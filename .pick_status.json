@@ -1,5 +1,446 @@
 [
     {
+        "sha": "0fd33207b7793772e60f6ad2c25a0fa97babfd54",
+        "description": "radv: allocate the TMA BO into 32-bit addr space",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "d243d21ffc9596140800812e26feeb5d35d13d29",
+        "description": "radv: align the TMA BO size to 256",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "2dbb87282fe0beaa692ead6f00a2a5ef1fb6b417",
+        "description": "gitlab-ci: Test the traces from bgfx",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "88b935bb0c0c31523fa34cbec389b8200d91a8c9",
+        "description": "mesa: fix formatting of messages printed using _mesa_log",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "fd10cb8cfccb8882e33a1ade047fc467b9716f54",
+        "description": "anv: fix transform feedback surface size",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": "36ee2fd61c8f943be1d1e2b0354f7a121ffef28f"
+    },
+    {
+        "sha": "5e4d69ec786e56794a995be869b5a9b80d050f2d",
+        "description": "st/mesa: Fix EGLImageTargetTexture2D for GL_TEXTURE_2D",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "855afe01449690e1ed21f9085718551e5ea09bbd",
+        "description": "meson: Fix lmsensors warning message.",
+        "nominated": false,
+        "nomination_type": 1,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": "138c003d22739b0d1e6860ed398dd511a44cde04"
+    },
+    {
+        "sha": "c6861b9f755e4a6b0dfe0afeaeaf8c5880e42312",
+        "description": "freedreno: Drop UNIFORM_BUFFER_OFFSET_ALIGNMENT to 32",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a79dad950b1f10ddeca2c907025a0f649b470cb9",
+        "description": "nir,amd: remove trinary_minmax opcodes",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "1fa43a4a8ec37aacac4d333a4c72987819188e69",
+        "description": "freedreno: handle case of shadowing current render target",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "743ad7bf6b8023c9bfdc98e793ed937d0f567d07",
+        "description": "freedreno: add debug helper to dump buffers",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "6f9bb6c26ac20a816ebf95744377a948adc42441",
+        "description": "freedreno/a6xx: refactor debug logging",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "440aab95c3deac65d1ece587ff33ae7c3bb507cd",
+        "description": "gallium/tgsi: add helper tgsi_get_interp_mode",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "2519472845a7eccd9ff2bfc8a3061ec2ae00de06",
+        "description": "st/mesa: handle lowered IO in st_nir_assign_vs_in_locations",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "2424485fb436b2abeca2dc801ffda156e3d1fe78",
+        "description": "st/mesa: don't generate NIR for ARB_vp/fp if NIR is not preferred",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": "5d0630e5043fc25aea3788c6a94059e2aceedf06"
+    },
+    {
+        "sha": "493fdcf44647ee471e934de3e63d193c6a3b6ff0",
+        "description": "st/mesa: don't pass NIR to draw module if IO is lowered",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "484a60d54742a13a3b7bf8fcaa9c57ccddcb7fe9",
+        "description": "nir: generate lowered IO in nir_lower_passthrough_edgeflags",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "7980f3e519f91508787b9dab3bc1e79169a77c48",
+        "description": "nir: add interpolation qualifiers for color sysvals into shader_info",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "4d36dceeabcc59155f2fa4acaf171ce2f3d4418c",
+        "description": "nir: add shader_info::io_lowered",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "844167d10094099e2fdc1fa47ea22f800da305ad",
+        "description": "nir: properly identify texcoords for lowered IO in nir_lower_drawpixels",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "2b1ef5df4eacae2a1c4028655c8b1f35412e0a3b",
+        "description": "nir: print IO semantics (v2)",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "01ab308edc78cda777bc66f2e8110fbd8c21aa18",
+        "description": "nir: update IO semantics in nir_io_add_const_offset_to_base",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "17af07024dfc8302b37a270cea4ef3eae06fe5e2",
+        "description": "nir: gather all IO info from IO intrinsics",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "502abfce7f5df1811b619657e2e973916699dbc0",
+        "description": "nir: save IO semantics in lowered IO intrinsics",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "ec1fa1d51ff614c19d08c949482b40c060de48c9",
+        "description": "intel/perf: fix raw query kernel metric selection",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "f1da3bb3d5ef8a7d11b8abc8534fc7d5ca875faa",
+        "description": "intel/perf: store query symbol name",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a9019d14aed7a6f76fc764afd1e200c816df06b1",
+        "description": "nir/load_store_vectorizer: Clean up unit test swizzle assertions.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "2b2524099379b96a6dbeab037a25cbf5d71da7df",
+        "description": "freedreno/ir3: Replace our custom vec4 UBO intrinsic with the shared lowering.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "73616598bd25764789f858fdadf7c6cd9dccb49c",
+        "description": "nir: Add a lowering pass for backends wanting load_ubo with vec4 offsets.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "d84a16e4817c33eb8cf7d47cc15e6a3ee6385cd1",
+        "description": "nir: Add nir_[iu]shr_imm and nir_udiv_imm helpers and use them.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "e78b887f76706ed0667457079474c31ac08374d0",
+        "description": "nir: Make the nir_builder *_imm helpers consistently handle bit size.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "f820dde201f82763b5165dfe6516f20e9c80795b",
+        "description": "aco: Fix convert_to_SDWA when instruction has 3 operands.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "0d194a70c6497ea77bb57aa22e229c4fceabb653",
+        "description": "aco: Fix unused variable warning by adding ASSERTED.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "089bc22de530a1ff251bb1e809f77de9cd578142",
+        "description": "r300: Use util_blend_factor_uses_dest",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "7a776f43d20d436a493222291a8243f3ff1bcd88",
+        "description": "si: Use util_blend_factor_uses_dest",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "e0554634592b4dd616bcc51d3e941f86e7bec044",
+        "description": "gallium: Add util_blend_uses_dest helper",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "e05930511b7d3dafa36cc8d2dca51767edeff3b9",
+        "description": "gallium: Add util_blend_factor_uses_dest helper",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "48a910d1f9344ed46822b9a969c200e606613cf3",
+        "description": "radv: use the trap handler to detect faulty shaders/instructions",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "8e97a61cfbb50e427159877a2b8110ec0f5ce8ef",
+        "description": "radv: enable the trap handler and configure the shader exceptions",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "af3230e39e9a4fe848e8c859095db8dab6869ccf",
+        "description": "radv: add initial trap handler support with RADV_TRAP_HANDLER=1",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "8fd2f5c16d902708136764f7121aad471559fb23",
+        "description": "radv: add a small interface for creating the trap handler shader",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a0814a873d50f65484b17927379fbb47cf90372e",
+        "description": "aco: skip unnecessary compiler pass for the trap handler program",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "9c46e6fca323390f3cb74d6e865d2883a4fbd453",
+        "description": "aco: add a helper for building a trap handler shader",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a6146aa5980f972a11ee054a49bba9dc79b8bbd4",
+        "description": "aco: validate that SMEM operands can use fixed registers",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "baa9268eb68500e66c3d151f7c97da354552fa91",
+        "description": "aco: add TBA/TMA/TTMP0-11 physical registers definitions",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "7e493e510b7722ea54138906e7bb3b05b58637e7",
+        "description": "amd/registers: add some SQ_WAVE_* register definitions",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "3aa71a61ddebce731205caac079372501f2f8ccd",
+        "description": "amd/registers: add missing TBA registers on GFX6-GFX8",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "5e841e8b4fd689c50e5ff870ccd64788c6181c9e",
+        "description": "nir: add iabs-lowering code",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "9e5e3be412271ff700c9ad7c0c51453ea1e95007",
+        "description": "egl: drop invalid shebang",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
         "sha": "32dc71b23acc996198ecf429018a12326689ae01",
         "description": "clover: Call clang with -O0 for the SPIR-V path",
         "nominated": false,
