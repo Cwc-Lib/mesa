@@ -1,5 +1,1031 @@
 [
     {
+        "sha": "98222db0da56018f4f61c742d8a7a1b7fb3cd986",
+        "description": "egl: document which driver hooks are only required by extensions",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "cf663d0d11c669780326e08ab9c49371d0c0afe3",
+        "description": "egl: move extension driver functions after core functions",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "12c941808ff6b9fabdb447b65724ddf49c611b5b",
+        "description": "docs/egl: correct/update DRI2 mention with the shiny new DRI3",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "ab2e59750f28b5e861f9a2a114ea28f5bc3f9975",
+        "description": "docs/egl: add some more documentation",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "7897c315d4f4978257a59271ce156d07ed678566",
+        "description": "docs/egl: add haiku driver",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "c84d3049b01a2d3ce527e81a908fa31c4a867ac3",
+        "description": "docs/egl: complete list of dri2 platforms",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "3909e9d1ac91158b36f524e1297aad8df58b87ca",
+        "description": "docs/egl: move section around",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "3704b0250c9d8ec1cc0d5821495676a9d03be664",
+        "description": "docs/egl: fix typo",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "608c87afdddb9524bce3d2ccd95c2297b453072b",
+        "description": "nir/vtn: SPIR-V bit count opcodes (core and extension) dest size mismatches nir",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a54695ddcb26b4437c361d7df8c93f6b8a990e27",
+        "description": "nir: Add bit_count to lower_int64 pass",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "d91f85f16e0b5cb75eddb3344343b9dc9a58d83a",
+        "description": "nir: Remove 32bit restriction for uadd_carry optimization",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "9232887c6991151df267d835668c64ba25754240",
+        "description": "nir: Implement mul_high lowering for bit sizes other than 32",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "ea715741b5b31044d00959b61bbc96db913e958e",
+        "description": "nir_lower_bit_size: Support lowering ops with differing source/dest sizes",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "0d595f72b2ccea462d01923e02957f1458acdd35",
+        "description": "nir: Relax opt_if logic to prevent re-merging 64bit phis for loop headers",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "43d22c8f2011b780467df97e58981522edccfa21",
+        "description": "nir: Add a lowering pass to split 64bit phis",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "6b1a56b908e702c06f55c63b19b695a47f607456",
+        "description": "iris: Drop stale syncobj references in fence_server_sync",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": "f459c56be6bf33439cccc11e932b2b5b52ba7ad8"
+    },
+    {
+        "sha": "e98c7a66347a05fc166c377ab1abb77955aff775",
+        "description": "iris: Reorder the loops in iris_fence_await() for clarity.",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": "f459c56be6bf33439cccc11e932b2b5b52ba7ad8"
+    },
+    {
+        "sha": "45793c00d29507c6de0193fbd6c627191ba50bed",
+        "description": "ci: Fix up rules for post-merge / main project branch pipelines",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "502b9daa7aaee27f63cc1fa8f755fdf0a0fedcfa",
+        "description": "aco: add ACO_DEBUG=novn,noopt,nosched for debugging purposes",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "4d40a719b07670b64d6ed4313818ac8d309bb77f",
+        "description": "radv: Fix 3d blits.",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "003ea78b774b82dd93948d226d4fd4d9a19ccae0",
+        "description": "st/mesa: remove useless code for lowered IO in st_nir_assign_vs_in_locations",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "868406197582da862e5a0e788fc49be8373dd12d",
+        "description": "ci: Test the KHR-GL* CTS cases with softpipe.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "d2cf6a8399e38f2c26564aeb6d0646c6c6198518",
+        "description": "aco: sink get_alu_src() in bfe lowering",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "14d748eb28efa57507a3a84b7ef157b27ab27752",
+        "description": "aco: fix sgpr ubfe/ibfe if the offset is too large",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "454bc595d184da6f9567b6a3451c87616ddb6e79",
+        "description": "aco: remove 64-bit SGPR ubfe/ibfe",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "eb3c16e1f8fc2103cd1302a829af502679631661",
+        "description": "aco/tests: add tests for long jumps",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "192b9f43039eee21288145e940502de5eca1a69b",
+        "description": "aco: shorten disassembly for repeated instructions",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "ae6330d955ed9e5a6c9a0ce12a11a08b95830bff",
+        "description": "aco/tests: add test for GFX10 0x3f bug",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "fe2dc41258b1d868b59c44256ef8397f301ed7da",
+        "description": "aco: create long jumps",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "156fd58cdacb28a7fca88fc9ffc84c3cdfbbb8f3",
+        "description": "aco: reserve 2 sgprs for each branch",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "e8ac14527a2fd384c1f2cce56e44a9e93e0a13ec",
+        "description": "aco: keep loop live-through variables spilled",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "75d6c30572ce78952f76ee62a71332a424ca886a",
+        "description": "aco: fix spills_entry heuristic for branch blocks in init_live_in_vars()",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "fc9f502a5bd853128a9c2932c793180035883efc",
+        "description": "aco: fix regclass checks when fixing to vcc/exec with Builder",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a537c9e73f86d8cb3f4a2b48b4143708b146f0fe",
+        "description": "aco: don't fix break condition for break+discard to exec",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "1a5444b90013213fa1f1108dc74e17c5e596e5a0",
+        "description": "aco: don't consider the first partial spill if it's the wrong type",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "8f6a900d5e5decd54f71ca89c950548089086c14",
+        "description": "aco: consider branch definitions in spiller",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "cacb388b3b720b63d17e08aabf2bd86d116f4506",
+        "description": "radv: print a warning when RADV_TRAP_HANDLER is used",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "60975ebe58ddb05beebbdd3850dc9d866aee5420",
+        "description": "etnaviv: Add lock around pending_ctx",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": "e5cc66dfad0a811338ef088b9b4be17cadc01dea"
+    },
+    {
+        "sha": "da660c90bf94527c3d54a9a59e7f7df935480479",
+        "description": "etnaviv: Remove etna_resource_get_status()",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "785e2707b0d181967ca8986346fa7482d4fbed0b",
+        "description": "etnaviv: Fix disabling early-z rejection on GC7000L (HALTI5)",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "0d8ae4ac15034cf91e53a7258aae920532e72abd",
+        "description": "radv: fix setting EXCP_EN for different shader stages",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "05a0349949921406aefe1d99e9d2af84629997e1",
+        "description": "v3d: set instance id to 0 at start of tile",
+        "nominated": true,
+        "nomination_type": 0,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "2e8b6f64decc1bfdf53dc4846fc29070d0115844",
+        "description": "v3d/packet: fix typo on Set InstanceID/PrimitiveID packet",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": "276d22c52dd9c50a2b2becd13c702fbb801a7e17"
+    },
+    {
+        "sha": "15bdbf34c4f3303f4eb7b7de7c1217cbdbfa704f",
+        "description": "freedreno/a5xx: Don't set the VARYING flag for fragcoord-only programs.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "36bd3e986830bbf7435389cdd68e593b8b43f234",
+        "description": "gallium/dri2: Report correct YUYV and UYVY plane count",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": "d5c857837aae205c0e1fddee30300b4419e2bb3f"
+    },
+    {
+        "sha": "7323062a872674ca7868453f62ad883d32dab929",
+        "description": "ci: Mark the rest of compswap as flaky on freedreno.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "27e6117ee9f77ef40721f7757e181ddf93fc60dd",
+        "description": "nir: Report progress properly in nir_lower_bool_to_*",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "39d00722b22a0059bbc58f0158a22f384519cd39",
+        "description": "freedreno/a6xx: fix hang with large render target",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "0f3c12c0ab05bd4f481f2b4c3397e1ddae1fb95d",
+        "description": "freedreno: add env var to override tiles-per-pipe",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "688ca541e7bc0f5791afe0bc3f2fd2692634b281",
+        "description": "freedreno: add env var to override GMEM size",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "758fdb9f3315d9ee4c31ed90e379f98928acd8b5",
+        "description": "freedreno/gmemtool: add tile_alignw/h and a650",
+        "nominated": false,
+        "nomination_type": 1,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": "f6f8a19092027ab0248e216997a5529565ce2e12"
+    },
+    {
+        "sha": "a61890883ddb993cce1b94ccff20b638acd0a4f7",
+        "description": "radeonsi: fix tess levels coming as scalar arrays from SPIR-V",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": "75ce078a0aff7fa0f4d6467bea787327da3a4b69"
+    },
+    {
+        "sha": "e512f2cef9200af31340b1451e80da3e8b2ad4bb",
+        "description": "mesa: add NV_copy_depth_to_color support for nir",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "da9d721323dc8b68984dda55a7814d4f9c970963",
+        "description": "nvc0: Add shader disk caching",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "82dd683a3ce83461c374aa2332d2db2ff589b741",
+        "description": "nv50/ir: Add nv50_ir_prog_info serialize",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "3e99af66b4e4ba658072e93f4de519dd271913e0",
+        "description": "nv50/ir: Add prog_info_out print",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "f20a210dc8552daadfe403d899a9ba6cdd21560b",
+        "description": "nv50/ir: Add nv50_ir_prog_info_out serialize and deserialize",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "5ecc06ef20efd70f35f7100b4e42bb22dc262b38",
+        "description": "nv50/ir: Use a bit field in info_out structure",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "f2924994bd3e0389446c2ca6bc23d4712a7742de",
+        "description": "nv50/ir: add nv50_ir_prog_info_out",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "fa8e62824075d8481d1e63ff057be7cd966c4149",
+        "description": "nv50/ir: remove symbol table support for compute shaders",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "83139aca59a6d7da4c4b0abfcc1371f6fc076729",
+        "description": "radv: Update CTS version.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "4e30191c9d3e5cdb1b65d4563f2b74e9bfdcf243",
+        "description": "radv: Remove conformance warnings with ACO.",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "2a9ffc24cc7a8d782c60265e6a28f0a0067b292c",
+        "description": "nir: Move new edgeflag assert into the io_lowered case",
+        "nominated": false,
+        "nomination_type": 1,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": "484a60d54742a13a3b7bf8fcaa9c57ccddcb7fe9"
+    },
+    {
+        "sha": "2fcfcca842a6c3ca77f38791da88b185839f064a",
+        "description": "nir: Copy semantics to nir_intrinsic_load_fs_input_interp_deltas",
+        "nominated": false,
+        "nomination_type": 1,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": "01ab308edc78cda777bc66f2e8110fbd8c21aa18"
+    },
+    {
+        "sha": "3cda33360e7daada224b66eabbe0d497fcabf9af",
+        "description": "panfrost: Drop mali_shader_meta",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "3d7ce1341670285b849844abd4bc55122e79da82",
+        "description": "pan/decode: Use unpacks for state descriptor",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "1b377c2e591db4cf641bf24977829075cc64cbc2",
+        "description": "panfrost: Use pack for fragment shaders",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "c86b51a7fa7495a36de900410f53862cbd0dabcc",
+        "description": "panfrost: Use opaque pack for vertex shaders",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "100b15cdc827feb5b9339502af9a3b10cc31a059",
+        "description": "panfrost: Add optional opaque packs to GenXML",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a7b2317d0a06c0c4c7f0fb2d7ab0c72f68ce6383",
+        "description": "panfrost: Use pack for Bifrost test state",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "5b3b2a6697900191ed86057373253c6bea9a83bc",
+        "description": "panfrost: Use pack for blit shaders",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a36ac2b9b058228e3c0a4180536838924c504985",
+        "description": "panfrost: Inherit default values from structs",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "754d54382952802b2c32b07add110d80c8261c94",
+        "description": "panfrost: XMLify the rest of shader_meta",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "80f1d611c5ddca6a719e0a470d3967a3d20ebcda",
+        "description": "panfrost: Use preuploaded shader descriptors",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "1e4c49e0b5db350528e9fbc730803338ad4995fb",
+        "description": "panfrost: Upload shader descriptors at CSO create",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "8c14482cdf134a9dcae6807671106bbc54e5aadb",
+        "description": "panfrost: Allocate a state uploader",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "da677a438f2a9e6c2412e9962b53068716001d9e",
+        "description": "panfrost: Ensure shader-db state is zero-initialized",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "e0a6af9d7b73ee3bf32ba471406810dfc6cfd435",
+        "description": "panfrost: Simplify shaderless packing",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "55d9c25b5a9001b314c73921d7b21051c0c6505e",
+        "description": "panfrost: Prepack fragment properties/preload",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a29fb64c168b1659d28de495407d594d3200c5fe",
+        "description": "panfrost: Pack vertex properties when compiling",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "5393d734a85da28a7466ae840d205bbb172de4b9",
+        "description": "panfrost: Derive UBO count from shader_info",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "661b46958d770a101462bb47840b485d6a183111",
+        "description": "panfrost: XMLify beginning of shader descriptor",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "3bb61e21f8bf290773897778fbf391775ba706b9",
+        "description": "panfrost: Derive texture/sampler_count from shader",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "d353b15beecd30dd0a4f162041afcd652bbc69a4",
+        "description": "panfrost: Quiet pandecode error",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "a0857e9d9ebf01334a0aca731bb622cb445e670e",
+        "description": "panfrost: Support SHADERLESS mode everywhere",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "c9858fb941ce7e903f608e537b3657c946f86980",
+        "description": "panfrost: Identify additional SFBD flags",
+        "nominated": true,
+        "nomination_type": 1,
+        "resolution": 0,
+        "master_sha": null,
+        "because_sha": "a64599a303ee8ded4bd6b3cef1f720bb7c308127"
+    },
+    {
+        "sha": "7a95ed2ecf4883bb637dc865aeb28ff393480ecc",
+        "description": "panfrost: XMLify Bifrost preload",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "1574866233ad20958f96c76feec18346642ca9ab",
+        "description": "panfrost: Group SFBD code tighter",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "518537d1c8c8958db97bc08bf28182cc9e43921b",
+        "description": "panfrost: Drop redundant NULL check",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "acf77cbb3980a9918b2dd476efbcacadeebc6a88",
+        "description": "panfrost: XMLify bifrost1",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "1b7d4f1940ca1609c511902c33f49a3fa8069328",
+        "description": "panfrost: Remove midgard1 bitfield",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "0268e8481e3793e8078723afd3b7dee89e6d8f09",
+        "description": "panfrost: Simplify bind_blend_state",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "96a9153036801249114b7a23716bda141240c341",
+        "description": "panfrost: Fold work_count packing for blend shaders",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "41aad9aff9d72b5ea4228b58872407ea22d2dca9",
+        "description": "panfrost: Use pack for shaderless",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "19ded1e1212b859c5af67613dc66ce10e2c74ee1",
+        "description": "panfrost: Use packs for fragment properties",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "d47541285965b4f255d1e8c686d38f6e4b96fd0e",
+        "description": "panfrost: Pack compute Midgard properties",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "87c59514e95fa8a7d066b1003fe22c3fdd1c04a4",
+        "description": "panfrost: XMLify Midgard properties",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "68503f3dd5c952aaf8bf8b007a0394d127642404",
+        "description": "panfrost: Group SFBD state together",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "58ae50f1b186212e58a426c34fbef8aafe7bf7e5",
+        "description": "panfrost: Clean up blend shader errata handling",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "8073e27d02b2263bc48a1bb1fd4b2eae3f03e8d6",
+        "description": "panfrost: Rename shader emit functions",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "9a2df304edbe7976c5cd7c522e06dc66b8b08b6e",
+        "description": "panfrost: Specialize compute vs frag shader init",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "9f83217bc8c1561cb8e5d3941ebce9e9a61ee769",
+        "description": "panfrost: Bake the initial tag into the shader pointer",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "606f05b9ab3c54acd1a7a0a6d8ad805e9d2bf7fc",
+        "description": "panfrost: Clamp shader->uniform_count",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "e45142113c8fa12db8f8847f8dee22fff54b9c6d",
+        "description": "panfrost: Size UBO#0 accurately",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "e5689a5713520477b39502b68204ffc88501678d",
+        "description": "panfrost: Combine frag_shader_meta_init functions",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "bf6d548787091cc31f80e8e2e1c0d6995cca5afc",
+        "description": "panfrost: XMLify blend equation",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "6beac11868c3656d37e383238ec007d0bcead0fa",
+        "description": "panfrost: Honour load_dest/opaque flags",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "919818a8a0056bbd539566e930563218e2e30fd9",
+        "description": "panfrost: Simplify make_fixed_blend_mode prototype",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "94c9f87df1a56864db1e2e64038ca8f9dec1825f",
+        "description": "panfrost: XMLify blend flags",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "bbec4ff9464abc0e4eb8f496d0bb473e5307af43",
+        "description": "panfrost: Separate shader/blend descriptor emits",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "cfef6de429d40785a306ef2a2db7092c4ce0388a",
+        "description": "panfrost: Hoist blend finalize calls",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "6fd62215fabf55688ec84d29efb102d8dc2be5a9",
+        "description": "panfrost: Decode nested structs correctly",
+        "nominated": false,
+        "nomination_type": 1,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": "75cc5b8c2922e192dd8c3e6dc33d6e691f2485fe"
+    },
+    {
+        "sha": "aac5a559cc281f0a375cdf81d4b1441d165ee6f4",
+        "description": "pan/decode: Drop legacy 32-bit job support",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
+        "sha": "bc6d6fd0ed57c667377d9aae5cc4a7b4d56b1b6f",
+        "description": "scons: bump c++ standard to 14 to match meson",
+        "nominated": false,
+        "nomination_type": null,
+        "resolution": 4,
+        "master_sha": null,
+        "because_sha": null
+    },
+    {
         "sha": "0fd33207b7793772e60f6ad2c25a0fa97babfd54",
         "description": "radv: allocate the TMA BO into 32-bit addr space",
         "nominated": false,
