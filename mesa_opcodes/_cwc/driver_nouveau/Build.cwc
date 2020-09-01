@@ -1,0 +1,39 @@
+-{vFlag}=
+-DGALLIUM_NOUVEAU
+-DPIPE_OS_UNIX
+>
+-{vIncl}=
+-I ../ 
+-I ../other/
+-I ../other/compiler/nir/
+-I ../../mesa-newir/
+-I ../../src/gallium/drivers/nouveau/
+-I ../../src/gallium/auxiliary/
+-I ../../src/gallium/include/
+-I ../../include/
+-I ../../drm/
+-I ../../drm/nouveau/
+-I ../../drm/include/drm/
+-I ../../src/
+-I ../../
+
+>
+;Build Nouveau
+-c ../../src/gallium/drivers/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/
+-{vIncl}
+-{vFlag}
+>
+;Generate Dynamic Lib
+;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.{_sDynamic}
+>
+;Generate Static Lib
+-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.a
+>
+;Build Main Example
+;-c ../HelloWorld/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/HelloWorld/
+;-{vIncl}
+>
+;Generate executable
+;-o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*
+>
+-#Run
