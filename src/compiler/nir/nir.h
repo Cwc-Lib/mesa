@@ -25,6 +25,10 @@
  *
  */
 
+ 
+//#include "mesa-newir/nir.h"
+//#define NIR_H
+ 
 #ifndef NIR_H
 #define NIR_H
 
