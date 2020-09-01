@@ -44,7 +44,7 @@ nv50_ir_prog_info_serialize(struct blob *blob, struct nv50_ir_prog_info *info)
          break;
       }
       default:
-         ERROR("unhandled info->bin.sourceRep switch case\n");
+         printf("unhandled info->bin.sourceRep switch case\n");
          assert(false);
          return false;
    }
@@ -114,7 +114,7 @@ nv50_ir_prog_info_out_serialize(struct blob *blob,
          else if (fixup->entry[i].apply == nv50_ir::gv100_selpFlip)
             blob_write_uint8(blob, FLIP_GV100);
          else {
-            ERROR("unhandled fixup apply function pointer\n");
+            printf("unhandled fixup apply function pointer\n");
             assert(false);
             return false;
          }
@@ -230,7 +230,7 @@ nv50_ir_prog_info_out_deserialize(void *data, size_t size, size_t offset,
                fixup->entry[i].apply = nv50_ir::gv100_selpFlip;
                break;
             default:
-               ERROR("unhandled fixup apply function switch case");
+               printf("unhandled fixup apply function switch case");
                assert(false);
                return false;
          }

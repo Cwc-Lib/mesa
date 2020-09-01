@@ -5,6 +5,7 @@
 -{vIncl}=
 -I ../ 
 -I ../other/
+-I ../other/gen/
 -I ../other/compiler/nir/
 -I ../../mesa-newir/
 -I ../../src/gallium/drivers/nouveau/
@@ -15,6 +16,7 @@
 -I ../../drm/nouveau/
 -I ../../drm/include/drm/
 -I ../../src/
+-I ../../src/mesa/
 -I ../../
 
 >
