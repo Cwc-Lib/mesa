@@ -1,0 +1,31 @@
+-{vFlag}=
+-DGALLIUM_NOUVEAU
+-DPIPE_OS_UNIX
+-DHAVE_LIB_ATOMIC_OPS
+>
+-{vIncl}=
+-I ../ 
+-I ../include/drm/
+-I ../nouveau/
+-I ../../_cwc/other/
+-I ../../libatomic_ops-7.6.10/src/
+>
+;Build Nouveau
+-c ../nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/drm/nouveau/
+-{vIncl}
+-{vFlag}
+>
+;Generate Dynamic Lib
+;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/drm_nouveau.{_sDynamic}
+>
+;Generate Static Lib
+-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/drm_nouveau.a
+>
+;Build Main Example
+;-c ../HelloWorld/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/HelloWorld/
+;-{vIncl}
+>
+;Generate executable
+-o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*
+>
+-#Run
