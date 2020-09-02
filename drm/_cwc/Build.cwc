@@ -19,11 +19,11 @@
 ;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/drm_nouveau.{_sDynamic}
 >
 ;Generate Static Lib
--o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/drm_nouveau.a
+-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/drm_nouveau.dll
 >
 ;Build Main Example
-;-c ../HelloWorld/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/HelloWorld/
-;-{vIncl}
+-c ../tests/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/Test_Nouveau/
+-{vIncl}
 >
 ;Generate executable
 -o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*
