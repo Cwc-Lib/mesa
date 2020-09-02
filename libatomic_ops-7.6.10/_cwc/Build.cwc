@@ -1,0 +1,27 @@
+-{vFlag}=
+-DGALLIUM_NOUVEAU
+-DPIPE_OS_UNIX
+>
+-{vIncl}=
+-I ../src/
+>
+;Build Atomic
+-c ../src/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/
+-{vIncl}
+-{vFlag}
+>
+>
+;Generate Dynamic Lib
+;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/atomic_ops.{_sDynamic}
+>
+;Generate Static Lib
+-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/atomic_ops.a
+>
+;Build Main Example
+-c ../tests/test_atomic.c -o obj/cpp_{_sPlatform}_{_sOpt}/tests/test_atomic.o
+-{vIncl}
+>
+;Generate executable
+-o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*
+>
+-#Run
