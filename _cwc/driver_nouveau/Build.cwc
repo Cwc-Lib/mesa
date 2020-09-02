@@ -6,8 +6,6 @@
 -I ../ 
 -I ../other/
 -I ../other/gen/
--I ../other/compiler/nir/
--I ../../mesa-newir/
 -I ../../src/gallium/drivers/nouveau/
 -I ../../src/gallium/auxiliary/
 -I ../../src/gallium/include/
@@ -16,12 +14,31 @@
 -I ../../drm/nouveau/
 -I ../../drm/include/drm/
 -I ../../src/
+-I ../../src/compiler/nir/
+-I ../../src/compiler/
 -I ../../src/mesa/
 -I ../../
 
 >
 ;Build Nouveau
 -c ../../src/gallium/drivers/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/
+-{vIncl}
+-{vFlag}
+>
+;Build Nouveau gen
+-c ../other/gen/nir/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/gen/
+-{vIncl}
+-{vFlag}
+>
+;Build Nouveau dmr
+;-c ../../drm/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/drm/
+;-{vIncl}
+;-{vFlag}
+>
+;Build Nouveau compiler nir
+-c ../../src/compiler/nir/
+!../../compiler/nir/tests/
+-o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/nir_compiler/
 -{vIncl}
 -{vFlag}
 >
@@ -36,6 +53,6 @@
 ;-{vIncl}
 >
 ;Generate executable
-;-o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*
+-o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*
 >
 -#Run
