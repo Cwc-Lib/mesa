@@ -17,6 +17,7 @@
 -I ../../src/compiler/nir/
 -I ../../src/compiler/
 -I ../../src/mesa/
+-I ../../src/util/
 -I ../../
 
 >
@@ -43,6 +44,12 @@
 -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/nir_compiler/
 -{vIncl}
 -{vFlag}
+>
+;Build Mesa Util
+-c ../../src/util/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/util/
+-{vIncl}
+-{vFlag}
+-DDT_REG
 >
 ;Generate Dynamic Lib
 ;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.{_sDynamic}
