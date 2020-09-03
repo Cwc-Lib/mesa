@@ -1,6 +1,7 @@
 -{vFlag}=
 -DGALLIUM_NOUVEAU
 -DPIPE_OS_UNIX
+-DGALLIUM_STATIC_TARGETS
 >
 -{vIncl}=
 -I ../ 
@@ -17,6 +18,7 @@
 -I ../../src/compiler/nir/
 -I ../../src/compiler/
 -I ../../src/mesa/
+-I ../../src/loader/
 -I ../../src/util/
 -I ../../
 
@@ -31,6 +33,16 @@
 -{vIncl}
 -{vFlag}
 >
+;tgsi/
+;Build Nouveau gallium_auxiliary (Maybe just tgsi?)
+;src/gallium/auxiliary/
+-c  ../../src/gallium/auxiliary/tgsi/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/auxiliary/tgsi/
+;-c  ../../src/gallium/auxiliary/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/auxiliary/
+-{vIncl}
+-DGALLIUM_NOUVEAU
+-DGALLIUM_STATIC_TARGETS
+-I ../../src/gallium/winsys/
+>
 ;Build Nouveau dmr
 -c ../../drm/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/drm/
 -I ../../libatomic_ops-7.6.10/src/
@@ -38,12 +50,14 @@
 -{vIncl}
 -{vFlag}
 >
-;Build Nouveau compiler nir
--c ../../src/compiler/nir/
+;Build Nouveau compiler
+;-c ../../src/compiler/nir/
+-c ../../src/compiler/
 !../../compiler/nir/tests/
--o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/nir_compiler/
+-o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/compiler/
 -{vIncl}
 -{vFlag}
+-I ../../src/mapi/
 >
 ;Build Mesa Util
 -c ../../src/util/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/util/

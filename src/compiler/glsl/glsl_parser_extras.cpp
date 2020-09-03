@@ -1319,11 +1319,13 @@ ast_expression::print(void) const
       break;
 
    case ast_int64_constant:
-      printf("%" PRId64 " ", primary_expression.int64_constant);
+   //   printf("%" PRId64 " ", primary_expression.int64_constant); 
+      printf("%PRId64"  " ", primary_expression.int64_constant); //TODO
       break;
 
    case ast_uint64_constant:
-      printf("%" PRIu64 " ", primary_expression.uint64_constant);
+    //  printf("%" PRIu64 " ", primary_expression.uint64_constant);
+      printf("%PRIu64"  " ", primary_expression.uint64_constant);//TODO
       break;
 
    case ast_bool_constant:

@@ -24,6 +24,10 @@
  *    Christian Gmeiner <christian.gmeiner@gmail.com>
  */
 
+ #ifndef O_CLOEXEC
+#define O_CLOEXEC        02000000        /* set close_on_exec */
+#endif
+
 #include "renderonly/renderonly.h"
 
 #include <errno.h>
