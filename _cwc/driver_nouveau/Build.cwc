@@ -43,6 +43,14 @@
 -DGALLIUM_STATIC_TARGETS
 -I ../../src/gallium/winsys/
 >
+;Build Nouveau cso_cache
+-c  ../../src/gallium/auxiliary/cso_cache/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/auxiliary/cso_cache/
+;-c  ../../src/gallium/auxiliary/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/auxiliary/
+-{vIncl}
+-DGALLIUM_NOUVEAU
+-DGALLIUM_STATIC_TARGETS
+-I ../../src/gallium/winsys/
+>
 ;Build Nouveau dmr
 -c ../../drm/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/drm/
 -I ../../libatomic_ops-7.6.10/src/
