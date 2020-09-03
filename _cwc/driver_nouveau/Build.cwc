@@ -31,9 +31,11 @@
 -{vFlag}
 >
 ;Build Nouveau dmr
-;-c ../../drm/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/drm/
-;-{vIncl}
-;-{vFlag}
+-c ../../drm/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/drm/
+-I ../../libatomic_ops-7.6.10/src/
+-DHAVE_LIB_ATOMIC_OPS
+-{vIncl}
+-{vFlag}
 >
 ;Build Nouveau compiler nir
 -c ../../src/compiler/nir/
