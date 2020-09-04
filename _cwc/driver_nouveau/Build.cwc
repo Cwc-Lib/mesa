@@ -1,3 +1,10 @@
+-{pMesa}=../../src/
+-{pDrm}=../../drm/
+-{pAtomic_ops}=../../libatomic_ops-7.6.10/src/
+-{pObj}=obj/cpp_{_sPlatform}_{_sOpt}/
+-{pLib}=Lib/{_sPlatform}_{_sOpt}/
+-{pOut}=_out/{_sPlatform}_{_sOpt}/
+>
 -{vFlag}=
 -DGALLIUM_NOUVEAU
 -DPIPE_OS_UNIX
@@ -7,85 +14,86 @@
 -I ../ 
 -I ../other/
 -I ../other/gen/
--I ../../src/gallium/drivers/nouveau/
--I ../../src/gallium/auxiliary/
--I ../../src/gallium/include/
+-I {pMesa}gallium/drivers/nouveau/
+-I {pMesa}gallium/auxiliary/
+-I {pMesa}gallium/include/
 -I ../../include/
--I ../../drm/
--I ../../drm/nouveau/
--I ../../drm/include/drm/
--I ../../src/
--I ../../src/compiler/nir/
--I ../../src/compiler/
--I ../../src/mesa/
--I ../../src/loader/
--I ../../src/util/
+-I {pDrm}
+-I {pDrm}nouveau/
+-I {pDrm}include/drm/
+-I {pMesa}
+-I {pMesa}compiler/nir/
+-I {pMesa}compiler/
+-I {pMesa}mesa/
+-I {pMesa}loader/
+-I {pMesa}util/
 -I ../../
 
 >
 ;Build Nouveau
--c ../../src/gallium/drivers/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/
+-c {pMesa}gallium/drivers/nouveau/ -o {pObj}lib/nouveau/
 -{vIncl}
 -{vFlag}
 >
 ;Build Nouveau gen
--c ../other/gen/nir/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/gen/
+-c ../other/gen/nir/ -o {pObj}lib/nouveau/gen/
 -{vIncl}
 -{vFlag}
 >
 ;tgsi/
 ;Build Nouveau gallium_auxiliary (Maybe just tgsi?)
 ;src/gallium/auxiliary/
--c  ../../src/gallium/auxiliary/tgsi/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/auxiliary/tgsi/
-;-c  ../../src/gallium/auxiliary/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/auxiliary/
+-c  {pMesa}gallium/auxiliary/tgsi/ -o {pObj}lib/auxiliary/tgsi/
+;-c  {pMesa}gallium/auxiliary/ -o {pObj}lib/auxiliary/
 -{vIncl}
 -DGALLIUM_NOUVEAU
 -DGALLIUM_STATIC_TARGETS
--I ../../src/gallium/winsys/
+-I {pMesa}gallium/winsys/
 >
 ;Build Nouveau cso_cache
--c  ../../src/gallium/auxiliary/cso_cache/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/auxiliary/cso_cache/
-;-c  ../../src/gallium/auxiliary/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/auxiliary/
+-c  {pMesa}gallium/auxiliary/cso_cache/ -o {pObj}lib/auxiliary/cso_cache/
+;-c  {pMesa}gallium/auxiliary/ -o {pObj}lib/auxiliary/
 -{vIncl}
 -DGALLIUM_NOUVEAU
 -DGALLIUM_STATIC_TARGETS
--I ../../src/gallium/winsys/
+-I {pMesa}gallium/winsys/
 >
 ;Build Nouveau dmr
--c ../../drm/nouveau/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/drm/
--I ../../libatomic_ops-7.6.10/src/
+-c {pDrm}nouveau/ -o {pObj}lib/nouveau/drm/
+-I {pAtomic_ops}
 -DHAVE_LIB_ATOMIC_OPS
 -{vIncl}
 -{vFlag}
 >
 ;Build Nouveau compiler
-;-c ../../src/compiler/nir/
--c ../../src/compiler/
+;-c {pMesa}compiler/nir/
+-c {pMesa}compiler/
 !../../compiler/nir/tests/
--o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/compiler/
+-o {pObj}lib/nouveau/compiler/
 -{vIncl}
 -{vFlag}
--I ../../src/mapi/
+-I {pMesa}mapi/
 >
 ;Build Mesa Util
--c ../../src/util/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/nouveau/util/
+-c {pMesa}util/ -o {pObj}lib/nouveau/util/
 -{vIncl}
 -{vFlag}
 -DDT_REG
 >
-;Build format  ../../src/util/ E:\_Project\Vellum\mesa\src\util\format
+;Build format  {pMesa}util/ E:\_Project\Vellum\mesa\src\util\format
 >
 ;Generate Dynamic Lib
-;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.{_sDynamic}
+;-o {pObj}lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.{_sDynamic}
 >
 ;Generate Static Lib
--o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.a
+-o {pObj}lib/ -#To {pLib}nouveau.a
 >
 ;Build Main Example
--c ../examples/nouveau_compiler.c -o obj/cpp_{_sPlatform}_{_sOpt}/Example/nouveau_compiler.o
+-c ../examples/nouveau_compiler.c -o {pObj}Example/nouveau_compiler.o
 -{vIncl}
 >
 ;Generate executable
--o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*
+;-o {pObj} -#To _out/{_sPlatform}_{_sOpt}/App.*
+-o "{pObj}Example/nouveau_compiler.o"  -#To {pOut}nouveau_compiler.* -lgdi32 "{pObj}Example/nouveau_compiler.o" "{pLib}nouveau.a" 
 >
 -#Run
