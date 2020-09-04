@@ -23,12 +23,19 @@
 -I {pDrm}include/drm/
 -I {pMesa}
 -I {pMesa}compiler/nir/
+-I {pMesa}compiler/spirv/
 -I {pMesa}compiler/
 -I {pMesa}mesa/
 -I {pMesa}loader/
 -I {pMesa}util/
+-I {pMesa}mesa/program/
 -I ../../
 
+>
+;Build system
+-c ../other/sys/ -o {pObj}lib/sys/
+-{vIncl}
+-{vFlag}
 >
 ;Build Nouveau
 -c {pMesa}gallium/drivers/nouveau/ -o {pObj}lib/nouveau/
@@ -88,12 +95,19 @@
 ;Generate Static Lib
 -o {pObj}lib/ -#To {pLib}nouveau.a
 >
-;Build Main Example
+
+;Generate executable nouveau_compiler
 -c ../examples/nouveau_compiler.c -o {pObj}Example/nouveau_compiler.o
 -{vIncl}
 >
-;Generate executable
-;-o {pObj} -#To _out/{_sPlatform}_{_sOpt}/App.*
 -o "{pObj}Example/nouveau_compiler.o"  -#To {pOut}nouveau_compiler.* -lgdi32 "{pObj}Example/nouveau_compiler.o" "{pLib}nouveau.a" 
 >
+;Generate executable spirv2nir
+-c ../examples/spirv2nir.c -o {pObj}Example/spirv2nir.o
+-{vIncl}
+>
+-o "{pObj}Example/spirv2nir.o"  -#To {pOut}spirv2nir.* -lgdi32 "{pObj}Example/spirv2nir.o" "{pLib}nouveau.a" 
+>
+
+
 -#Run
