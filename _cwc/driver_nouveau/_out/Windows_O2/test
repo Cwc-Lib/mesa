@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+*.out
+build
+
+obj/
+*.wdat

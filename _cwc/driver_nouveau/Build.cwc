@@ -82,8 +82,8 @@
 -o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.a
 >
 ;Build Main Example
-;-c ../HelloWorld/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/HelloWorld/
-;-{vIncl}
+-c ../examples/nouveau_compiler.c -o obj/cpp_{_sPlatform}_{_sOpt}/Example/nouveau_compiler.o
+-{vIncl}
 >
 ;Generate executable
 -o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*
