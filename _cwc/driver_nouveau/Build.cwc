@@ -73,6 +73,8 @@
 -{vFlag}
 -DDT_REG
 >
+;Build format  ../../src/util/ E:\_Project\Vellum\mesa\src\util\format
+>
 ;Generate Dynamic Lib
 ;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.{_sDynamic}
 >
