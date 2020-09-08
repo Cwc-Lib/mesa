@@ -104,6 +104,11 @@
 -{vIncl}
 -{vFlag}
 >
+;Build API 
+;E:\Data\setting\mesa\src\mapi
+
+-D_GLAPI_NO_EXPORTS
+>
 ;Build format  {pMesa}util/ E:\_Project\Vellum\mesa\src\util\format
 >
 ;Generate Dynamic Lib
