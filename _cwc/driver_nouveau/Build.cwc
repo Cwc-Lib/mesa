@@ -6,9 +6,12 @@
 -{pOut}=_out/{_sPlatform}_{_sOpt}/
 >
 -{vFlag}=
+-D__STDC_FORMAT_MACROS
 -DGALLIUM_NOUVEAU
 -DPIPE_OS_UNIX
 -DGALLIUM_STATIC_TARGETS
+-DPACKAGE_VERSION=
+-DPACKAGE_BUGREPORT=
 >
 -{vIncl}=
 -I ../ 
@@ -28,10 +31,12 @@
 -I {pMesa}compiler/glsl/
 -I {pMesa}compiler/
 -I {pMesa}mesa/
+-I {pMesa}mesa/main/
 -I {pMesa}loader/
 -I {pMesa}util/
 -I {pMesa}mesa/program/
 -I {pMesa}mapi/
+-I ../other/gen/main/
 -I ../../
 
 >
@@ -89,10 +94,24 @@
 -{vFlag}
 -DDT_REG
 >
+;Build Main
+-c {pMesa}/mesa/main/ -o {pObj}mesa/main/
+-{vIncl}
+-{vFlag}
+>
+;Build gen Main
+-c ../other/gen/main/ -o {pObj}mesa/main/gen/
+-{vIncl}
+-{vFlag}
+>
 ;Build format  {pMesa}util/ E:\_Project\Vellum\mesa\src\util\format
 >
 ;Generate Dynamic Lib
 ;-o {pObj}lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.{_sDynamic}
+>
+;Generate Mesa Lib
+-o {pObj}mesa/ -#To {pLib}mesa.a
+>
 >
 ;Generate Static Lib
 -o {pObj}lib/ -#To {pLib}nouveau.a
@@ -102,7 +121,7 @@
 -c ../examples/tgis2nouveau.c -o {pObj}Example/tgis2nouveau.o
 -{vIncl}
 >
--o "{pObj}Example/tgis2nouveau.o"  -#To {pOut}tgis2nouveau.* -lgdi32 "{pObj}Example/tgis2nouveau.o" "{pLib}nouveau.a" 
+-o "{pObj}Example/tgis2nouveau.o"  -#To {pOut}tgis2nouveau.* -lgdi32 "{pObj}Example/tgis2nouveau.o" "{pLib}nouveau.a"
 >
 ;Generate executable spirv2nir.exe
 -c ../examples/spirv2nir.c -o {pObj}Example/spirv2nir.o
@@ -121,7 +140,7 @@
 -c ../examples/glsl_compiler.cpp -o {pObj}Example/glsl_compiler.o
 -{vIncl}
 >
--o "{pObj}Example/glsl_compiler.o"  -#To {pOut}glsl_compiler.* -lgdi32 "{pObj}Example/glsl_compiler.o" "{pLib}nouveau.a" 
+-o "{pObj}Example/glsl_compiler.o"  -#To {pOut}glsl_compiler.* -lgdi32 "{pObj}Example/glsl_compiler.o" "{pLib}nouveau.a"   "{pLib}mesa.a" 
 >
 
 -#Run

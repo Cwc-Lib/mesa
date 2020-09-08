@@ -3420,7 +3420,7 @@ static inline void SET_EdgeFlagv(struct _glapi_table *disp, void (GLAPIENTRYP fn
 
 typedef void (GLAPIENTRYP _glptr_End)(void);
 #define CALL_End(disp, parameters) \
-    (* GET_End(disp)) parameters
+    (* GET_End(disp))parameters
 static inline _glptr_End GET_End(struct _glapi_table *disp) {
    return (_glptr_End) (GET_by_offset(disp, _gloffset_End));
 }
