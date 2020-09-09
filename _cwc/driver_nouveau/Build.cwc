@@ -105,9 +105,11 @@
 -{vFlag}
 >
 ;Build API 
-;E:\Data\setting\mesa\src\mapi
-
+-c {pMesa}mapi/ -o {pObj}mapi/
+-{vIncl}
+-{vFlag}
 -D_GLAPI_NO_EXPORTS
+-DMAPI_ABI_HEADER="\"glapi_mapi_tmp.h\""
 >
 ;Build format  {pMesa}util/ E:\_Project\Vellum\mesa\src\util\format
 >
