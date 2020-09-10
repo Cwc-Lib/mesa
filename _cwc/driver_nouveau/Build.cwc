@@ -80,16 +80,16 @@
 -{vIncl}
 -{vFlag}
 >
-;Build Nouveau compiler
+;Build mesa compiler
 ;-c {pMesa}compiler/nir/
 -c {pMesa}compiler/
 !../../compiler/nir/tests/
--o {pObj}lib/nouveau/compiler/
+-o {pObj}mesa/compiler/
 -{vIncl}
 -{vFlag}
 >
 ;Build Mesa Util
--c {pMesa}util/ -o {pObj}lib/nouveau/util/
+-c {pMesa}util/ -o {pObj}mesa/util/
 -{vIncl}
 -{vFlag}
 -DDT_REG
@@ -98,24 +98,33 @@
 -c {pMesa}/mesa/main/ -o {pObj}mesa/main/
 -{vIncl}
 -{vFlag}
+-D_GLAPI_NO_EXPORTS
 >
 ;Build gen Main
 -c ../other/gen/main/ -o {pObj}mesa/main/gen/
 -{vIncl}
 -{vFlag}
 >
+;Build mesa program
+-c {pMesa}/mesa/program/ -o {pObj}mesa/program/
+-{vIncl}
+-{vFlag}
+-D_GLAPI_NO_EXPORTS
+>
 ;Build API 
 -c {pMesa}mapi/ -o {pObj}mapi/
 -{vIncl}
 -{vFlag}
--D_GLAPI_NO_EXPORTS
 -DMAPI_MODE_BRIDGE
--DMAPI_ABI_HEADER=%"glapi_mapi_tmp.h%"
+-DMAPI_ABI_HEADER=%"glapi_shared_mapi_tmp.h%"
 >
 ;Build format  {pMesa}util/ E:\_Project\Vellum\mesa\src\util\format
 >
 ;Generate Dynamic Lib
 ;-o {pObj}lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.{_sDynamic}
+>
+;Generate mapi Lib
+-o {pObj}mapi/ -#To {pLib}mapi.a
 >
 ;Generate Mesa Lib
 -o {pObj}mesa/ -#To {pLib}mesa.a
@@ -142,13 +151,13 @@
 -{vIncl}
 -I {pMesa}compiler/glsl/glcpp/
 >
--o "{pObj}Example/glcpp.o"  -#To {pOut}glcpp.* -lgdi32 "{pObj}Example/glcpp.o" "{pLib}nouveau.a" 
+-o "{pObj}Example/glcpp.o"  -#To {pOut}glcpp.* -lgdi32 "{pObj}Example/glcpp.o" "{pLib}nouveau.a"  "{pLib}mesa.a" "{pLib}mapi.a"
 >
 ;Generate GLSL Compiler
 -c ../examples/glsl_compiler.cpp -o {pObj}Example/glsl_compiler.o
 -{vIncl}
 >
--o "{pObj}Example/glsl_compiler.o"  -#To {pOut}glsl_compiler.* -lgdi32 "{pObj}Example/glsl_compiler.o" "{pLib}nouveau.a"   "{pLib}mesa.a" 
+-o "{pObj}Example/glsl_compiler.o"  -#To {pOut}glsl_compiler.* -lgdi32 "{pObj}Example/glsl_compiler.o"  "{pLib}nouveau.a" "{pLib}mesa.a" "{pLib}mapi.a" 
 >
 
 -#Run

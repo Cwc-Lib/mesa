@@ -35,7 +35,7 @@
 #include "util/ralloc.h"
 #include "util/strtod.h"
 #include "main/mtypes.h"
-
+/*
 void
 _mesa_warning(struct gl_context *ctx, const char *fmt, ...)
 {
@@ -44,9 +44,7 @@ _mesa_warning(struct gl_context *ctx, const char *fmt, ...)
 
     va_start(vargs, fmt);
 
-    /* This output is not thread-safe, but that's good enough for the
-     * standalone compiler.
-     */
+
     fprintf(stderr, "Mesa warning: ");
     vfprintf(stderr, fmt, vargs);
     fprintf(stderr, "\n");
@@ -62,9 +60,6 @@ _mesa_problem(struct gl_context *ctx, const char *fmt, ...)
 
     va_start(vargs, fmt);
 
-    /* This output is not thread-safe, but that's good enough for the
-     * standalone compiler.
-     */
     fprintf(stderr, "Mesa problem: ");
     vfprintf(stderr, fmt, vargs);
     fprintf(stderr, "\n");
@@ -177,7 +172,7 @@ _mesa_clear_shader_program_data(struct gl_context *ctx,
    shProg->data->AtomicBuffers = NULL;
    shProg->data->NumAtomicBuffers = 0;
 }
-
+*/
 void initialize_context_to_defaults(struct gl_context *ctx, gl_api api)
 {
    memset(ctx, 0, sizeof(*ctx));
