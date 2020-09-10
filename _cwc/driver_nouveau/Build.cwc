@@ -109,7 +109,8 @@
 -{vIncl}
 -{vFlag}
 -D_GLAPI_NO_EXPORTS
--DMAPI_ABI_HEADER="\"glapi_mapi_tmp.h\""
+-DMAPI_MODE_BRIDGE
+-DMAPI_ABI_HEADER=%"glapi_mapi_tmp.h%"
 >
 ;Build format  {pMesa}util/ E:\_Project\Vellum\mesa\src\util\format
 >
