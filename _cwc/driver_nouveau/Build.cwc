@@ -138,20 +138,20 @@
 -c ../examples/tgis2nouveau.c -o {pObj}Example/tgis2nouveau.o
 -{vIncl}
 >
--o "{pObj}Example/tgis2nouveau.o"  -#To {pOut}tgis2nouveau.* -lgdi32 "{pObj}Example/tgis2nouveau.o" "{pLib}nouveau.a"
+;-o "{pObj}Example/tgis2nouveau.o"  -#To {pOut}tgis2nouveau.* -lgdi32 "{pObj}Example/tgis2nouveau.o" "{pLib}nouveau.a"
 >
 ;Generate executable spirv2nir.exe
 -c ../examples/spirv2nir.c -o {pObj}Example/spirv2nir.o
 -{vIncl}
 >
--o "{pObj}Example/spirv2nir.o"  -#To {pOut}spirv2nir.* -lgdi32 "{pObj}Example/spirv2nir.o" "{pLib}nouveau.a" 
+;-o "{pObj}Example/spirv2nir.o"  -#To {pOut}spirv2nir.* -lgdi32 "{pObj}Example/spirv2nir.o" "{pLib}nouveau.a" 
 >
 ;Generate executable glcpp.exe
 -c ../examples/glcpp.c -o {pObj}Example/glcpp.o
 -{vIncl}
 -I {pMesa}compiler/glsl/glcpp/
 >
--o "{pObj}Example/glcpp.o"  -#To {pOut}glcpp.* -lgdi32 "{pObj}Example/glcpp.o" "{pLib}nouveau.a"  "{pLib}mesa.a" "{pLib}mapi.a"
+;-o "{pObj}Example/glcpp.o"  -#To {pOut}glcpp.* -lgdi32 "{pObj}Example/glcpp.o" "{pLib}nouveau.a"  "{pLib}mesa.a" "{pLib}mapi.a"
 >
 ;Generate GLSL Compiler
 -c ../examples/glsl_compiler.cpp -o {pObj}Example/glsl_compiler.o
