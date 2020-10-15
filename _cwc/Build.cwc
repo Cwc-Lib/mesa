@@ -1,0 +1,129 @@
+-{pMesa}=../src/
+-{pDrm}=../drm/
+-{pAtomic_ops}=../libatomic_ops-7.6.10/src/
+-{pObj}=obj/cpp_{_sPlatform}_{_sOpt}/
+-{pLib}=Lib/{_sPlatform}_{_sOpt}/
+-{pOut}=_out/{_sPlatform}_{_sOpt}/
+>
+-{vFlag}=
+-D__STDC_FORMAT_MACROS
+-DGALLIUM_NOUVEAU
+-DPIPE_OS_UNIX
+-DGALLIUM_STATIC_TARGETS
+-DPACKAGE_VERSION=
+-DPACKAGE_BUGREPORT=
+;mapi
+-D_GLAPI_NO_EXPORTS
+>
+-{vIncl}=
+-I ./
+-I ../
+-I ../include/
+-I other/
+-I other/gen/
+-I {pMesa}gallium/drivers/nouveau/
+-I {pMesa}gallium/auxiliary/
+-I {pMesa}gallium/include/
+-I {pDrm}
+-I {pDrm}nouveau/
+-I {pDrm}include/drm/
+-I {pMesa}
+-I {pMesa}compiler/nir/
+-I {pMesa}compiler/spirv/
+-I {pMesa}compiler/glsl/glcpp/
+-I {pMesa}compiler/glsl/
+-I {pMesa}compiler/
+-I {pMesa}mesa/
+-I {pMesa}mesa/main/
+-I {pMesa}loader/
+-I {pMesa}util/
+-I {pMesa}mesa/program/
+-I {pMesa}mapi/
+-I other/gen/main/
+>
+;--- Build mapi (GL API)
+-c {pMesa}mapi/ -o {pObj}mesa/mapi/
+-{vIncl}
+-{vFlag}
+-DMAPI_MODE_BRIDGE
+-DMAPI_ABI_HEADER=%"glapi_shared_mapi_tmp.h%"
+>
+-o {pObj}mesa/mapi/ -#To {pLib}libglapi.a
+>
+;--- Build Compiler Nir + GLSL + SPIRV
+-c {pMesa}compiler/
+!{pMesa}compiler/nir/tests/
+-o {pObj}mesa/compiler/
+-{vIncl}
+-{vFlag}
+>
+-o {pObj}mesa/compiler/ -#To {pLib}libcompiler.a
+>
+;--- Build GDI (context?)
+-c  {pMesa}gallium/winsys/sw/gdi/ -o {pObj}gallium/winsys/sw/gdi/ 
+-{vIncl}
+-I {pMesa}gallium/winsys/
+-DGALLIUM_NOUVEAU
+-DGALLIUM_STATIC_TARGETS
+>
+-o {pObj}gallium/winsys/sw/gdi/  -#To {pLib}libws_gdi.a
+>
+;--- Build frontend wgl
+-c  {pMesa}gallium/frontends/wgl/ -o {pObj}gallium/frontends/wgl/
+-{vIncl}
+-I {pMesa}gallium/winsys/
+-DGALLIUM_NOUVEAU
+-DGALLIUM_STATIC_TARGETS
+-DWINVER=0x600
+>
+-o {pObj}gallium/frontends/wgl/  -#To {pLib}libwgl.a
+>
+;--- Build Gallium_auxiliary
+-c {pMesa}gallium/auxiliary/ 
+!{pMesa}gallium/auxiliary/gallivm/
+!{pMesa}gallium/auxiliary/draw/draw_llvm.c
+!{pMesa}gallium/auxiliary/draw/draw_llvm_sample.c
+!{pMesa}gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c
+!{pMesa}gallium/auxiliary/draw/draw_vs_llvm.c
+-o {pObj}gallium/auxiliary/
+-{vIncl}
+-DGALLIUM_NOUVEAU
+-DGALLIUM_STATIC_TARGETS
+-I {pMesa}gallium/winsys/
+>
+-o {pObj}gallium/auxiliary/  -#To {pLib}libgallium.a
+>
+;Build Mesa Util
+-c {pMesa}util/ -o {pObj}mesa/util/
+-{vIncl}
+-{vFlag}
+-DDT_REG
+>
+-o {pObj}mesa/util/  -#To {pLib}libmesautil.a
+>
+;Build Mesa
+-c {pMesa}mesa/ 
+!{pMesa}mesa/tnl_dd/
+!{pMesa}drivers/dri/
+!{pMesa}drivers/osmesa/
+!{pMesa}drivers/x11/
+!{pMesa}main/tests/
+!{pMesa}state_tracker/tests/
+;aa
+-o {pObj}mesa/mesacore/
+-{vIncl}
+-{vFlag}
+;
+-DDT_REG
+>
+-o {pObj}mesa/mesacore/  -#To {pLib}libmesa.a
+>
+;gallium\drivers\softpipe
+;gallium\drivers\svga
+;gallium\targets\libgl-gdi -> opengl32.lib
+;gallium\winsys\sw\null -> ws_null.lib ?
+;gallium\winsys\sw\wrapper -> ws_wrapper.lib
+;getopt -> getopt.lib (getopt_long.obj)
+;util -> mesautil.lib
+;mesa -> mesa.lib //TODO
+>

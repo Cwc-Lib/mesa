@@ -1,0 +1,2868 @@
+Build started at 2020-10-15T09:54:13.892412
+Main binary: c:\users\mbanville\appdata\local\programs\python\python38-32\python.exe
+Build Options: -Dbackend=vs
+Python system: Windows
+The Meson build system
+Version: 0.55.1
+Source dir: E:\Data\setting\mesa
+Build dir: E:\Data\setting\mesa\builddir
+Build type: native build
+Program python found: YES
+Running command: C:\Users\mbanville\AppData\Local\Programs\Python\Python38-32\python.EXE bin/meson_get_version.py
+--- stdout ---
+20.3.0-devel
+--- stderr ---
+
+
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Project name: mesa
+Project version: 20.3.0-devel
+None of 'CC' are defined in the environment, not changing global flags.
+None of 'CFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: gcc
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: gcc E:\Data\setting\mesa\builddir\meson-private\sanitycheckc.c -o E:\Data\setting\mesa\builddir\meson-private\sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: E:\Data\setting\mesa\builddir\meson-private\sanitycheckc.exe
+C compiler for the build machine: gcc (gcc 7.1.0 "gcc (x86_64-posix-seh, Built by strawberryperl.com project) 7.1.0")
+C linker for the build machine: gcc ld.bfd 2.27
+None of 'AR' are defined in the environment, not changing global flags.
+None of 'CXX' are defined in the environment, not changing global flags.
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: c++ E:\Data\setting\mesa\builddir\meson-private\sanitycheckcpp.cc -o E:\Data\setting\mesa\builddir\meson-private\sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: E:\Data\setting\mesa\builddir\meson-private\sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 7.1.0 "c++ (x86_64-posix-seh, Built by strawberryperl.com project) 7.1.0")
+C++ linker for the build machine: c++ ld.bfd 2.27
+None of 'CC' are defined in the environment, not changing global flags.
+None of 'CFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: gcc
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: gcc E:\Data\setting\mesa\builddir\meson-private\sanitycheckc.c -o E:\Data\setting\mesa\builddir\meson-private\sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: E:\Data\setting\mesa\builddir\meson-private\sanitycheckc.exe
+C compiler for the host machine: gcc (gcc 7.1.0 "gcc (x86_64-posix-seh, Built by strawberryperl.com project) 7.1.0")
+C linker for the host machine: gcc ld.bfd 2.27
+None of 'AR' are defined in the environment, not changing global flags.
+None of 'CXX' are defined in the environment, not changing global flags.
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: c++ E:\Data\setting\mesa\builddir\meson-private\sanitycheckcpp.cc -o E:\Data\setting\mesa\builddir\meson-private\sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: E:\Data\setting\mesa\builddir\meson-private\sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 7.1.0 "c++ (x86_64-posix-seh, Built by strawberryperl.com project) 7.1.0")
+C++ linker for the host machine: c++ ld.bfd 2.27
+Auto detected Visual Studio backend: vs2015
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Program C:\Users\mbanville\AppData\Local\Programs\Python\Python38-32\python found: YES (C:\Users\mbanville\AppData\Local\Programs\Python\Python38-32\python.exe)
+Running command: C:\Users\mbanville\AppData\Local\Programs\Python\Python38-32\python.exe -c 
+from distutils.version import StrictVersion
+import mako
+assert StrictVersion(mako.__version__) > StrictVersion("0.8.0")
+  
+--- stdout ---
+
+--- stderr ---
+
+
+Running compile:
+Working directory:  C:\Users\Public\Documents\Wondershare\CreatorTemp\tmpeqndjvdw
+Command line:  gcc C:\Users\Public\Documents\Wondershare\CreatorTemp\tmpeqndjvdw\testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=c99 
+
+Code:
+ 
+        #include <errno.h>
+        #ifndef ETIME
+        # define ETIME
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+ETIME
+Compiler stdout:
+              
+             
+#pragma pack(push,_CRT_PACKING)
+  typedef __builtin_va_list __gnuc_va_list;
+  typedef __gnuc_va_list va_list;
+#pragma pack(pop)
+void __attribute__((__cdecl__)) __debugbreak(void);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) void __attribute__((__cdecl__)) __debugbreak(void)
+{
+  __asm__ __volatile__("int {$}3":);
+}
+const char *__mingw_get_crt_info (void);
+#pragma pack(push,_CRT_PACKING)
+__extension__ typedef unsigned long long size_t;
+__extension__ typedef long long ssize_t;
+typedef size_t rsize_t;
+__extension__ typedef long long intptr_t;
+__extension__ typedef unsigned long long uintptr_t;
+__extension__ typedef long long ptrdiff_t;
+typedef unsigned short wchar_t;
+typedef unsigned short wint_t;
+typedef unsigned short wctype_t;
+typedef int errno_t;
+typedef long __time32_t;
+__extension__ typedef long long __time64_t;
+typedef __time64_t time_t;
+struct threadlocaleinfostruct;
+struct threadmbcinfostruct;
+typedef struct threadlocaleinfostruct *pthreadlocinfo;
+typedef struct threadmbcinfostruct *pthreadmbcinfo;
+struct __lc_time_data;
+typedef struct localeinfo_struct {
+  pthreadlocinfo locinfo;
+  pthreadmbcinfo mbcinfo;
+} _locale_tstruct,*_locale_t;
+typedef struct tagLC_ID {
+  unsigned short wLanguage;
+  unsigned short wCountry;
+  unsigned short wCodePage;
+} LC_ID,*LPLC_ID;
+typedef struct threadlocaleinfostruct {
+  int refcount;
+  unsigned int lc_codepage;
+  unsigned int lc_collate_cp;
+  unsigned long lc_handle[6];
+  LC_ID lc_id[6];
+  struct {
+    char *locale;
+    wchar_t *wlocale;
+    int *refcount;
+    int *wrefcount;
+  } lc_category[6];
+  int lc_clike;
+  int mb_cur_max;
+  int *lconv_intl_refcount;
+  int *lconv_num_refcount;
+  int *lconv_mon_refcount;
+  struct lconv *lconv;
+  int *ctype1_refcount;
+  unsigned short *ctype1;
+  const unsigned short *pctype;
+  const unsigned char *pclmap;
+  const unsigned char *pcumap;
+  struct __lc_time_data *lc_time_curr;
+} threadlocinfo;
+#pragma pack(pop)
+__attribute__ ((__dllimport__)) extern int *__attribute__((__cdecl__)) _errno(void);
+errno_t __attribute__((__cdecl__)) _set_errno(int _Value);
+errno_t __attribute__((__cdecl__)) _get_errno(int *_Value);
+        "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "ETIME" :  
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp3ee9m9u7
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp3ee9m9u7\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp3ee9m9u7\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define bswap32 meson_disable_define_of_bswap32
+        
+        #include <limits.h>
+        #undef bswap32
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char bswap32 (void);
+        
+        #if defined __stub_bswap32 || defined __stub___bswap32
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return bswap32 ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccQl6UAW.o:testfile.c:(.text+0xe): undefined reference to `bswap32'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpgy5a8ksg
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpgy5a8ksg\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpgy5a8ksg\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(bswap32) && !0
+            #error "No definition for __builtin_bswap32 found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_bswap32)
+                #error "__builtin_bswap32 not found"
+            #endif
+        #elif ! defined(bswap32)
+            __builtin_bswap32;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "bswap32" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp5oos47t5
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp5oos47t5\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp5oos47t5\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define bswap64 meson_disable_define_of_bswap64
+        
+        #include <limits.h>
+        #undef bswap64
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char bswap64 (void);
+        
+        #if defined __stub_bswap64 || defined __stub___bswap64
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return bswap64 ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccmmHRrg.o:testfile.c:(.text+0xe): undefined reference to `bswap64'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpg7r8a2ok
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpg7r8a2ok\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpg7r8a2ok\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(bswap64) && !0
+            #error "No definition for __builtin_bswap64 found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_bswap64)
+                #error "__builtin_bswap64 not found"
+            #endif
+        #elif ! defined(bswap64)
+            __builtin_bswap64;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "bswap64" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpyw7bsi3l
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpyw7bsi3l\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpyw7bsi3l\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define clz meson_disable_define_of_clz
+        
+        #include <limits.h>
+        #undef clz
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clz (void);
+        
+        #if defined __stub_clz || defined __stub___clz
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return clz ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccpTkjDv.o:testfile.c:(.text+0xe): undefined reference to `clz'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp86swt0co
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp86swt0co\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp86swt0co\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(clz) && !0
+            #error "No definition for __builtin_clz found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_clz)
+                #error "__builtin_clz not found"
+            #endif
+        #elif ! defined(clz)
+            __builtin_clz;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clz" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpxvxcnlay
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpxvxcnlay\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpxvxcnlay\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define clzll meson_disable_define_of_clzll
+        
+        #include <limits.h>
+        #undef clzll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clzll (void);
+        
+        #if defined __stub_clzll || defined __stub___clzll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return clzll ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccviyZ2S.o:testfile.c:(.text+0xe): undefined reference to `clzll'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpyeal7to2
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpyeal7to2\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpyeal7to2\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(clzll) && !0
+            #error "No definition for __builtin_clzll found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_clzll)
+                #error "__builtin_clzll not found"
+            #endif
+        #elif ! defined(clzll)
+            __builtin_clzll;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clzll" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpqeveonhv
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpqeveonhv\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpqeveonhv\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define ctz meson_disable_define_of_ctz
+        
+        #include <limits.h>
+        #undef ctz
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ctz (void);
+        
+        #if defined __stub_ctz || defined __stub___ctz
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return ctz ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\cclThHxh.o:testfile.c:(.text+0xe): undefined reference to `ctz'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpdez2l3po
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpdez2l3po\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpdez2l3po\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(ctz) && !0
+            #error "No definition for __builtin_ctz found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_ctz)
+                #error "__builtin_ctz not found"
+            #endif
+        #elif ! defined(ctz)
+            __builtin_ctz;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "ctz" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmph_rriacx
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmph_rriacx\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmph_rriacx\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define expect meson_disable_define_of_expect
+        
+        #include <limits.h>
+        #undef expect
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char expect (void);
+        
+        #if defined __stub_expect || defined __stub___expect
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return expect ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccYG6pKw.o:testfile.c:(.text+0xe): undefined reference to `expect'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp1_nhdniq
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp1_nhdniq\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp1_nhdniq\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(expect) && !0
+            #error "No definition for __builtin_expect found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_expect)
+                #error "__builtin_expect not found"
+            #endif
+        #elif ! defined(expect)
+            __builtin_expect;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "expect" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp2zl5od_v
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp2zl5od_v\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp2zl5od_v\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define ffs meson_disable_define_of_ffs
+        
+        #include <limits.h>
+        #undef ffs
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ffs (void);
+        
+        #if defined __stub_ffs || defined __stub___ffs
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return ffs ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\cc6KYY0S.o:testfile.c:(.text+0xe): undefined reference to `ffs'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp4n50ueoy
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp4n50ueoy\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp4n50ueoy\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(ffs) && !0
+            #error "No definition for __builtin_ffs found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_ffs)
+                #error "__builtin_ffs not found"
+            #endif
+        #elif ! defined(ffs)
+            __builtin_ffs;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "ffs" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp85w0tyez
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp85w0tyez\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp85w0tyez\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define ffsll meson_disable_define_of_ffsll
+        
+        #include <limits.h>
+        #undef ffsll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ffsll (void);
+        
+        #if defined __stub_ffsll || defined __stub___ffsll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return ffsll ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccs05Dsg.o:testfile.c:(.text+0xe): undefined reference to `ffsll'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpbl049nmc
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpbl049nmc\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpbl049nmc\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(ffsll) && !0
+            #error "No definition for __builtin_ffsll found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_ffsll)
+                #error "__builtin_ffsll not found"
+            #endif
+        #elif ! defined(ffsll)
+            __builtin_ffsll;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "ffsll" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp_sm47kfg
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp_sm47kfg\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp_sm47kfg\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define popcount meson_disable_define_of_popcount
+        
+        #include <limits.h>
+        #undef popcount
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char popcount (void);
+        
+        #if defined __stub_popcount || defined __stub___popcount
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return popcount ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\cclGozCv.o:testfile.c:(.text+0xe): undefined reference to `popcount'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpg_jcbora
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpg_jcbora\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpg_jcbora\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(popcount) && !0
+            #error "No definition for __builtin_popcount found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_popcount)
+                #error "__builtin_popcount not found"
+            #endif
+        #elif ! defined(popcount)
+            __builtin_popcount;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "popcount" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpeq75026n
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpeq75026n\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpeq75026n\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define popcountll meson_disable_define_of_popcountll
+        
+        #include <limits.h>
+        #undef popcountll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char popcountll (void);
+        
+        #if defined __stub_popcountll || defined __stub___popcountll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return popcountll ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\cc3MGW9T.o:testfile.c:(.text+0xe): undefined reference to `popcountll'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpjrp9c7g2
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpjrp9c7g2\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpjrp9c7g2\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(popcountll) && !0
+            #error "No definition for __builtin_popcountll found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_popcountll)
+                #error "__builtin_popcountll not found"
+            #endif
+        #elif ! defined(popcountll)
+            __builtin_popcountll;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "popcountll" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp_rzti98h
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp_rzti98h\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp_rzti98h\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define unreachable meson_disable_define_of_unreachable
+        
+        #include <limits.h>
+        #undef unreachable
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char unreachable (void);
+        
+        #if defined __stub_unreachable || defined __stub___unreachable
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return unreachable ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\cchoh7yh.o:testfile.c:(.text+0xe): undefined reference to `unreachable'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp4dnu9r_o
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp4dnu9r_o\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp4dnu9r_o\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(unreachable) && !0
+            #error "No definition for __builtin_unreachable found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_unreachable)
+                #error "__builtin_unreachable not found"
+            #endif
+        #elif ! defined(unreachable)
+            __builtin_unreachable;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "unreachable" : YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp4eseglrl
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp4eseglrl\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp4eseglrl\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((const));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute const: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpe4vfswz0
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpe4vfswz0\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpe4vfswz0\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((flatten));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute flatten: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpve2hf_eu
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpve2hf_eu\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpve2hf_eu\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int *foo(void) __attribute__((malloc));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute malloc: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpn1yinjps
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpn1yinjps\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpn1yinjps\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((pure));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute pure: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpya90bw99
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpya90bw99\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpya90bw99\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((unused));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute unused: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp5e12ziae
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp5e12ziae\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp5e12ziae\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((warn_unused_result));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute warn_unused_result: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpch376ld2
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpch376ld2\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpch376ld2\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((weak));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute weak: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpx5pd6z4i
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpx5pd6z4i\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpx5pd6z4i\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(const char * p, ...) __attribute__((format(printf, 1, 2)));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute format: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpl3e8omno
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpl3e8omno\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpl3e8omno\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ struct __attribute__((packed)) foo { int bar; };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute packed: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpyprnnt2c
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpyprnnt2c\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpyprnnt2c\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int *foo(void) __attribute__((returns_nonnull));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute returns_nonnull: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpdnccbjjh
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpdnccbjjh\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpdnccbjjh\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ 
+        int foo(void) { return 0; }
+        int bar(void) __attribute__((alias("foo")));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute alias: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpq0xsm6ew
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpq0xsm6ew\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpq0xsm6ew\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((noreturn));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute noreturn: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp6ll_w63b
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp6ll_w63b\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp6ll_w63b\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((visibility("hidden")));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute visibility:hidden: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp_thq5a5f
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp_thq5a5f\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp_thq5a5f\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ __uint128_t foo(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "__uint128_t" compiles: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpwcyo6y8n
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpwcyo6y8n\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpwcyo6y8n\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpjkabmx02
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpjkabmx02\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpjkabmx02\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=missing-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp3ydphi_h
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp3ydphi_h\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp3ydphi_h\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=return-type 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=return-type: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpc2tcxuxa
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpc2tcxuxa\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpc2tcxuxa\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=empty-body 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=empty-body: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmparsq_3nz
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmparsq_3nz\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmparsq_3nz\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=incompatible-pointer-types 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=incompatible-pointer-types: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpi9d8pr_x
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpi9d8pr_x\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpi9d8pr_x\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=int-conversion 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=int-conversion: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmptdiwrjd2
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmptdiwrjd2\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmptdiwrjd2\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wimplicit-fallthrough 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wimplicit-fallthrough: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpswdz4evm
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpswdz4evm\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpswdz4evm\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-missing-field-initializers -Wmissing-field-initializers 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-field-initializers -Wmissing-field-initializers: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp8aowk74d
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp8aowk74d\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp8aowk74d\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-format-truncation -Wformat-truncation 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-truncation -Wformat-truncation: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp95gfqclm
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp95gfqclm\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp95gfqclm\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fno-math-errno 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-math-errno: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmposkn3jtl
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmposkn3jtl\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmposkn3jtl\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fno-trapping-math 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-trapping-math: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp0m75hol8
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp0m75hol8\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp0m75hol8\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Qunused-arguments 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ gcc: error: unrecognized command line option '-Qunused-arguments'; did you mean '-Wunused-parameter'?
+
+Compiler for C supports arguments -Qunused-arguments: NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpwhbqp87l
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpwhbqp87l\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpwhbqp87l\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fno-common 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-common: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpst7pk72s
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpst7pk72s\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpst7pk72s\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=return-type 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Werror=return-type: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpp2hhwa1e
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpp2hhwa1e\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpp2hhwa1e\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=empty-body 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Werror=empty-body: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp6dvww6zc
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmp6dvww6zc\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmp6dvww6zc\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wno-non-virtual-dtor -Wnon-virtual-dtor 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-non-virtual-dtor -Wnon-virtual-dtor: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpxub0mavb
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpxub0mavb\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpxub0mavb\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wno-missing-field-initializers -Wmissing-field-initializers 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-missing-field-initializers -Wmissing-field-initializers: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpq9tod8nj
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpq9tod8nj\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpq9tod8nj\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wno-format-truncation -Wformat-truncation 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-format-truncation -Wformat-truncation: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpwts79nin
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpwts79nin\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpwts79nin\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -fno-math-errno 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -fno-math-errno: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp6qvn8rjl
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmp6qvn8rjl\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmp6qvn8rjl\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -fno-trapping-math 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -fno-trapping-math: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpqtaq35gh
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpqtaq35gh\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpqtaq35gh\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Qunused-arguments 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ c++: error: unrecognized command line option '-Qunused-arguments'; did you mean '-Wunused-parameter'?
+
+Compiler for C++ supports arguments -Qunused-arguments: NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpbtegzt7m
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpbtegzt7m\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpbtegzt7m\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -flifetime-dse=1 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -flifetime-dse=1: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpd2gn1zw5
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpd2gn1zw5\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpd2gn1zw5\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-override-init -Woverride-init 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-override-init -Woverride-init: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpxj4y9qby
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpxj4y9qby\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpxj4y9qby\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-initializer-overrides -Winitializer-overrides 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ gcc: error: unrecognized command line option '-Winitializer-overrides'; did you mean '-Wno-suggest-override'?
+
+Compiler for C supports arguments -Wno-initializer-overrides -Winitializer-overrides: NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpxdvu255w
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpxdvu255w\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpxdvu255w\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=pointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmplze32qts
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmplze32qts\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmplze32qts\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=pointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Werror=pointer-arith: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp19hfui66
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp19hfui66\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp19hfui66\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=vla 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=vla: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpttxzj2hh
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpttxzj2hh\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpttxzj2hh\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=vla 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Werror=vla: YES 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpydwuwqym
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpydwuwqym\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpydwuwqym\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=gnu-empty-initializer 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1.exe: error: -Werror=gnu-empty-initializer: no option -Wgnu-empty-initializer
+
+Compiler for C supports arguments -Werror=gnu-empty-initializer: NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp12eatzv_
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmp12eatzv_\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmp12eatzv_\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=gnu-empty-initializer 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1plus.exe: error: -Werror=gnu-empty-initializer: no option -Wgnu-empty-initializer
+
+Compiler for C++ supports arguments -Werror=gnu-empty-initializer: NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpcysw976l
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpcysw976l\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpcysw976l\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ #include <stdint.h>
+                  int main() {
+                    struct {
+                      uint64_t *v;
+                    } x;
+                    return (int)__atomic_load_n(x.v, __ATOMIC_ACQUIRE) &
+                           (int)__atomic_add_fetch(x.v, (uint64_t)1, __ATOMIC_ACQ_REL);
+
+                  }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "GCC atomic builtins" compiles: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp999oedll
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp999oedll\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp999oedll\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ #include <stdint.h>
+                     int main() {
+                       struct {
+                         uint64_t *v;
+                       } x;
+                       return (int)__atomic_load_n(x.v, __ATOMIC_ACQUIRE) &
+                              (int)__atomic_add_fetch(x.v, (uint64_t)1, __ATOMIC_ACQ_REL);
+                     }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "GCC atomic builtins required -latomic" links: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpsmqahigi
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpsmqahigi\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpsmqahigi\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ #include <stdint.h>
+                   uint64_t v;
+                   int main() {
+                     return __sync_add_and_fetch(&v, (uint64_t)1);
+                   }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "GCC 64bit atomics" with dependency not-found links: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp7em5x2ee
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp7em5x2ee\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp7em5x2ee\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lws2_32 -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library ws2_32 found: YES
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmph6lgiuuq
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmph6lgiuuq\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmph6lgiuuq\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmph6lgiuuq\testfile.c:2:18: fatal error: sys/sysmacros.h: No such file or directory
+         #include <sys/sysmacros.h>
+                  ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+Header <sys/sysmacros.h> has symbol "major" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpe6tdu7_5
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpe6tdu7_5\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpe6tdu7_5\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <sys/mkdev.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpe6tdu7_5\testfile.c:2:18: fatal error: sys/mkdev.h: No such file or directory
+         #include <sys/mkdev.h>
+                  ^~~~~~~~~~~~~
+compilation terminated.
+
+Header <sys/mkdev.h> has symbol "major" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmporoz9eew
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmporoz9eew\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmporoz9eew\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ #include <sys/types.h>
+        #include <sys/sysctl.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmporoz9eew\testfile.c:2:18: fatal error: sys/sysctl.h: No such file or directory
+         #include <sys/sysctl.h>
+                  ^~~~~~~~~~~~~~
+compilation terminated.
+
+Check usable header "sys/sysctl.h" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmppxkb9_6o
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmppxkb9_6o\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmppxkb9_6o\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <xlocale.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmppxkb9_6o\testfile.c:2:18: fatal error: xlocale.h: No such file or directory
+         #include <xlocale.h>
+                  ^~~~~~~~~~~
+compilation terminated.
+
+Check usable header "xlocale.h" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpdx13tqc8
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpdx13tqc8\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpdx13tqc8\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <linux/futex.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpdx13tqc8\testfile.c:2:18: fatal error: linux/futex.h: No such file or directory
+         #include <linux/futex.h>
+                  ^~~~~~~~~~~~~~~
+compilation terminated.
+
+Check usable header "linux/futex.h" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpm_qli5vg
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpm_qli5vg\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpm_qli5vg\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <endian.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpm_qli5vg\testfile.c:2:18: fatal error: endian.h: No such file or directory
+         #include <endian.h>
+                  ^~~~~~~~~~
+compilation terminated.
+
+Check usable header "endian.h" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpllb3ojhl
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpllb3ojhl\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpllb3ojhl\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <dlfcn.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpllb3ojhl\testfile.c:2:18: fatal error: dlfcn.h: No such file or directory
+         #include <dlfcn.h>
+                  ^~~~~~~~~
+compilation terminated.
+
+Check usable header "dlfcn.h" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpqtz8o_9o
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpqtz8o_9o\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpqtz8o_9o\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <execinfo.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpqtz8o_9o\testfile.c:2:18: fatal error: execinfo.h: No such file or directory
+         #include <execinfo.h>
+                  ^~~~~~~~~~~~
+compilation terminated.
+
+Check usable header "execinfo.h" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmplea_tva2
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmplea_tva2\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmplea_tva2\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <sys/shm.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmplea_tva2\testfile.c:2:18: fatal error: sys/shm.h: No such file or directory
+         #include <sys/shm.h>
+                  ^~~~~~~~~~~
+compilation terminated.
+
+Check usable header "sys/shm.h" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpbygw54q4
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpbygw54q4\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpbygw54q4\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <cet.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpbygw54q4\testfile.c:2:18: fatal error: cet.h: No such file or directory
+         #include <cet.h>
+                  ^~~~~~~
+compilation terminated.
+
+Check usable header "cet.h" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp856f8fp0
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp856f8fp0\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp856f8fp0\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <pthread_np.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmp856f8fp0\testfile.c:2:18: fatal error: pthread_np.h: No such file or directory
+         #include <pthread_np.h>
+                  ^~~~~~~~~~~~~~
+compilation terminated.
+
+Check usable header "pthread_np.h" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmppkfwzcth
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmppkfwzcth\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmppkfwzcth\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define strtof meson_disable_define_of_strtof
+        
+        #include <limits.h>
+        #undef strtof
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strtof (void);
+        
+        #if defined __stub_strtof || defined __stub___strtof
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strtof ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strtof" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpx3t3w3cg
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpx3t3w3cg\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpx3t3w3cg\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define mkostemp meson_disable_define_of_mkostemp
+        
+        #include <limits.h>
+        #undef mkostemp
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char mkostemp (void);
+        
+        #if defined __stub_mkostemp || defined __stub___mkostemp
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return mkostemp ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccpCPLXI.o:testfile.c:(.text+0xe): undefined reference to `mkostemp'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpmp_cat10
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpmp_cat10\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpmp_cat10\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(mkostemp) && !0
+            #error "No definition for __builtin_mkostemp found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_mkostemp)
+                #error "__builtin_mkostemp not found"
+            #endif
+        #elif ! defined(mkostemp)
+            __builtin_mkostemp;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpmp_cat10\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmpmp_cat10\testfile.c:20:13: error: '__builtin_mkostemp' undeclared (first use in this function); did you mean '__builtin_memcmp'?
+             __builtin_mkostemp;
+             ^~~~~~~~~~~~~~~~~~
+             __builtin_memcmp
+E:\Data\setting\mesa\builddir\meson-private\tmpmp_cat10\testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "mkostemp" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpx9gegx_4
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpx9gegx_4\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpx9gegx_4\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define timespec_get meson_disable_define_of_timespec_get
+        
+        #include <limits.h>
+        #undef timespec_get
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char timespec_get (void);
+        
+        #if defined __stub_timespec_get || defined __stub___timespec_get
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return timespec_get ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccB4PnAV.o:testfile.c:(.text+0xe): undefined reference to `timespec_get'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpwlev3l7z
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpwlev3l7z\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpwlev3l7z\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(timespec_get) && !0
+            #error "No definition for __builtin_timespec_get found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_timespec_get)
+                #error "__builtin_timespec_get not found"
+            #endif
+        #elif ! defined(timespec_get)
+            __builtin_timespec_get;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpwlev3l7z\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmpwlev3l7z\testfile.c:20:13: error: '__builtin_timespec_get' undeclared (first use in this function); did you mean '__builtin_isspace'?
+             __builtin_timespec_get;
+             ^~~~~~~~~~~~~~~~~~~~~~
+             __builtin_isspace
+E:\Data\setting\mesa\builddir\meson-private\tmpwlev3l7z\testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "timespec_get" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp_80jsukb
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp_80jsukb\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp_80jsukb\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define memfd_create meson_disable_define_of_memfd_create
+        
+        #include <limits.h>
+        #undef memfd_create
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char memfd_create (void);
+        
+        #if defined __stub_memfd_create || defined __stub___memfd_create
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return memfd_create ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\cc59Nega.o:testfile.c:(.text+0xe): undefined reference to `memfd_create'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpnugrxzkp
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpnugrxzkp\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpnugrxzkp\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(memfd_create) && !0
+            #error "No definition for __builtin_memfd_create found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_memfd_create)
+                #error "__builtin_memfd_create not found"
+            #endif
+        #elif ! defined(memfd_create)
+            __builtin_memfd_create;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpnugrxzkp\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmpnugrxzkp\testfile.c:20:13: error: '__builtin_memfd_create' undeclared (first use in this function); did you mean '__builtin_memset'?
+             __builtin_memfd_create;
+             ^~~~~~~~~~~~~~~~~~~~~~
+             __builtin_memset
+E:\Data\setting\mesa\builddir\meson-private\tmpnugrxzkp\testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "memfd_create" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmppi3ipit1
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmppi3ipit1\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmppi3ipit1\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define random_r meson_disable_define_of_random_r
+        
+        #include <limits.h>
+        #undef random_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char random_r (void);
+        
+        #if defined __stub_random_r || defined __stub___random_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return random_r ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccSeTNXe.o:testfile.c:(.text+0xe): undefined reference to `random_r'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpqc9tyrkq
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpqc9tyrkq\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpqc9tyrkq\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(random_r) && !0
+            #error "No definition for __builtin_random_r found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_random_r)
+                #error "__builtin_random_r not found"
+            #endif
+        #elif ! defined(random_r)
+            __builtin_random_r;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpqc9tyrkq\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmpqc9tyrkq\testfile.c:20:13: error: '__builtin_random_r' undeclared (first use in this function); did you mean '__builtin_gamma_r'?
+             __builtin_random_r;
+             ^~~~~~~~~~~~~~~~~~
+             __builtin_gamma_r
+E:\Data\setting\mesa\builddir\meson-private\tmpqc9tyrkq\testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "random_r" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp1pcp37s0
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp1pcp37s0\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp1pcp37s0\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define flock meson_disable_define_of_flock
+        
+        #include <limits.h>
+        #undef flock
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char flock (void);
+        
+        #if defined __stub_flock || defined __stub___flock
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return flock ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccIhUKbt.o:testfile.c:(.text+0xe): undefined reference to `flock'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp0fmw6nz9
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp0fmw6nz9\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp0fmw6nz9\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(flock) && !0
+            #error "No definition for __builtin_flock found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_flock)
+                #error "__builtin_flock not found"
+            #endif
+        #elif ! defined(flock)
+            __builtin_flock;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmp0fmw6nz9\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmp0fmw6nz9\testfile.c:20:13: error: '__builtin_flock' undeclared (first use in this function); did you mean '__builtin_floor'?
+             __builtin_flock;
+             ^~~~~~~~~~~~~~~
+             __builtin_floor
+E:\Data\setting\mesa\builddir\meson-private\tmp0fmw6nz9\testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "flock" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp5t8o2kqg
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp5t8o2kqg\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp5t8o2kqg\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define strtok_r meson_disable_define_of_strtok_r
+        
+        #include <limits.h>
+        #undef strtok_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strtok_r (void);
+        
+        #if defined __stub_strtok_r || defined __stub___strtok_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strtok_r ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strtok_r" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmprfuaut33
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmprfuaut33\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmprfuaut33\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define getrandom meson_disable_define_of_getrandom
+        
+        #include <limits.h>
+        #undef getrandom
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getrandom (void);
+        
+        #if defined __stub_getrandom || defined __stub___getrandom
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return getrandom ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\cccx6yyV.o:testfile.c:(.text+0xe): undefined reference to `getrandom'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpdgwdmvwy
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpdgwdmvwy\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpdgwdmvwy\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(getrandom) && !0
+            #error "No definition for __builtin_getrandom found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_getrandom)
+                #error "__builtin_getrandom not found"
+            #endif
+        #elif ! defined(getrandom)
+            __builtin_getrandom;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpdgwdmvwy\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmpdgwdmvwy\testfile.c:20:13: error: '__builtin_getrandom' undeclared (first use in this function); did you mean '__builtin_strndup'?
+             __builtin_getrandom;
+             ^~~~~~~~~~~~~~~~~~~
+             __builtin_strndup
+E:\Data\setting\mesa\builddir\meson-private\tmpdgwdmvwy\testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "getrandom" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp3_3020_g
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp3_3020_g\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp3_3020_g\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D_GNU_SOURCE 
+
+Code:
+ 
+        #include <errno.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef program_invocation_name
+                program_invocation_name;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmp3_3020_g\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmp3_3020_g\testfile.c:6:17: error: 'program_invocation_name' undeclared (first use in this function)
+                 program_invocation_name;
+                 ^~~~~~~~~~~~~~~~~~~~~~~
+E:\Data\setting\mesa\builddir\meson-private\tmp3_3020_g\testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Header <errno.h> has symbol "program_invocation_name" : NO 
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpc77fnsvo
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpc77fnsvo\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpc77fnsvo\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ #include <sys/types.h>
+   #include <dirent.h>
+        void bar(void) {
+            struct dirent foo;
+            foo.d_type;
+
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpc77fnsvo\testfile.c: In function 'bar':
+E:\Data\setting\mesa\builddir\meson-private\tmpc77fnsvo\testfile.c:5:17: error: 'struct dirent' has no member named 'd_type'; did you mean 'd_name'?
+             foo.d_type;
+                 ^~~~~~
+                 d_name
+
+Checking whether type "struct dirent" has member "d_type" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -DPACKAGE_VERSION="20.3.0-devel" -DPACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues" -DENABLE_ST_OMX_BELLAGIO=0 -DENABLE_ST_OMX_TIZONIA=0 -DEGL_NO_X11 -DETIME=ETIMEDOUT -DHAVE___BUILTIN_BSWAP32 -DHAVE___BUILTIN_BSWAP64 -DHAVE___BUILTIN_CLZ -DHAVE___BUILTIN_CLZLL -DHAVE___BUILTIN_CTZ -DHAVE___BUILTIN_EXPECT -DHAVE___BUILTIN_FFS -DHAVE___BUILTIN_FFSLL -DHAVE___BUILTIN_POPCOUNT -DHAVE___BUILTIN_POPCOUNTLL -DHAVE___BUILTIN_UNREACHABLE -DHAVE_FUNC_ATTRIBUTE_CONST -DHAVE_FUNC_ATTRIBUTE_FLATTEN -DHAVE_FUNC_ATTRIBUTE_MALLOC -DHAVE_FUNC_ATTRIBUTE_PURE -DHAVE_FUNC_ATTRIBUTE_UNUSED -DHAVE_FUNC_ATTRIBUTE_WARN_UNUSED_RESULT -DHAVE_FUNC_ATTRIBUTE_WEAK -DHAVE_FUNC_ATTRIBUTE_FORMAT -DHAVE_FUNC_ATTRIBUTE_PACKED -DHAVE_FUNC_ATTRIBUTE_RETURNS_NONNULL -DHAVE_FUNC_ATTRIBUTE_ALIAS -DHAVE_FUNC_ATTRIBUTE_NORETURN -DHAVE_FUNC_ATTRIBUTE_VISIBILITY -DHAVE_UINT128 -D_WINDOWS -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DPIPE_SUBSYSTEM_WINDOWS_USER -D_USE_MATH_DEFINES -D__MSVCRT_VERSION__=0x0700 -DUSE_SSE41 -DUSE_GCC_ATOMIC_BUILTINS -DHAVE_STRTOF -DHAVE_STRTOK_R 
+
+Code:
+ 
+    #define _GNU_SOURCE
+    #include <stdlib.h>
+    #include <locale.h>
+    #ifdef HAVE_XLOCALE_H
+    #include <xlocale.h>
+    #endif
+    int main() {
+      locale_t loc = newlocale(LC_CTYPE_MASK, "C", NULL);
+      const char *s = "1.0";
+      char *end;
+      double d = strtod_l(s, end, loc);
+      float f = strtof_l(s, end, loc);
+      freelocale(loc);
+      return 0;
+    }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\testfile.c:9:7: error: unknown type name 'locale_t'; did you mean '_locale_t'?
+       locale_t loc = newlocale(LC_CTYPE_MASK, "C", NULL);
+       ^~~~~~~~
+       _locale_t
+E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\testfile.c:9:22: warning: implicit declaration of function 'newlocale'; did you mean 'setlocale'? [-Wimplicit-function-declaration]
+       locale_t loc = newlocale(LC_CTYPE_MASK, "C", NULL);
+                      ^~~~~~~~~
+                      setlocale
+E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\testfile.c:9:32: error: 'LC_CTYPE_MASK' undeclared (first use in this function); did you mean 'LC_CTYPE'?
+       locale_t loc = newlocale(LC_CTYPE_MASK, "C", NULL);
+                                ^~~~~~~~~~~~~
+                                LC_CTYPE
+E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\testfile.c:9:32: note: each undeclared identifier is reported only once for each function it appears in
+E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\testfile.c:12:18: warning: implicit declaration of function 'strtod_l'; did you mean '_strtod_l'? [-Wimplicit-function-declaration]
+       double d = strtod_l(s, end, loc);
+                  ^~~~~~~~
+                  _strtod_l
+E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\testfile.c:13:17: warning: implicit declaration of function 'strtof_l'; did you mean 'strtoull'? [-Wimplicit-function-declaration]
+       float f = strtof_l(s, end, loc);
+                 ^~~~~~~~
+                 strtoull
+E:\Data\setting\mesa\builddir\meson-private\tmpztrgunq8\testfile.c:14:7: warning: implicit declaration of function 'freelocale'; did you mean '_free_locale'? [-Wimplicit-function-declaration]
+       freelocale(loc);
+       ^~~~~~~~~~
+       _free_locale
+
+Checking if "strtod has locale support" links: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpp4aflvw6
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpp4aflvw6\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpp4aflvw6\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group -Wl,-Bsymbolic 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "Bsymbolic" links: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpcti610yn
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpcti610yn\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpcti610yn\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group -Wl,--gc-sections 
+
+Code:
+ static char unused() { return 5; } int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "gc-sections" links: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpgw60nw__
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpgw60nw__\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpgw60nw__\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group -Wl,--version-script=E:/Data/setting/mesa/build-support/conftest.map 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "version-script" links: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp7i4a3n4j
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp7i4a3n4j\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp7i4a3n4j\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group -Wl,--dynamic-list=E:/Data/setting/mesa/build-support/conftest.dyn 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "dynamic-list" links: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpgf_yi50t
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpgf_yi50t\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpgf_yi50t\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,--build-id=sha1 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,--build-id=sha1: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpxq8k2byn
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpxq8k2byn\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpxq8k2byn\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define dlopen meson_disable_define_of_dlopen
+        
+        #include <limits.h>
+        #undef dlopen
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dlopen (void);
+        
+        #if defined __stub_dlopen || defined __stub___dlopen
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dlopen ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccfyo7da.o:testfile.c:(.text+0xe): undefined reference to `dlopen'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpf76zf718
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpf76zf718\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpf76zf718\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(dlopen) && !0
+            #error "No definition for __builtin_dlopen found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_dlopen)
+                #error "__builtin_dlopen not found"
+            #endif
+        #elif ! defined(dlopen)
+            __builtin_dlopen;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpf76zf718\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmpf76zf718\testfile.c:20:13: error: '__builtin_dlopen' undeclared (first use in this function); did you mean '__builtin_drem'?
+             __builtin_dlopen;
+             ^~~~~~~~~~~~~~~~
+             __builtin_drem
+E:\Data\setting\mesa\builddir\meson-private\tmpf76zf718\testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "dlopen" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmppcnt5o_c
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmppcnt5o_c\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmppcnt5o_c\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -ldl
+collect2.exe: error: ld returned 1 exit status
+
+Library dl found: NO
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmppb_bvbm1
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmppb_bvbm1\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmppb_bvbm1\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define dladdr meson_disable_define_of_dladdr
+        
+        #include <limits.h>
+        #undef dladdr
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dladdr (void);
+        
+        #if defined __stub_dladdr || defined __stub___dladdr
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dladdr ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccKzEZ4n.o:testfile.c:(.text+0xe): undefined reference to `dladdr'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpt_yljhe6
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpt_yljhe6\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpt_yljhe6\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(dladdr) && !0
+            #error "No definition for __builtin_dladdr found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_dladdr)
+                #error "__builtin_dladdr not found"
+            #endif
+        #elif ! defined(dladdr)
+            __builtin_dladdr;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmpt_yljhe6\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmpt_yljhe6\testfile.c:20:13: error: '__builtin_dladdr' undeclared (first use in this function); did you mean '__builtin_floor'?
+             __builtin_dladdr;
+             ^~~~~~~~~~~~~~~~
+             __builtin_floor
+E:\Data\setting\mesa\builddir\meson-private\tmpt_yljhe6\testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "dladdr" with dependency -ldl: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp41n0a5u7
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp41n0a5u7\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp41n0a5u7\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        #define dl_iterate_phdr meson_disable_define_of_dl_iterate_phdr
+        
+        #include <limits.h>
+        #undef dl_iterate_phdr
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dl_iterate_phdr (void);
+        
+        #if defined __stub_dl_iterate_phdr || defined __stub___dl_iterate_phdr
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dl_iterate_phdr ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ C:\Users\MBANVI~1\AppData\Local\Temp\ccwgdG8D.o:testfile.c:(.text+0xe): undefined reference to `dl_iterate_phdr'
+collect2.exe: error: ld returned 1 exit status
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmp1w2zundm
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmp1w2zundm\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmp1w2zundm\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(dl_iterate_phdr) && !0
+            #error "No definition for __builtin_dl_iterate_phdr found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_dl_iterate_phdr)
+                #error "__builtin_dl_iterate_phdr not found"
+            #endif
+        #elif ! defined(dl_iterate_phdr)
+            __builtin_dl_iterate_phdr;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ E:\Data\setting\mesa\builddir\meson-private\tmp1w2zundm\testfile.c: In function 'main':
+E:\Data\setting\mesa\builddir\meson-private\tmp1w2zundm\testfile.c:20:13: error: '__builtin_dl_iterate_phdr' undeclared (first use in this function); did you mean '__builtin___strcat_chk'?
+             __builtin_dl_iterate_phdr;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+             __builtin___strcat_chk
+E:\Data\setting\mesa\builddir\meson-private\tmp1w2zundm\testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "dl_iterate_phdr" : NO 
+Pkg-config binary for MachineChoice.HOST is not cached.
+None of 'PKG_CONFIG' are defined in the environment, not changing global flags.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: C:\Perl\perl\bin\pkg-config.BAT (0.26)
+Determining dependency 'zlib' with pkg-config executable 'C:\\Perl\\perl\\bin\\pkg-config.BAT'
+PKG_CONFIG_PATH: 
+Called `C:\Perl\perl\bin\pkg-config.BAT --modversion zlib` -> 0
+1.2.11
+PKG_CONFIG_PATH: 
+Called `C:\Perl\perl\bin\pkg-config.BAT --cflags zlib` -> 0
+
+PKG_CONFIG_PATH: 
+Called `C:\Perl\perl\bin\pkg-config.BAT zlib --libs` -> 0
+-LC:/Perl/c/lib/pkgconfig/../../lib -lz
+PKG_CONFIG_PATH: 
+Called `C:\Perl\perl\bin\pkg-config.BAT zlib --libs` -> 0
+-lz
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpc48tm1ts
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpc48tm1ts\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpc48tm1ts\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpt8igcoax
+Command line:  c++ E:\Data\setting\mesa\builddir\meson-private\tmpt8igcoax\testfile.cpp -o E:\Data\setting\mesa\builddir\meson-private\tmpt8igcoax\output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/
+programs: =C:/Perl/c/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/;C:/Perl/c/bin/../libexec/gcc/;C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/bin/x86_64-w64-mingw32/7.1.0/;C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/bin/
+libraries: =C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/;C:/Perl/c/bin/../lib/gcc/;C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/x86_64-w64-mingw32/7.1.0/;C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../x86_64-w64-mingw32/7.1.0/;C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../lib/;/mingw/lib/x86_64-w64-mingw32/7.1.0/;/mingw/lib/../lib/;C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Perl/c/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../;/mingw/lib/
+
+Compiler stderr:
+ 
+Run-time dependency zlib found: YES 1.2.11
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libzstd' with pkg-config executable 'C:\\Perl\\perl\\bin\\pkg-config.BAT'
+PKG_CONFIG_PATH: 
+Called `C:\Perl\perl\bin\pkg-config.BAT --modversion libzstd` -> 1
+
+CMake binary for MachineChoice.HOST is not cached
+None of 'CMAKE' are defined in the environment, not changing global flags.
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Found CMake: C:\Program Files\CMake\bin\cmake.EXE (3.12.2)
+None of 'CMAKE_PREFIX_PATH' are defined in the environment, not changing global flags.
+Extracting basic cmake information
+Try CMake generator: auto
+None of 'FC' are defined in the environment, not changing global flags.
+None of 'FFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'FC_LD' are defined in the environment, not changing global flags.
+None of 'F_LD' are defined in the environment, not changing global flags.
+Called `C:\Program Files\CMake\bin\cmake.EXE --trace --trace-expand --no-warn-unused-cli .` in E:\Data\setting\mesa\builddir\meson-private\cmake_libzstd -> 1
+CMake failed to gather system information for generator  with error code 1
+OUT:
+Running with trace output on.
+Running with expanded trace output on.
+Not searching for unused variables given on the command line.
+-- Building for: Visual Studio 15 2017
+-- Selecting Windows SDK version 10.0.18362.0 to target Windows 10.0.19041.
+-- Configuring incomplete, errors occurred!
+See also "E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/CMakeOutput.log".
+
+
+
+ERR:
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeLists.txt(2):  cmake_minimum_required(VERSION 3.12.2 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeLists.txt(3):  project(MesonTemp LANGUAGES C CXX )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(35):  if(CMAKE_HOST_UNIX )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(75):  else()
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(76):  if(CMAKE_HOST_WIN32 )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(77):  if(DEFINED ENV{PROCESSOR_ARCHITEW6432} )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(79):  else()
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(80):  set(CMAKE_HOST_SYSTEM_PROCESSOR AMD64 )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(89):  if(CMAKE_TOOLCHAIN_FILE )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(109):  if(CMAKE_SYSTEM_NAME )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(114):  elseif(CMAKE_VS_WINCE_VERSION )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(120):  else()
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(121):  set(CMAKE_SYSTEM_NAME Windows )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(122):  if(NOT DEFINED CMAKE_SYSTEM_VERSION )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(123):  set(CMAKE_SYSTEM_VERSION 10.0.19041 )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(125):  set(CMAKE_SYSTEM_PROCESSOR AMD64 )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(126):  set(CMAKE_CROSSCOMPILING FALSE )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(127):  set(PRESET_CMAKE_SYSTEM_NAME FALSE )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(130):  include(Platform/Windows-Determine OPTIONAL )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(132):  macro(ADJUST_CMAKE_SYSTEM_VARIABLES _PREFIX )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(161):  ADJUST_CMAKE_SYSTEM_VARIABLES(CMAKE_SYSTEM )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(133):  if(NOT CMAKE_SYSTEM_NAME )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(138):  if(CMAKE_SYSTEM_NAME MATCHES BSD.OS )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(143):  if(CMAKE_SYSTEM_NAME MATCHES kFreeBSD )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(148):  if(CMAKE_SYSTEM_NAME MATCHES CYGWIN )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(153):  set(CMAKE_SYSTEM Windows )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(155):  if(CMAKE_SYSTEM_VERSION )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(156):  set(CMAKE_SYSTEM Windows-10.0.19041 )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(162):  ADJUST_CMAKE_SYSTEM_VARIABLES(CMAKE_HOST_SYSTEM )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(133):  if(NOT CMAKE_HOST_SYSTEM_NAME )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(138):  if(CMAKE_HOST_SYSTEM_NAME MATCHES BSD.OS )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(143):  if(CMAKE_HOST_SYSTEM_NAME MATCHES kFreeBSD )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(148):  if(CMAKE_HOST_SYSTEM_NAME MATCHES CYGWIN )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(153):  set(CMAKE_HOST_SYSTEM Windows )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(155):  if(CMAKE_HOST_SYSTEM_VERSION )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(156):  set(CMAKE_HOST_SYSTEM Windows-10.0.19041 )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(166):  if(CMAKE_BINARY_DIR )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(168):  if(PRESET_CMAKE_SYSTEM_NAME )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(173):  else()
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(174):  file(APPEND E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/CMakeOutput.log The system is: Windows - 10.0.19041 - AMD64
+ )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(180):  set(INCLUDE_CMAKE_TOOLCHAIN_FILE_IF_REQUIRED )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(181):  if(CMAKE_TOOLCHAIN_FILE )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake(186):  configure_file(C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeSystem.cmake.in E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake @ONLY )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(1):  set(CMAKE_HOST_SYSTEM Windows-10.0.19041 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(2):  set(CMAKE_HOST_SYSTEM_NAME Windows )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(3):  set(CMAKE_HOST_SYSTEM_VERSION 10.0.19041 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(4):  set(CMAKE_HOST_SYSTEM_PROCESSOR AMD64 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(8):  set(CMAKE_SYSTEM Windows-10.0.19041 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(9):  set(CMAKE_SYSTEM_NAME Windows )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(10):  set(CMAKE_SYSTEM_VERSION 10.0.19041 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(11):  set(CMAKE_SYSTEM_PROCESSOR AMD64 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(13):  set(CMAKE_CROSSCOMPILING FALSE )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(15):  set(CMAKE_SYSTEM_LOADED 1 )
+CMake Error at CMakeLists.txt:3 (project):
+  Failed to run MSBuild command:
+
+    MSBuild.exe
+
+  to get the value of VCTargetsPath:
+
+    Microsoft (R) Build Engine, version 14.0.25420.1
+    Copyright (C) Microsoft Corporation. Tous droits réservés.
+    
+    La génération a démarré 2020-10-15 09:54:28.
+    Projet "E:\Data\setting\mesa\builddir\meson-private\cmake_libzstd\CMakeFiles\3.12.2\VCTargetsPath.vcxproj" sur le noud 1 (cibles par défaut).
+    C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Platform.targets(57,5): error MSB8020: The build tools for v141 (Platform Toolset = 'v141') cannot be found. To build using the v141 build tools, please install v141 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution". [E:\Data\setting\mesa\builddir\meson-private\cmake_libzstd\CMakeFiles\3.12.2\VCTargetsPath.vcxproj]
+    Génération du projet "E:\Data\setting\mesa\builddir\meson-private\cmake_libzstd\CMakeFiles\3.12.2\VCTargetsPath.vcxproj" terminée (cibles par défaut) -- ÉCHEC.
+    
+    ÉCHEC de la build.
+    
+    "E:\Data\setting\mesa\builddir\meson-private\cmake_libzstd\CMakeFiles\3.12.2\VCTargetsPath.vcxproj" (cible par défaut) (1) ->
+    (PlatformPrepareForBuild cible) -> 
+      C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Platform.targets(57,5): error MSB8020: The build tools for v141 (Platform Toolset = 'v141') cannot be found. To build using the v141 build tools, please install v141 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution". [E:\Data\setting\mesa\builddir\meson-private\cmake_libzstd\CMakeFiles\3.12.2\VCTargetsPath.vcxproj]
+    
+        0 Avertissement(s)
+        1 Erreur(s)
+    
+    Temps écoulé 00:00:00.09
+    
+
+  Exit code: 1
+
+
+
+
+
+
+Try CMake generator: Ninja
+None of 'FC' are defined in the environment, not changing global flags.
+None of 'FFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'FC_LD' are defined in the environment, not changing global flags.
+None of 'F_LD' are defined in the environment, not changing global flags.
+Called `C:\Program Files\CMake\bin\cmake.EXE -G Ninja --trace --trace-expand --no-warn-unused-cli .` in E:\Data\setting\mesa\builddir\meson-private\cmake_libzstd -> 1
+CMake failed to gather system information for generator Ninja with error code 1
+OUT:
+Running with trace output on.
+Running with expanded trace output on.
+Not searching for unused variables given on the command line.
+-- Configuring incomplete, errors occurred!
+See also "E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/CMakeOutput.log".
+
+
+
+ERR:
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeLists.txt(2):  cmake_minimum_required(VERSION 3.12.2 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeLists.txt(3):  project(MesonTemp LANGUAGES C CXX )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(1):  set(CMAKE_HOST_SYSTEM Windows-10.0.19041 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(2):  set(CMAKE_HOST_SYSTEM_NAME Windows )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(3):  set(CMAKE_HOST_SYSTEM_VERSION 10.0.19041 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(4):  set(CMAKE_HOST_SYSTEM_PROCESSOR AMD64 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(8):  set(CMAKE_SYSTEM Windows-10.0.19041 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(9):  set(CMAKE_SYSTEM_NAME Windows )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(10):  set(CMAKE_SYSTEM_VERSION 10.0.19041 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(11):  set(CMAKE_SYSTEM_PROCESSOR AMD64 )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(13):  set(CMAKE_CROSSCOMPILING FALSE )
+E:/Data/setting/mesa/builddir/meson-private/cmake_libzstd/CMakeFiles/3.12.2/CMakeSystem.cmake(15):  set(CMAKE_SYSTEM_LOADED 1 )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeNinjaFindMake.cmake(5):  find_program(CMAKE_MAKE_PROGRAM NAMES ninja-build ninja DOC Program used to build from build.ninja files. )
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeNinjaFindMake.cmake(8):  mark_as_advanced(CMAKE_MAKE_PROGRAM )
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+
+
+
+Try CMake generator: Unix Makefiles
+None of 'FC' are defined in the environment, not changing global flags.
+None of 'FFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'FC_LD' are defined in the environment, not changing global flags.
+None of 'F_LD' are defined in the environment, not changing global flags.
+Called `C:\Program Files\CMake\bin\cmake.EXE -G Unix Makefiles --trace --trace-expand --no-warn-unused-cli .` in E:\Data\setting\mesa\builddir\meson-private\cmake_libzstd -> 0
+  -- Module search paths:    []
+  -- CMake root:             C:/Program Files/CMake/share/cmake-3.12
+  -- CMake architectures:    []
+  -- CMake lib search paths: ['lib', 'lib32', 'lib64', 'libx32', 'share']
+Preliminary CMake check failed. Aborting.
+Run-time dependency libzstd found: NO (tried pkgconfig and cmake)
+Run-time dependency threads found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  E:\Data\setting\mesa\builddir\meson-private\tmpsjg19qpt
+Command line:  gcc E:\Data\setting\mesa\builddir\meson-private\tmpsjg19qpt\testfile.c -o E:\Data\setting\mesa\builddir\meson-private\tmpsjg19qpt\output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libdrm' with pkg-config executable 'C:\\Perl\\perl\\bin\\pkg-config.BAT'
+PKG_CONFIG_PATH: 
+Called `C:\Perl\perl\bin\pkg-config.BAT --modversion libdrm` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+None of 'CMAKE_PREFIX_PATH' are defined in the environment, not changing global flags.
+Preliminary CMake check failed. Aborting.
+Run-time dependency libdrm found: NO (tried pkgconfig and cmake)
+CMake binary for MachineChoice.HOST is cached.
+None of 'CMAKE_PREFIX_PATH' are defined in the environment, not changing global flags.
+Preliminary CMake check failed. Aborting.
+llvm-config binary missing from cross or native file, or env var undefined.
+Trying a default llvm-config fallback at llvm-config
+Trying a default llvm-config fallback at llvm-config-9
+Trying a default llvm-config fallback at llvm-config90
+Trying a default llvm-config fallback at llvm-config-8
+Trying a default llvm-config fallback at llvm-config80
+Trying a default llvm-config fallback at llvm-config-7
+Trying a default llvm-config fallback at llvm-config70
+Trying a default llvm-config fallback at llvm-config-6.0
+Trying a default llvm-config fallback at llvm-config60
+Trying a default llvm-config fallback at llvm-config-5.0
+Trying a default llvm-config fallback at llvm-config50
+Trying a default llvm-config fallback at llvm-config-4.0
+Trying a default llvm-config fallback at llvm-config40
+Trying a default llvm-config fallback at llvm-config-3.9
+Trying a default llvm-config fallback at llvm-config39
+Trying a default llvm-config fallback at llvm-config-3.8
+Trying a default llvm-config fallback at llvm-config38
+Trying a default llvm-config fallback at llvm-config-3.7
+Trying a default llvm-config fallback at llvm-config37
+Trying a default llvm-config fallback at llvm-config-3.6
+Trying a default llvm-config fallback at llvm-config36
+Trying a default llvm-config fallback at llvm-config-3.5
+Trying a default llvm-config fallback at llvm-config35
+Trying a default llvm-config fallback at llvm-config-10
+Trying a default llvm-config fallback at llvm-config-devel
+Trying a default llvm-config fallback at llvm-config-64
+llvm-config found: YES (C:\llvm_\bin\llvm-config.EXE) 9.0.8
+Run-time dependency LLVM (modules: bitwriter, core, engine, executionengine, instcombine, mcdisassembler, mcjit, scalaropts, transformutils, coroutines) found: YES 9.0.8
+Got config-tool variable has-rtti : NO
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'valgrind' with pkg-config executable 'C:\\Perl\\perl\\bin\\pkg-config.BAT'
+PKG_CONFIG_PATH: 
+Called `C:\Perl\perl\bin\pkg-config.BAT --modversion valgrind` -> 1
+
+Run-time dependency valgrind found: NO (tried pkgconfig)
+Program win_flex found: NO
+Program lex flex found: NO
+
+meson.build:1614:4: ERROR: Program 'lex flex' not found
