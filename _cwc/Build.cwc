@@ -104,12 +104,11 @@
 ;Build Mesa
 -c {pMesa}mesa/ 
 !{pMesa}mesa/tnl_dd/
-!{pMesa}drivers/dri/
-!{pMesa}drivers/osmesa/
-!{pMesa}drivers/x11/
-!{pMesa}main/tests/
-!{pMesa}state_tracker/tests/
-;aa
+!{pMesa}mesa/drivers/dri/
+!{pMesa}mesa/drivers/osmesa/
+!{pMesa}mesa/drivers/x11/
+!{pMesa}mesa/main/tests/
+!{pMesa}mesa/state_tracker/tests/
 -o {pObj}mesa/mesacore/
 -{vIncl}
 -{vFlag}
