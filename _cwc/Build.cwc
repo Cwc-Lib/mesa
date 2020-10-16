@@ -10,10 +10,10 @@
 -DGALLIUM_NOUVEAU
 -DPIPE_OS_UNIX
 -DGALLIUM_STATIC_TARGETS
--DPACKAGE_VERSION=
 -DPACKAGE_BUGREPORT=
 ;mapi
 -D_GLAPI_NO_EXPORTS
+-DPACKAGE_VERSION=%"v0%"
 >
 -{vIncl}=
 -I ./
@@ -116,6 +116,21 @@
 -DDT_REG
 >
 -o {pObj}mesa/mesacore/  -#To {pLib}libmesa.a
+>
+;Build Gallium softpipe
+-c {pMesa}gallium/drivers/softpipe/ -o {pObj}gallium/drivers/softpipe/
+-{vIncl}
+-{vFlag}
+>
+-o {pObj}gallium/drivers/softpipe/  -#To {pLib}libsoftpipe.a
+>
+;Build Gallium svga
+-c {pMesa}gallium/drivers/svga/ -o {pObj}gallium/drivers/svga/
+-I {pMesa}gallium/drivers/svga/include/
+-{vIncl}
+-{vFlag}
+>
+-o {pObj}gallium/drivers/svga/  -#To {pLib}libsvga.a
 >
 ;gallium\drivers\softpipe
 ;gallium\drivers\svga
