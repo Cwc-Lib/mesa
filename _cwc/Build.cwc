@@ -12,7 +12,8 @@
 -DGALLIUM_STATIC_TARGETS
 -DPACKAGE_BUGREPORT=
 ;mapi
--D_GLAPI_NO_EXPORTS
+;-D_GLAPI_NO_EXPORTS
+;-D_GLAPI_DLL_EXPORTS
 -DPACKAGE_VERSION=%"v0%"
 >
 -{vIncl}=
@@ -40,15 +41,6 @@
 -I {pMesa}mesa/program/
 -I {pMesa}mapi/
 -I other/gen/main/
->
-;--- Build mapi (GL API)
--c {pMesa}mapi/ -o {pObj}mesa/mapi/
--{vIncl}
--{vFlag}
--DMAPI_MODE_BRIDGE
--DMAPI_ABI_HEADER=%"glapi_shared_mapi_tmp.h%"
->
--o {pObj}mesa/mapi/ -#To {pLib}libglapi.a
 >
 ;--- Build Compiler Nir + GLSL + SPIRV
 -c {pMesa}compiler/
@@ -105,6 +97,8 @@
 -{vFlag}
 ;
 -DDT_REG
+|
+-c {pMesa}getopt/  -o {pObj}mesa/mesacore/
 >
 -o {pObj}mesa/mesacore/  -#To {pLib}libmesa.a
 >
@@ -143,6 +137,38 @@
 >
 -o {pObj}gallium/winsys/sw/base/  -#To {pLib}libws_base.a
 >
+;--- Build mapi (GL API) Dynamic + Static
+>
+-{vIncl_API}= 
+-{vIncl} 
+-{vFlag} 
+-DMAPI_MODE_BRIDGE
+-DMAPI_ABI_HEADER=%"glapi_shared_mapi_tmp.h%"
+>
+-c {pMesa}mapi/ -o {pObj}mesa/mapi_dyn/
+-{vIncl_API}
+-D_GLAPI_DLL_EXPORTS
+>
+-c {pMesa}mapi/ -o {pObj}mesa/mapi_sta/
+-{vIncl_API}
+-D_GLAPI_NO_EXPORTS
+>
+-o {pObj}mesa/mapi_sta/ -#To {pLib}libglapi.a
+>
+;Build DLL
+-o {pObj}mesa/mapi_dyn/  -#To {pLib}libopengl32.dll
+-L {pLib}
+-lmesa
+-lmesautil
+-lcompiler
+-lgallium
+-lsoftpipe
+-lws_gdi
+-lws_base
+-lsvga
+-lwgl
+>
+
 ;gallium\drivers\softpipe
 ;gallium\drivers\svga
 ;gallium\targets\libgl-gdi -> opengl32.lib
