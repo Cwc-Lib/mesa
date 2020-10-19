@@ -12,8 +12,6 @@
 -DGALLIUM_STATIC_TARGETS
 -DPACKAGE_BUGREPORT=
 ;mapi
-;-D_GLAPI_NO_EXPORTS
-;-D_GLAPI_DLL_EXPORTS
 -DPACKAGE_VERSION=%"v0%"
 >
 -{vIncl}=
@@ -142,14 +140,24 @@
 -{vIncl_API}= 
 -{vIncl} 
 -{vFlag} 
--DMAPI_MODE_BRIDGE
+-DMAPI_MODE_UTIL
+;-DMAPI_MODE_BRIDGE
+;-DMAPI_MODE_GLAPI
 -DMAPI_ABI_HEADER=%"glapi_shared_mapi_tmp.h%"
 >
--c {pMesa}mapi/ -o {pObj}mesa/mapi_dyn/
+-c {pMesa}mapi/ 
+!{pMesa}mapi/mapi_glapi.c
+!{pMesa}mapi/stub.c
+!{pMesa}mapi/table.c
+-o {pObj}mesa/mapi_dyn/
 -{vIncl_API}
 -D_GLAPI_DLL_EXPORTS
 >
--c {pMesa}mapi/ -o {pObj}mesa/mapi_sta/
+-c {pMesa}mapi/ 
+!{pMesa}mapi/mapi_glapi.c
+!{pMesa}mapi/stub.c
+!{pMesa}mapi/table.c
+-o {pObj}mesa/mapi_sta/
 -{vIncl_API}
 -D_GLAPI_NO_EXPORTS
 >
