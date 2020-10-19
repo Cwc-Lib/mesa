@@ -1,6 +1,7 @@
 *.pyc
 *.pyo
 *.out
+*.a
 build
 
 obj/

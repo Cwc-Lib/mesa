@@ -70,7 +70,9 @@
 -o {pObj}gallium/auxiliary/  -#To {pLib}libgallium.a
 >
 ;Build Mesa Util
--c {pMesa}util/ -o {pObj}mesa/util/
+-c {pMesa}util/ 
+!{pMesa}util/xmlconfig.c
+-o {pObj}mesa/util/
 -{vIncl}
 -{vFlag}
 -DDT_REG
@@ -174,6 +176,7 @@
 ;Build DLL
 -o {pObj}  -#To {pLib}libopengl32.dll
 -L {pLib}
+-lgdi32
 ;-lmesa
 ;-lmesautil
 ;-lcompiler
