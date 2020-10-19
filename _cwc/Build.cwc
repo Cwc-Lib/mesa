@@ -59,15 +59,6 @@
 >
 -o {pObj}mesa/compiler/ -#To {pLib}libcompiler.a
 >
-;--- Build GDI (context?)
--c  {pMesa}gallium/winsys/sw/gdi/ -o {pObj}gallium/winsys/sw/gdi/ 
--{vIncl}
--I {pMesa}gallium/winsys/
--DGALLIUM_NOUVEAU
--DGALLIUM_STATIC_TARGETS
->
--o {pObj}gallium/winsys/sw/gdi/  -#To {pLib}libws_gdi.a
->
 ;--- Build frontend wgl
 -c  {pMesa}gallium/frontends/wgl/ -o {pObj}gallium/frontends/wgl/
 -{vIncl}
@@ -131,6 +122,26 @@
 -{vFlag}
 >
 -o {pObj}gallium/drivers/svga/  -#To {pLib}libsvga.a
+>
+;--- Build GDI (context)
+-c  {pMesa}gallium/winsys/sw/gdi/ -o {pObj}gallium/winsys/sw/gdi/ 
+-{vIncl}
+-I {pMesa}gallium/winsys/
+-DGALLIUM_NOUVEAU
+-DGALLIUM_STATIC_TARGETS
+>
+-o {pObj}gallium/winsys/sw/gdi/  -#To {pLib}libws_gdi.a
+>
+;Build winsys base
+-c {pMesa}gallium/winsys/sw/null/ -o {pObj}gallium/winsys/sw/base/null/
+-{vIncl}
+-{vFlag}
+|
+-c {pMesa}gallium/winsys/sw/wrapper/ -o {pObj}gallium/winsys/sw/base/wrapper/
+-{vIncl}
+-{vFlag}
+>
+-o {pObj}gallium/winsys/sw/base/  -#To {pLib}libws_base.a
 >
 ;gallium\drivers\softpipe
 ;gallium\drivers\svga
