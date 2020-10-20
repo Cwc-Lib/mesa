@@ -201,7 +201,7 @@
 ;-{vFlag}
 >
 ;Build DLL
--o {pObj}  -#To {pLib}libopengl32.dll
+-o {pObj}  -#To {pLib}opengl32.dll
 -L {pLib}
 -lgdi32
 ;-lmesa
