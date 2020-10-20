@@ -15,7 +15,8 @@
 -DPACKAGE_VERSION=%"v0%"
 ;
 -D_GLAPI_DLL_EXPORTS
--D_GDI32_
+;-D_GDI32_
+;#define WINGDIAPI DECLSPEC_IMPORT
 -DBUILD_GL32
 -DKHRONOS_DLL_EXPORTS
 >
@@ -126,6 +127,7 @@
 ;--- Build GDI (context)
 -c  {pMesa}gallium/winsys/sw/gdi/ -o {pObj}gallium/winsys/sw/gdi/ 
 -{vIncl}
+-{vFlag}
 -I {pMesa}gallium/winsys/
 ;-DGALLIUM_NOUVEAU
 ;-DGALLIUM_STATIC_TARGETS
@@ -173,12 +175,15 @@
 ;--- Build frontend wgl
 -c  {pMesa}gallium/frontends/wgl/ -o {pObj}gallium/frontends/wgl/
 -{vIncl}
+-{vFlag}
 -I {pMesa}gallium/winsys/
+;-D_GDI32_
 ;-DGALLIUM_NOUVEAU
 ;-DGALLIUM_STATIC_TARGETS
 -DWINVER=0x600
-;
-;-D_GDI32_
+-DWINGDIAPI=__declspec(dllexport)
+-DBUILD_GL32
+
 ;-DBUILD_GL32
 ;-DKHRONOS_DLL_EXPORTS
 >
