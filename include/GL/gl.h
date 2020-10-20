@@ -30,6 +30,11 @@
 /**********************************************************************
  * Begin system-specific stuff.
  */
+//#define WINGDIAPI __declspec(dllexport) __cdecl //maeiky
+//#undef APIENTRY
+//#undef WINAPI
+//#define  WINAPI __cdecl
+
 
 #if defined(_WIN32) && !defined(__WIN32__) && !defined(__CYGWIN__)
 #define __WIN32__

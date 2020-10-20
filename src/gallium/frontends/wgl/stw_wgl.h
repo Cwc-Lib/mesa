@@ -33,6 +33,9 @@
 
 #include <GL/gl.h>
 
+#define WINGDIAPI __declspec(dllexport) __cdecl //maeiky
+#define APIENTRY
+#define WINAPI
 
 /*
  * Undeclared APIs exported by opengl32.dll

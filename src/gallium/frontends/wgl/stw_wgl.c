@@ -48,8 +48,8 @@
 #include "stw_wgl.h"
 #include "stw_ext_context.h"
 
-#undef WINGDIAPI //maeiky
-#define WINGDIAPI //maeiky
+#define WINGDIAPI __declspec(dllexport) __cdecl //maeiky
+#define APIENTRY
 
 static void
 overrideOpenGL32EntryPoints(void);
@@ -69,8 +69,15 @@ WINGDIAPI HGLRC APIENTRY
 wglCreateContext(
    HDC hdc )
 {
+setvbuf(stdout, NULL, _IONBF, 0);
+printf("\n CREATE CONTEXT!!\n");
+printf("\n CREATE CONTEXT!!\n");
+while(1){
+}
    overrideOpenGL32EntryPoints();
    return (HGLRC)(UINT_PTR)DrvCreateContext(hdc);
+    printf("\n ENDDD !!\n");
+    printf("\n ENDDD !!\n");
 }
 
 WINGDIAPI HGLRC APIENTRY
@@ -78,7 +85,12 @@ wglCreateLayerContext(
    HDC hdc,
    int iLayerPlane )
 {
+printf("\n CREATE CONTEXT!!\n");
+printf("\n CREATE CONTEXT!!\n");
+
    overrideOpenGL32EntryPoints();
+ printf("\n ENDDD !!\n");
+   
    return (HGLRC)(UINT_PTR)DrvCreateLayerContext( hdc, iLayerPlane );
 }
 
@@ -160,6 +172,7 @@ wglChoosePixelFormat(
    HDC hdc,
    CONST PIXELFORMATDESCRIPTOR *ppfd )
 {
+printf("\n wglChoosePixelFormat!\n");
    if (ppfd->nSize != sizeof( PIXELFORMATDESCRIPTOR ) || ppfd->nVersion != 1)
       return 0;
    if (ppfd->iPixelType != PFD_TYPE_RGBA)
@@ -173,6 +186,7 @@ wglChoosePixelFormat(
    if (!(ppfd->dwFlags & PFD_STEREO_DONTCARE) && (ppfd->dwFlags & PFD_STEREO))
       return 0;
 
+printf("\n end!\n");
    return stw_pixelformat_choose( hdc, ppfd );
 }
 
