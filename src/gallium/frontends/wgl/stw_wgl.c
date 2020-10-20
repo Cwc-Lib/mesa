@@ -207,7 +207,7 @@ wglSetPixelFormat(
    return DrvSetPixelFormat( hdc, iPixelFormat );
 }
 
-
+/*  //maeiky
 WINGDIAPI BOOL APIENTRY
 wglUseFontBitmapsA(
    HDC hdc,
@@ -216,7 +216,7 @@ wglUseFontBitmapsA(
    DWORD listBase )
 {
    return wglUseFontBitmapsW(hdc, first, count, listBase);
-}
+}*/
 
 WINGDIAPI BOOL APIENTRY
 wglShareLists(
@@ -226,7 +226,7 @@ wglShareLists(
    return DrvShareLists((DHGLRC)(UINT_PTR)hglrc1,
                         (DHGLRC)(UINT_PTR)hglrc2);
 }
-
+/* //maeiky
 WINGDIAPI BOOL APIENTRY
 wglUseFontBitmapsW(
    HDC hdc,
@@ -285,7 +285,7 @@ wglUseFontBitmapsW(
 
    return result;
 }
-
+*/
 WINGDIAPI BOOL APIENTRY
 wglUseFontOutlinesA(
    HDC hdc,
