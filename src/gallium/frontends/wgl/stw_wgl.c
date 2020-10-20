@@ -48,6 +48,8 @@
 #include "stw_wgl.h"
 #include "stw_ext_context.h"
 
+#undef WINGDIAPI //maeiky
+#define WINGDIAPI //maeiky
 
 static void
 overrideOpenGL32EntryPoints(void);
