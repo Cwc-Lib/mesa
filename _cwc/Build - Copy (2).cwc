@@ -1,0 +1,7 @@
+>
+-{vFlag}=
+-DPACKAGE_VERSION=%"v0%"
+>
+-c ../src/gallium/auxiliary/draw/test.cpp -o test.o
+-{vFlag}
+>

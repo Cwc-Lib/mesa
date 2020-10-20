@@ -9,7 +9,7 @@
 -D__STDC_FORMAT_MACROS
 -DGALLIUM_NOUVEAU
 -DPIPE_OS_UNIX
--DGALLIUM_STATIC_TARGETS
+;-DGALLIUM_STATIC_TARGETS
 -DPACKAGE_BUGREPORT=
 ;mapi
 -DPACKAGE_VERSION=%"v0%"
@@ -56,15 +56,25 @@
 >
 ;--- Build Gallium_auxiliary
 -c {pMesa}gallium/auxiliary/ 
+!{pMesa}gallium/auxiliary/rbug/
+!{pMesa}gallium/auxiliary/driver_rbug/
+!{pMesa}gallium/auxiliary/renderonly/
 !{pMesa}gallium/auxiliary/gallivm/
 !{pMesa}gallium/auxiliary/draw/draw_llvm.c
 !{pMesa}gallium/auxiliary/draw/draw_llvm_sample.c
 !{pMesa}gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c
 !{pMesa}gallium/auxiliary/draw/draw_vs_llvm.c
+!{pMesa}gallium/auxiliary/indices/u_indices.c
+!{pMesa}gallium/auxiliary/indices/u_unfilled_indices.c
+!{pMesa}gallium/auxiliary/indices/u_primconvert.c
+;
+!{pMesa}gallium/auxiliary/pipe-loader/
+;
 -o {pObj}gallium/auxiliary/
 -{vIncl}
--DGALLIUM_NOUVEAU
--DGALLIUM_STATIC_TARGETS
+;-DGALLIUM_NOUVEAU
+;-DGALLIUM_STATIC_TARGETS
+-DPIPE_SEARCH_DIR=%"C:/MesaPipe/%"
 -I {pMesa}gallium/winsys/
 >
 -o {pObj}gallium/auxiliary/  -#To {pLib}libgallium.a
@@ -72,6 +82,7 @@
 ;Build Mesa Util
 -c {pMesa}util/ 
 !{pMesa}util/xmlconfig.c
+!{pMesa}util/format/u_format_table.c
 -o {pObj}mesa/util/
 -{vIncl}
 -{vFlag}
@@ -116,8 +127,8 @@
 -c  {pMesa}gallium/winsys/sw/gdi/ -o {pObj}gallium/winsys/sw/gdi/ 
 -{vIncl}
 -I {pMesa}gallium/winsys/
--DGALLIUM_NOUVEAU
--DGALLIUM_STATIC_TARGETS
+;-DGALLIUM_NOUVEAU
+;-DGALLIUM_STATIC_TARGETS
 >
 -o {pObj}gallium/winsys/sw/gdi/  -#To {pLib}libws_gdi.a
 >
@@ -163,8 +174,8 @@
 -c  {pMesa}gallium/frontends/wgl/ -o {pObj}gallium/frontends/wgl/
 -{vIncl}
 -I {pMesa}gallium/winsys/
--DGALLIUM_NOUVEAU
--DGALLIUM_STATIC_TARGETS
+;-DGALLIUM_NOUVEAU
+;-DGALLIUM_STATIC_TARGETS
 -DWINVER=0x600
 ;
 ;-D_GDI32_
@@ -172,6 +183,17 @@
 ;-DKHRONOS_DLL_EXPORTS
 >
 -o {pObj}gallium/frontends/wgl/  -#To {pLib}libwgl.a
+>
+;Build gen nir
+-c other/gen/ -o {pObj}gen/
+-{vIncl}
+-{vFlag}
+-I {pMesa}util/format/
+>
+;Build loader
+;-c {pMesa}loader/ -o {pObj}loader/
+;-{vIncl}
+;-{vFlag}
 >
 ;Build DLL
 -o {pObj}  -#To {pLib}libopengl32.dll
