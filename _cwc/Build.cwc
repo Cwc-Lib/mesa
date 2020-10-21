@@ -177,7 +177,7 @@
 -{vIncl}
 -{vFlag}
 -I {pMesa}gallium/winsys/
-;-D_GDI32_
+-D_GDI32_
 ;-DGALLIUM_NOUVEAU
 ;-DGALLIUM_STATIC_TARGETS
 -DWINVER=0x600
