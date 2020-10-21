@@ -323,9 +323,12 @@ stw_pixelformat_get_count(void)
 uint
 stw_pixelformat_get_extended_count(void)
 {
-   if (!stw_init_screen())
+   printf("\nsstw_pixelformat_get_extended_count");
+   if (!stw_init_screen()){
+   printf("\nsstw_init_screen");
       return 0;
-
+	}
+	   printf("\nssstw_dev %p ", stw_dev);
    return stw_dev->pixelformat_extended_count;
 }
 
@@ -426,10 +429,12 @@ stw_pixelformat_choose(HDC hdc, CONST PIXELFORMATDESCRIPTOR *ppfd)
    uint bestdelta;
 
    (void) hdc;
-
+printf("\nstw_pixelformat_choose");
    count = stw_pixelformat_get_extended_count();
+   printf("\ count: %d",  count);
    bestindex = 0;
    bestdelta = ~0U;
+
 
    for (index = 1; index <= count; index++) {
       uint delta = 0;
@@ -482,6 +487,6 @@ stw_pixelformat_choose(HDC hdc, CONST PIXELFORMATDESCRIPTOR *ppfd)
             break;
       }
    }
-
+printf("\nFound bestindex: %d",  bestindex);
    return bestindex;
 }

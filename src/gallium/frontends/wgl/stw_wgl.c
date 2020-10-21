@@ -189,6 +189,7 @@ printf("\n wglChoosePixelFormat!\n");
 
 printf("\n end!\n");
    return stw_pixelformat_choose( hdc, ppfd );
+   
 }
 
 WINGDIAPI int APIENTRY

@@ -27,7 +27,7 @@
  *
  * \author Ian Romanick <ian.d.romanick@intel.com>
  */
-
+#include <math.h>
 #include "main/context.h"
 #include "main/enums.h"
 #include "main/shaderapi.h"

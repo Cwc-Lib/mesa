@@ -315,6 +315,7 @@ pipe_loader_sw_create_screen(struct pipe_loader_device *dev,
 }
 
 static const struct pipe_loader_ops pipe_loader_sw_ops = {
+printf("\n ******************* pipe_loader_sw_ops");
    .create_screen = pipe_loader_sw_create_screen,
    .get_driconf_xml = pipe_loader_sw_get_driconf_xml,
    .release = pipe_loader_sw_release

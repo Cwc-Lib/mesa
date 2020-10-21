@@ -123,7 +123,7 @@
  *   5       -        -               __zw            3        __xy
  *
 */
-
+#include <math.h>
 #include "program/prog_instruction.h"
 #include "util/u_math.h"
 #include <ostream>

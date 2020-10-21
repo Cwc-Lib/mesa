@@ -32,7 +32,7 @@
  * library written by Philip Taylor. I added sRGB support and adjusted it for
  * Mesa. - Marek
  */
-
+#include <math.h>
 #include "texcompress_astc.h"
 #include "macros.h"
 #include "util/half_float.h"

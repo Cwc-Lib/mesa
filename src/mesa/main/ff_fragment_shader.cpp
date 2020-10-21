@@ -26,7 +26,7 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  **************************************************************************/
-
+#include <math.h>
 #include "main/glheader.h"
 #include "main/context.h"
 

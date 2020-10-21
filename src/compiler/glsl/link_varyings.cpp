@@ -28,7 +28,7 @@
  * stages.
  */
 
-
+#include <math.h>
 #include "main/errors.h"
 #include "main/mtypes.h"
 #include "glsl_symbol_table.h"

@@ -341,6 +341,7 @@ pipe_loader_drm_get_driinfo_xml(const char *driver_name)
 }
 
 static const struct pipe_loader_ops pipe_loader_drm_ops = {
+printf("\n *********************** pipe_loader_ops");
    .create_screen = pipe_loader_drm_create_screen,
    .get_driconf_xml = pipe_loader_drm_get_driconf_xml,
    .release = pipe_loader_drm_release
