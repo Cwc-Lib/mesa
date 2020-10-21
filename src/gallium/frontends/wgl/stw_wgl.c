@@ -73,8 +73,7 @@ wglCreateContext(
 setvbuf(stdout, 0, 4, 0);
 printf("\n CREATE CONTEXT!!\n");
 printf("\n CREATE CONTEXT!!\n");
-while(1){
-}
+
    overrideOpenGL32EntryPoints();
    return (HGLRC)(UINT_PTR)DrvCreateContext(hdc);
     printf("\n ENDDD !!\n");
