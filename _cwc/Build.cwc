@@ -132,6 +132,13 @@
 -I {pMesa}gallium/winsys/
 ;-DGALLIUM_NOUVEAU
 ;-DGALLIUM_STATIC_TARGETS
+|
+-c  {pMesa}gallium/targets/libgl-gdi/ -o {pObj}gallium/winsys/sw/gdi/
+-{vIncl}
+-{vFlag}
+-I {pMesa}gallium/frontends/wgl/
+-I {pMesa}gallium/winsys/sw/
+-I {pMesa}gallium/drivers/
 >
 -o {pObj}gallium/winsys/sw/gdi/  -#To {pLib}libws_gdi.a
 >
