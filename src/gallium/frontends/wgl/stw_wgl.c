@@ -65,11 +65,12 @@ wglCopyContext(
                           mask );
 }
 
+#include <stdio.h>
 WINGDIAPI HGLRC APIENTRY
 wglCreateContext(
    HDC hdc )
 {
-setvbuf(stdout, NULL, _IONBF, 0);
+setvbuf(stdout, 0, 4, 0);
 printf("\n CREATE CONTEXT!!\n");
 printf("\n CREATE CONTEXT!!\n");
 while(1){
