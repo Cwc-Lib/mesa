@@ -170,9 +170,11 @@ BOOL WINAPI
 DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 {
    printf("\n!!DllMain!!!!!!!!!!!!! ");
+   
    switch (fdwReason) {
    case DLL_PROCESS_ATTACH:
-   printf("\n!!DLL_PROCESS_ATTACH");
+	  printf("\n!!DLL_PROCESS_ATTACH");
+	  
       stw_init(&stw_winsys);
       stw_init_thread();
       break;

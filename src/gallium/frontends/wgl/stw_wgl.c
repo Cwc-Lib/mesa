@@ -126,6 +126,7 @@ wglMakeCurrent(
    HDC hdc,
    HGLRC hglrc )
 {
+	printf("\n!wglMakeCurrent!\n");
    return DrvSetContext( hdc, (DHGLRC)(UINT_PTR)hglrc, NULL ) ? TRUE : FALSE;
 }
 

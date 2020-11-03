@@ -430,13 +430,16 @@ stw_get_current_read_dc( void )
 BOOL
 stw_make_current(HDC hDrawDC, HDC hReadDC, DHGLRC dhglrc)
 {
+
+printf("\n!stw_make_current!\n");
    struct stw_context *old_ctx = NULL;
    struct stw_context *ctx = NULL;
    BOOL ret = FALSE;
 
-   if (!stw_dev)
+   if (!stw_dev){
+	printf("\n!stw_dev\n");
       return FALSE;
-
+	}
    old_ctx = stw_current_context();
    if (old_ctx != NULL) {
       if (old_ctx->dhglrc == dhglrc) {
@@ -464,6 +467,7 @@ stw_make_current(HDC hDrawDC, HDC hReadDC, DHGLRC dhglrc)
       ctx = stw_lookup_context_locked( dhglrc );
       stw_unlock_contexts(stw_dev);
       if (!ctx) {
+	  printf("\n!ctx\n");
          goto fail;
       }
 
@@ -481,13 +485,16 @@ stw_make_current(HDC hDrawDC, HDC hReadDC, DHGLRC dhglrc)
          int iPixelFormat = get_matching_pixel_format(hDrawDC);
          if (iPixelFormat)
             fb = stw_framebuffer_create( hDrawDC, iPixelFormat );
-         if (!fb)
+         if (!fb){
+		   printf("\n!fb\n");
             goto fail;
+			}
       }
 
       if (fb->iPixelFormat != ctx->iPixelFormat) {
          stw_framebuffer_unlock(fb);
          SetLastError(ERROR_INVALID_PIXEL_FORMAT);
+		 printf("\nERROR_INVALID_PIXEL_FORMAT1\n");
          goto fail;
       }
 
@@ -521,13 +528,16 @@ stw_make_current(HDC hDrawDC, HDC hReadDC, DHGLRC dhglrc)
                int iPixelFormat = GetPixelFormat(hReadDC);
                if (iPixelFormat)
                   fbRead = stw_framebuffer_create( hReadDC, iPixelFormat );
-               if (!fbRead)
+               if (!fbRead){
+			    printf("\n!fbRead\n");
                   goto fail;
+				  }
             }
 
             if (fbRead->iPixelFormat != ctx->iPixelFormat) {
                stw_framebuffer_unlock(fbRead);
                SetLastError(ERROR_INVALID_PIXEL_FORMAT);
+			      printf("\n!ERROR_INVALID_PIXEL_FORMAT2\n");
                goto fail;
             }
             stw_framebuffer_unlock(fbRead);
@@ -580,7 +590,7 @@ fail:
          stw_unlock_framebuffers(stw_dev);
       }
    }
-
+ printf("\nret%d\n", (int)ret);
    return ret;
 }
 
