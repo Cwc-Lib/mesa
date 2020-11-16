@@ -437,10 +437,10 @@ DrvSetPixelFormat(HDC hdc, LONG iPixelFormat)
 
    fb = stw_framebuffer_from_hdc_locked(hdc);
    if (fb) {
-      /*
-       * SetPixelFormat must be called only once.  However ignore
-       * pbuffers, for which the framebuffer object is created first.
-       */
+      
+       // SetPixelFormat must be called only once.  However ignore
+      //pbuffers, for which the framebuffer object is created first.
+       
       boolean bPbuffer = fb->bPbuffer;
 
       stw_framebuffer_unlock( fb );

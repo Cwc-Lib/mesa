@@ -7142,6 +7142,7 @@ builtin_builder::_atomic_counter_op(const char *intrinsic,
    MAKE_SIG(glsl_type::uint_type, avail, 1, counter);
 
    ir_variable *retval = body.make_temp(glsl_type::uint_type, "atomic_retval");
+   printf("nfunc%s:\n", intrinsic);
    body.emit(call(shader->symbols->get_function(intrinsic), retval,
                   sig->parameters));
    body.emit(ret(retval));

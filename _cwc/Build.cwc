@@ -221,6 +221,7 @@
 ;-lws_base
 ;-lsvga
 ;-lwgl
+-Wl,--kill-at
 >
 
 ;gallium\drivers\softpipe

@@ -61,8 +61,8 @@ stw_own_mutex(const CRITICAL_SECTION *cs)
    CRITICAL_SECTION dummy;
    InitializeCriticalSection(&dummy);
    EnterCriticalSection(&dummy);
-   if (0)
-      _debug_printf("%p %p\n", cs->OwningThread, dummy.OwningThread);
+   //if (0)
+      printf("\n***OwningThread:: %p %p\n", cs->OwningThread, dummy.OwningThread);
    bool ret = cs->OwningThread == dummy.OwningThread;
    LeaveCriticalSection(&dummy);
    DeleteCriticalSection(&dummy);

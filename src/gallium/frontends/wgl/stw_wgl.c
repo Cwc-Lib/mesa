@@ -48,8 +48,8 @@
 #include "stw_wgl.h"
 #include "stw_ext_context.h"
 
-#define WINGDIAPI __declspec(dllexport) __cdecl //maeiky
-#define APIENTRY
+//#define WINGDIAPI __declspec(dllexport) __cdecl //maeiky
+//#define APIENTRY
 
 static void
 overrideOpenGL32EntryPoints(void);
