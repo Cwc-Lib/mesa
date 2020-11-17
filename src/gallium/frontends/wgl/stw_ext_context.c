@@ -188,7 +188,7 @@ wglCreateContextAttribsARB(HDC hDC, HGLRC hShareContext, const int *attribList)
                                      contextFlags, profileMask,
                                      dhglrc);
       if (!c) {
-         wglDeleteContext_func(context);
+      //   wglDeleteContext_func(context);
          context = 0;
       }
    }

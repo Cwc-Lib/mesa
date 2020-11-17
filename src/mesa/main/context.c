@@ -1319,6 +1319,7 @@ fail:
 void
 _mesa_free_context_data(struct gl_context *ctx, bool destroy_debug_output)
 {
+
    if (!_mesa_get_current_context()){
       /* No current context, but we may need one in order to delete
        * texture objs, etc.  So temporarily bind the context now.
@@ -1397,7 +1398,7 @@ _mesa_free_context_data(struct gl_context *ctx, bool destroy_debug_output)
 
    /* unbind the context if it's currently bound */
    if (ctx == _mesa_get_current_context()) {
-      _mesa_make_current(NULL, NULL, NULL);
+      _mesa_make_current(NULL, NULL, NULL);///buggg
    }
 
    /* Do this after unbinding context to ensure any thread is finished. */

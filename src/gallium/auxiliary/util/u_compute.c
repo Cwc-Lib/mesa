@@ -64,6 +64,8 @@ static void *blit_compute_shader(struct pipe_context *ctx)
    struct tgsi_token tokens[1024];
    struct pipe_compute_state state = {0};
 
+	printf("\n****tgsi_text_translate[text]: %s ", text);
+	printf("\n****tgsi_text_translate[tokens]: %s ", tokens);
    if (!tgsi_text_translate(text, tokens, ARRAY_SIZE(tokens))) {
       assert(false);
       return NULL;
