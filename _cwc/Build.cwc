@@ -74,6 +74,8 @@
 ;
 -o {pObj}gallium/auxiliary/
 -{vIncl}
+-{vFlag}
+-UPIPE_OS_UNIX
 ;-DGALLIUM_NOUVEAU
 ;-DGALLIUM_STATIC_TARGETS
 -DPIPE_SEARCH_DIR=%"C:/MesaPipe/%"
