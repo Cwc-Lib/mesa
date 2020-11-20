@@ -11,7 +11,6 @@
 -I {pLLVM_host}
 -I {pLLVM}src/include/
 -DMESA_LLVM_VERSION_STRING=%"3.8.0%"
--DLLVM_AVAILABLE
 >
 -{vFlag}=
 -DGALLIUM_LLVMPIPE
@@ -70,6 +69,7 @@
 !{pMesa}gallium/auxiliary/rbug/
 !{pMesa}gallium/auxiliary/driver_rbug/
 !{pMesa}gallium/auxiliary/renderonly/
+!{pMesa}gallium/auxiliary/gallivm/
 !{pMesa}gallium/auxiliary/draw/draw_llvm.c
 !{pMesa}gallium/auxiliary/draw/draw_llvm_sample.c
 !{pMesa}gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c
@@ -77,7 +77,6 @@
 !{pMesa}gallium/auxiliary/indices/u_indices.c
 !{pMesa}gallium/auxiliary/indices/u_unfilled_indices.c
 !{pMesa}gallium/auxiliary/indices/u_primconvert.c
-;!{pMesa}gallium/auxiliary/gallivm/ --> LLVMPipe
 ;
 !{pMesa}gallium/auxiliary/pipe-loader/
 ;

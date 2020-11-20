@@ -40,16 +40,17 @@
 -{vIncl}
 -{vFlag}
 >
+;LLVM_3_8_0\src\lib\Tg\X86\TargetInfo
 ;Build Tg --> only x86 subfolder + &Tg
 -c &{pLLVM_lib}Tg/ -o {pObj}llvm/lib/Tg/ -{vIncl} -{vFlag}
 |
--c &{pLLVM_lib}Tg/ -o {pObj}llvm/lib/Tg/ -{vIncl} -{vFlag}
+-c {pLLVM_lib}Tg/X86/ -o {pObj}llvm/lib/Tg/X86/ -{vIncl} -{vFlag}
 >
 ;Generate Dynamic Lib
 ;-o {pObj}lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.{_sDynamic}
 >
 ;Generate LLVM Lib
-;-o {pObj} -#To {pLib}llvm.a
+-o {pObj} -#To {pLib}libllvm.a
 >
 ;Generate IrDemo.exe
 -o {pObj} -#To {pOut}/IrDemo.*

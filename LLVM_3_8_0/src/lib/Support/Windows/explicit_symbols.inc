@@ -1,12 +1,7 @@
 /* in libgcc.a */
 
 //Maeiky add
-
-
-
 #include "CpcDos/CpcDosExplicitSymbol.h"
-
-
 
 
 //Pure virtual functions can get called during object construction/destruction. If that happens, __cxa_pure_virtual() gets called to report the error

@@ -585,6 +585,7 @@ lp_free_objcache(void *objcache_ptr)
    delete objcache;
 }
 
+/* TODO 
 extern "C" LLVMValueRef
 lp_get_called_value(LLVMValueRef call)
 {
@@ -596,3 +597,4 @@ lp_is_function(LLVMValueRef v)
 {
 	return LLVMGetValueKind(v) == LLVMFunctionValueKind;
 }
+*/
