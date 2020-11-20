@@ -52,6 +52,7 @@
 
 #if !defined(CONST64) || !defined(CONST64U)
 #ifdef _MSC_VER
+#error
 #define CONST64(c) c##I64
 #define CONST64U(c) c##uI64
 #elif defined __APPLE__
@@ -59,6 +60,7 @@
 #define CONST64U(c) c##uLL
 #elif __GNUC__
 #if defined(VM_X86_64) || defined(VM_ARM_64)
+	#error
 #define CONST64(c) c##L
 #define CONST64U(c) c##uL
 #else

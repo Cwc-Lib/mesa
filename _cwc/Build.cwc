@@ -1,9 +1,16 @@
 -{pMesa}=../src/
+-{pLLVM}=../LLVM_3_8_0/
+-{pLLVM_host}={pLLVM}HostConfig/
 -{pDrm}=../drm/
 -{pAtomic_ops}=../libatomic_ops-7.6.10/src/
 -{pObj}=obj/cpp_{_sPlatform}_{_sOpt}/
 -{pLib}=Lib/{_sPlatform}_{_sOpt}/
 -{pOut}=_out/{_sPlatform}_{_sOpt}/
+>
+-{vFlag_LLVM}=
+-I {pLLVM_host}
+-I {pLLVM}src/include/
+-DMESA_LLVM_VERSION_STRING=%"3.8.0%"
 >
 -{vFlag}=
 -D__STDC_FORMAT_MACROS
@@ -76,6 +83,7 @@
 -o {pObj}gallium/auxiliary/
 -{vIncl}
 -{vFlag}
+-{vFlag_LLVM}
 -UPIPE_OS_UNIX
 ;-DGALLIUM_NOUVEAU
 ;-DGALLIUM_STATIC_TARGETS
@@ -113,6 +121,14 @@
 >
 -o {pObj}mesa/mesacore/  -#To {pLib}libmesa.a
 >
+;Build Gallium LLVMpipe (optional?)
+-c {pMesa}gallium/drivers/llvmpipe/ -o {pObj}gallium/drivers/llvmpipe/
+-{vIncl}
+-{vFlag}
+-{vFlag_LLVM}
+>
+-o {pObj}gallium/drivers/llvmpipe/  -#To {pLib}libllvmpipe.a
+>
 ;Build Gallium softpipe
 -c {pMesa}gallium/drivers/softpipe/ -o {pObj}gallium/drivers/softpipe/
 -{vIncl}
@@ -132,6 +148,7 @@
 -c  {pMesa}gallium/winsys/sw/gdi/ -o {pObj}gallium/winsys/sw/gdi/ 
 -{vIncl}
 -{vFlag}
+-{vFlag_LLVM}
 -I {pMesa}gallium/winsys/
 ;-DGALLIUM_NOUVEAU
 ;-DGALLIUM_STATIC_TARGETS
@@ -139,6 +156,7 @@
 -c  {pMesa}gallium/targets/libgl-gdi/ -o {pObj}gallium/winsys/sw/gdi/
 -{vIncl}
 -{vFlag}
+-{vFlag_LLVM}
 -I {pMesa}gallium/frontends/wgl/
 -I {pMesa}gallium/winsys/sw/
 -I {pMesa}gallium/drivers/
@@ -210,6 +228,10 @@
 ;-c {pMesa}loader/ -o {pObj}loader/
 ;-{vIncl}
 ;-{vFlag}
+>
+;Build LLVM
+
+
 >
 ;Build DLL
 -o {pObj}  -#To {pLib}opengl32.dll

@@ -43,13 +43,14 @@ LLVM runs much more quickly when it’s optimized and assertions are removed. Howe
 /////////mingw shit//////////
 #include <string.h>
 #include <stdlib.h>     /* malloc, free, rand */
-inline char *strdup (const char *s) {
+/*
+static inline char *strdup (const char *s) {
     char *d = (char*)malloc (strlen (s) + 1);   // Allocate memory
     if (d != NULL) strcpy (d,s);         // Copy string if okay
     return d;                            // Return new memory
-}
+}*/
 //is blank missing
-inline int isblank2(char _nChar){
+static inline int isblank2(char _nChar){
     if(_nChar == ' ' || _nChar == '\t'){
         return 1;
     }
