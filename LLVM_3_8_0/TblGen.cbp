@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TableGen" />
+		<Option pch_mode="2" />
+		<Option compiler="mingwtdm_64" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TableGen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="mingwtdm_64" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-m64" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="HostConfig/llvm-tblgen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="mingwtdm_64" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-std=c++11" />
+					<Add option="-m64" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Os" />
+			<Add option="-std=c++11" />
+			<Add option="-m64" />
+			<Add option="-fno-exceptions" />
+			<Add option="-DD__STDC_LIMIT_MACROS" />
+			<Add option="-DD__STDC_CONSTANT_MACROS" />
+			<Add directory="src/include" />
+			<Add directory="HostConfig" />
+			<Add directory="src/lib/Target/X86" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+			<Add option="-m64" />
+			<Add option="-lole32" />
+			<Add option="-static" />
+			<Add option="-limagehlp" />
+			<Add option="-lshell32" />
+			<Add option="-lpsapi" />
+			<Add option="-lgdi32" />
+		</Linker>
+		<Unit filename="HostConfig/llvm/Config/config.h" />
+		<Unit filename="HostConfig/llvm/Config/llvm-config.h" />
+		<Unit filename="HostConfig/llvm/support/DataTypes.h" />
+		<Unit filename="src/lib/Support/APFloat.cpp" />
+		<Unit filename="src/lib/Support/APInt.cpp" />
+		<Unit filename="src/lib/Support/APSInt.cpp" />
+		<Unit filename="src/lib/Support/ARMBuildAttrs.cpp" />
+		<Unit filename="src/lib/Support/ARMWinEH.cpp" />
+		<Unit filename="src/lib/Support/Allocator.cpp" />
+		<Unit filename="src/lib/Support/Atomic.cpp" />
+		<Unit filename="src/lib/Support/BlockFrequency.cpp" />
+		<Unit filename="src/lib/Support/BranchProbability.cpp" />
+		<Unit filename="src/lib/Support/COM.cpp" />
+		<Unit filename="src/lib/Support/CommandLine.cpp" />
+		<Unit filename="src/lib/Support/Compression.cpp" />
+		<Unit filename="src/lib/Support/ConvertUTF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/lib/Support/ConvertUTFWrapper.cpp" />
+		<Unit filename="src/lib/Support/CrashRecoveryContext.cpp" />
+		<Unit filename="src/lib/Support/DAGDeltaAlgorithm.cpp" />
+		<Unit filename="src/lib/Support/DataExtractor.cpp" />
+		<Unit filename="src/lib/Support/DataStream.cpp" />
+		<Unit filename="src/lib/Support/Debug.cpp" />
+		<Unit filename="src/lib/Support/DeltaAlgorithm.cpp" />
+		<Unit filename="src/lib/Support/Dwarf.cpp" />
+		<Unit filename="src/lib/Support/DynamicLibrary.cpp" />
+		<Unit filename="src/lib/Support/Errno.cpp" />
+		<Unit filename="src/lib/Support/ErrorHandling.cpp" />
+		<Unit filename="src/lib/Support/FileOutputBuffer.cpp" />
+		<Unit filename="src/lib/Support/FileUtilities.cpp" />
+		<Unit filename="src/lib/Support/FoldingSet.cpp" />
+		<Unit filename="src/lib/Support/FormattedStream.cpp" />
+		<Unit filename="src/lib/Support/GraphWriter.cpp" />
+		<Unit filename="src/lib/Support/Hashing.cpp" />
+		<Unit filename="src/lib/Support/Host.cpp" />
+		<Unit filename="src/lib/Support/IntEqClasses.cpp" />
+		<Unit filename="src/lib/Support/IntervalMap.cpp" />
+		<Unit filename="src/lib/Support/IntrusiveRefCntPtr.cpp" />
+		<Unit filename="src/lib/Support/JamCRC.cpp" />
+		<Unit filename="src/lib/Support/LEB128.cpp" />
+		<Unit filename="src/lib/Support/LineIterator.cpp" />
+		<Unit filename="src/lib/Support/Locale.cpp" />
+		<Unit filename="src/lib/Support/LockFileManager.cpp" />
+		<Unit filename="src/lib/Support/MD5.cpp" />
+		<Unit filename="src/lib/Support/ManagedStatic.cpp" />
+		<Unit filename="src/lib/Support/MathExtras.cpp" />
+		<Unit filename="src/lib/Support/Memory.cpp" />
+		<Unit filename="src/lib/Support/MemoryBuffer.cpp" />
+		<Unit filename="src/lib/Support/MemoryObject.cpp" />
+		<Unit filename="src/lib/Support/Mutex.cpp" />
+		<Unit filename="src/lib/Support/Options.cpp" />
+		<Unit filename="src/lib/Support/Path.cpp" />
+		<Unit filename="src/lib/Support/PluginLoader.cpp" />
+		<Unit filename="src/lib/Support/PrettyStackTrace.cpp" />
+		<Unit filename="src/lib/Support/Process.cpp" />
+		<Unit filename="src/lib/Support/Program.cpp" />
+		<Unit filename="src/lib/Support/RWMutex.cpp" />
+		<Unit filename="src/lib/Support/RandomNumberGenerator.cpp" />
+		<Unit filename="src/lib/Support/Regex.cpp" />
+		<Unit filename="src/lib/Support/ScaledNumber.cpp" />
+		<Unit filename="src/lib/Support/SearchForAddressOfSpecialSymbol.cpp" />
+		<Unit filename="src/lib/Support/Signals.cpp" />
+		<Unit filename="src/lib/Support/SmallPtrSet.cpp" />
+		<Unit filename="src/lib/Support/SmallVector.cpp" />
+		<Unit filename="src/lib/Support/SourceMgr.cpp" />
+		<Unit filename="src/lib/Support/SpecialCaseList.cpp" />
+		<Unit filename="src/lib/Support/Statistic.cpp" />
+		<Unit filename="src/lib/Support/StreamingMemoryObject.cpp" />
+		<Unit filename="src/lib/Support/StringExtras.cpp" />
+		<Unit filename="src/lib/Support/StringMap.cpp" />
+		<Unit filename="src/lib/Support/StringPool.cpp" />
+		<Unit filename="src/lib/Support/StringRef.cpp" />
+		<Unit filename="src/lib/Support/StringSaver.cpp" />
+		<Unit filename="src/lib/Support/SystemUtils.cpp" />
+		<Unit filename="src/lib/Support/TargetParser.cpp" />
+		<Unit filename="src/lib/Support/TargetRegistry.cpp" />
+		<Unit filename="src/lib/Support/ThreadLocal.cpp" />
+		<Unit filename="src/lib/Support/ThreadPool.cpp" />
+		<Unit filename="src/lib/Support/Threading.cpp" />
+		<Unit filename="src/lib/Support/TimeValue.cpp" />
+		<Unit filename="src/lib/Support/Timer.cpp" />
+		<Unit filename="src/lib/Support/ToolOutputFile.cpp" />
+		<Unit filename="src/lib/Support/Triple.cpp" />
+		<Unit filename="src/lib/Support/Twine.cpp" />
+		<Unit filename="src/lib/Support/Unicode.cpp" />
+		<Unit filename="src/lib/Support/Unix/Unix.h" />
+		<Unit filename="src/lib/Support/Valgrind.cpp" />
+		<Unit filename="src/lib/Support/Watchdog.cpp" />
+		<Unit filename="src/lib/Support/Windows/WindowsSupport.h" />
+		<Unit filename="src/lib/Support/YAMLParser.cpp" />
+		<Unit filename="src/lib/Support/YAMLTraits.cpp" />
+		<Unit filename="src/lib/Support/circular_raw_ostream.cpp" />
+		<Unit filename="src/lib/Support/raw_os_ostream.cpp" />
+		<Unit filename="src/lib/Support/raw_ostream.cpp" />
+		<Unit filename="src/lib/Support/regcclass.h" />
+		<Unit filename="src/lib/Support/regcname.h" />
+		<Unit filename="src/lib/Support/regcomp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/lib/Support/regerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/lib/Support/regex2.h" />
+		<Unit filename="src/lib/Support/regex_impl.h" />
+		<Unit filename="src/lib/Support/regexec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/lib/Support/regfree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/lib/Support/regstrlcpy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/lib/Support/regutils.h" />
+		<Unit filename="src/lib/TableGen/Error.cpp" />
+		<Unit filename="src/lib/TableGen/Main.cpp" />
+		<Unit filename="src/lib/TableGen/Record.cpp" />
+		<Unit filename="src/lib/TableGen/SetTheory.cpp" />
+		<Unit filename="src/lib/TableGen/StringMatcher.cpp" />
+		<Unit filename="src/lib/TableGen/TGLexer.cpp" />
+		<Unit filename="src/lib/TableGen/TGLexer.h" />
+		<Unit filename="src/lib/TableGen/TGParser.cpp" />
+		<Unit filename="src/lib/TableGen/TGParser.h" />
+		<Unit filename="src/lib/TableGen/TableGenBackend.cpp" />
+		<Unit filename="src/utils/TableGen/AsmMatcherEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/AsmWriterEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/AsmWriterInst.cpp" />
+		<Unit filename="src/utils/TableGen/AsmWriterInst.h" />
+		<Unit filename="src/utils/TableGen/Attributes.cpp" />
+		<Unit filename="src/utils/TableGen/CTagsEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/CallingConvEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/CodeEmitterGen.cpp" />
+		<Unit filename="src/utils/TableGen/CodeGenDAGPatterns.cpp" />
+		<Unit filename="src/utils/TableGen/CodeGenDAGPatterns.h" />
+		<Unit filename="src/utils/TableGen/CodeGenInstruction.cpp" />
+		<Unit filename="src/utils/TableGen/CodeGenInstruction.h" />
+		<Unit filename="src/utils/TableGen/CodeGenIntrinsics.h" />
+		<Unit filename="src/utils/TableGen/CodeGenMapTable.cpp" />
+		<Unit filename="src/utils/TableGen/CodeGenRegisters.cpp" />
+		<Unit filename="src/utils/TableGen/CodeGenRegisters.h" />
+		<Unit filename="src/utils/TableGen/CodeGenSchedule.cpp" />
+		<Unit filename="src/utils/TableGen/CodeGenSchedule.h" />
+		<Unit filename="src/utils/TableGen/CodeGenTarget.cpp" />
+		<Unit filename="src/utils/TableGen/CodeGenTarget.h" />
+		<Unit filename="src/utils/TableGen/DAGISelEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/DAGISelMatcher.cpp" />
+		<Unit filename="src/utils/TableGen/DAGISelMatcher.h" />
+		<Unit filename="src/utils/TableGen/DAGISelMatcherEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/DAGISelMatcherGen.cpp" />
+		<Unit filename="src/utils/TableGen/DAGISelMatcherOpt.cpp" />
+		<Unit filename="src/utils/TableGen/DFAPacketizerEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/DisassemblerEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/FastISelEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/FixedLenDecoderEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/InstrInfoEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/IntrinsicEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/OptParserEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/PseudoLoweringEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/RegisterInfoEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/SequenceToOffsetTable.h" />
+		<Unit filename="src/utils/TableGen/SubtargetEmitter.cpp" />
+		<Unit filename="src/utils/TableGen/TableGen.cpp" />
+		<Unit filename="src/utils/TableGen/TableGenBackends.h" />
+		<Unit filename="src/utils/TableGen/X86DisassemblerShared.h" />
+		<Unit filename="src/utils/TableGen/X86DisassemblerTables.cpp" />
+		<Unit filename="src/utils/TableGen/X86DisassemblerTables.h" />
+		<Unit filename="src/utils/TableGen/X86ModRMFilters.cpp" />
+		<Unit filename="src/utils/TableGen/X86ModRMFilters.h" />
+		<Unit filename="src/utils/TableGen/X86RecognizableInstr.cpp" />
+		<Unit filename="src/utils/TableGen/X86RecognizableInstr.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,7 @@
+# Compiled Object files
+_old/
+*.d
+*.o
+obj/
+
+*.wdat

@@ -1,0 +1,7 @@
+﻿#include "Lib_GZ_WinOpenGL/Lib_GZ_WinOpenGL.h"
+#include "Lib_GZ_WinOpenGL/SOpGpu.h"
+extern "C" int IniLib_Lib_GZ_WinOpenGL(){
+Lib_GZ_WinOpenGL::zpLib = Lib_GZ_WinOpenGL::NewLib();
+Lib_GZ_WinOpenGL::SOpGpu::NewClass();
+return 1;
+}

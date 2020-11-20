@@ -1,0 +1,15 @@
+﻿#include "Lib_GZ_Windows/Lib_GZ_Windows.h"
+#include "Lib_GZ_Windows/Sys/OpContext.h"
+#include "Lib_GZ_Windows/Sys/OpContextHandle.h"
+#include "Lib_GZ_Windows/Sys/OpDebug.h"
+#include "Lib_GZ_Windows/Sys/OpFile.h"
+#include "Lib_GZ_Windows/Sys/OpSystem.h"
+extern "C" int IniLib_Lib_GZ_Windows(){
+Lib_GZ_Windows::zpLib = Lib_GZ_Windows::NewLib();
+Lib_GZ_Windows::Sys::OpContext::NewClass();
+Lib_GZ_Windows::Sys::OpContextHandle::NewClass();
+Lib_GZ_Windows::Sys::OpDebug::NewClass();
+Lib_GZ_Windows::Sys::OpFile::NewClass();
+Lib_GZ_Windows::Sys::OpSystem::NewClass();
+return 1;
+}

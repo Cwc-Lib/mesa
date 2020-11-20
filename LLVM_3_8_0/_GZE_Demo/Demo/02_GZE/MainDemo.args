@@ -1,0 +1,1 @@
+-std=c++11 -Os  -m32 -Wreturn-type -fno-rtti -fno-exceptions -Werror=return-type -DGZ_tWindows -DGZ_tDebug -DGZ_tNo_FreeType -DGZ_tTakeEmbedRcOnDrive -DGZ_tMonothread -DGZ_tOverplace=\"[Lib_GZ,Lib_GZ_Windows,Lib_GZ_OpenGL,Lib_GZ_WinOpenGL,Lib_Demo]\"  -I . -I _Lib/GZE/ -I _Lib/GZE/SubLib_System/ 

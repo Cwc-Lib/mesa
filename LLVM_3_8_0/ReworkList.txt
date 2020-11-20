@@ -1,0 +1,25 @@
+gpp @a -c src\lib\Support\DynamicLibrary.cpp -o r\src\lib\Support\DynamicLibrary.o
+Pour trouver les function externe C (Communication C / IR)
+
+gpp @a -c src\lib\Support\Memory.cpp -o r\src\lib\Support\Memory.o
+//Lot of work
+
+gpp @a -c src\lib\Support\Process.cpp -o r\src\lib\Support\Process.o
+//Lot of work
+
+
+gpp @a -c src\lib\Support\Path.cpp -o r\src\lib\Support\Path.o
+Fonctionne si le fichier ll est charge en  memoire, a completer pour les fichier disques
+
+gpp @a -c src\lib\Support\LockFileManager.cpp -o r\src\lib\Support\LockFileManager.o
+Require un sleep, pas essentiel
+
+gpp @a -c src\lib\Support\Program.cpp -o r\src\lib\Support\Program.o
+//Rien a faire, pas essentiel
+
+gpp @a -c src\lib\Support\Signals.cpp -o r\src\lib\Support\Signals.o
+//Rien a faire, semble pas essentiel
+
+
+//Not sure Compiler rt
+#define _Atomic(T) std::atomic<T>

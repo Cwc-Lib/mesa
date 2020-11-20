@@ -1,0 +1,1 @@
+-std=c++11 -m32 -fno-exceptions -fpermissive -Os -std=c++11 -DCpcDos -Isrc\include -IHostConfig -Isrc\lib\Tg\X86 -Isrc\lib\ExecutionEngine

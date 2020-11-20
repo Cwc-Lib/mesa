@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="NoAssert" />
+	<File name="src\include\llvm\Support\ManagedStatic.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2672" topLine="35" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\Analysis\DominanceFrontierImpl.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4585" topLine="135" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Tf\Ins\AddressSanitizer.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="43393" topLine="1061" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\ScaledNumber.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4760" topLine="144" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\IR\Instruction.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5820" topLine="146" />
+		</Cursor>
+	</File>
+	<File name="src\lib\CG\SelectionDAG\ScheduleDAGRRList.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="55995" topLine="1576" />
+		</Cursor>
+	</File>
+	<File name="src\examples\Kaleidoscope\Chapter4\toy.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10927" topLine="391" />
+		</Cursor>
+	</File>
+	<File name="src\lib\CG\LiveIntervalUnion.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3171" topLine="121" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm-c\Analysis.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2418" topLine="43" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\Signals.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6319" topLine="134" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\CommandLine.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="27519" topLine="781" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\raw_ostream.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="22485" topLine="761" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\Memory.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="452" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\lib\EE\RuntimeDyld\RuntimeDyldELF.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="71202" topLine="1771" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\Threading.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="806" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\Analysis\RegionPrinter.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="871" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Tg\X86\InstPrinter\X86IntelInstPrinter.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="570" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\lib\CG\MIRPrinter.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="896" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\MemoryBuffer.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="788" topLine="105" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\ADT\IntervalMap.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12961" topLine="369" />
+		</Cursor>
+	</File>
+	<File name="src\lib\EE\RuntimeDyld\RuntimeDyldELF.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4615" topLine="98" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\TimeValue.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="806" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\CodeGen\MIRYamlMapping.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2867" topLine="74" />
+		</Cursor>
+	</File>
+	<File name="src\lib\CG\MachineInstr.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="58032" topLine="1599" />
+		</Cursor>
+	</File>
+	<File name="src\lib\IR\Core.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="56066" topLine="1644" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\MemoryObject.cpp" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="440" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\MC\MCSchedule.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3845" topLine="93" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\regcomp.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="33400" topLine="1379" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Tg\X86\X86MCInstLower.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="25055" topLine="624" />
+		</Cursor>
+	</File>
+	<File name="src\lib\CG\MIRPrintingPass.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="632" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\Mutex.cpp" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\Host.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="406" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\Analysis\ScalarEvolutionExpander.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3883" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\CodeGen\MachineBasicBlock.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="23044" topLine="531" />
+		</Cursor>
+	</File>
+	<File name="src\lib\CG\MachineLoopInfo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2786" topLine="61" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\Path.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="619" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="src\lib\An\BlockFrequencyInfoImpl.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8631" topLine="262" />
+		</Cursor>
+	</File>
+	<File name="HostConfig\llvm\Config\config.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="103" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\IR\Value.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5097" topLine="138" />
+		</Cursor>
+	</File>
+	<File name="HostConfig\llvm\Config\llvm-config.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2083" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Tg\X86\Disassembler\X86Disassembler.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="40352" topLine="948" />
+		</Cursor>
+	</File>
+	<File name="src\lib\An\CFG.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2645" topLine="81" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm-c\Core.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="75364" topLine="2562" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\DebugInfo\PDB\PDBSymbolFuncDebugEnd.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1334" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\Support\ScaledNumber.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="29137" topLine="764" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\CodeGen\LiveInterval.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="27107" topLine="733" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Tg\X86\X86RegisterInfo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15919" topLine="477" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\Process.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2422" topLine="46" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Tg\X86\X86FloatingPoint.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="37782" topLine="1013" />
+		</Cursor>
+	</File>
+	<File name="_Demo\Demo.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1588" topLine="72" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\IR\DebugInfoMetadata.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="32248" topLine="837" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\StringPool.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="687" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\IR\Module.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7392" topLine="167" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\Program.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2422" topLine="31" />
+		</Cursor>
+	</File>
+	<File name="src\lib\CG\MachineRegionInfo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3317" topLine="103" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\DynamicLibrary.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4501" topLine="143" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm-c\lto.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11372" topLine="382" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\PassSupport.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3600" topLine="79" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\CodeGen\LiveIntervalUnion.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3869" topLine="92" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\CodeGen\MachineScheduler.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="28998" topLine="853" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\Analysis\BlockFrequencyInfoImpl.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="670" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm-c\ExecutionEngine.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1532" topLine="31" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\Windows\WindowsSupport.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4495" topLine="121" />
+		</Cursor>
+	</File>
+	<File name="_Demo\JitProg.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="922" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\include\llvm\ADT\Statistic.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3755" topLine="145" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Tf\IPO\GlobalOpt.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="30605" topLine="778" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Tg\X86\X86ISelDAGToDAG.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3815" topLine="109" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\LockFileManager.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="342" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="_Demo\JitProg.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="623" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="src\lib\Support\ErrorHandling.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5383" topLine="159" />
+		</Cursor>
+	</File>
+	<File name="src\examples\Fibonacci\fibonacci.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3647" topLine="91" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,670 @@
+//Minimal Example Hello World With LibRT
+#if 0 /* expanded by -frewrite-includes */
+#include <LibRT.h>
+#endif /* expanded by -frewrite-includes */
+
+#ifndef GZ_tLibRT
+	#define GZ_tLibRT
+#endif
+
+#ifndef LRT_IMPORT
+	#define LRT_IMPORT  __declspec(dllimport)
+#endif
+
+#ifndef __STRINGIFY
+	#define __STRINGIFY(x) #x
+#endif
+
+#if 0 /* expanded by -frewrite-includes */
+#include "LrtCommun.h"
+#endif /* expanded by -frewrite-includes */
+#ifndef HDEF_LrtCommun
+#define HDEF_LrtCommun
+
+#if 0 /* expanded by -frewrite-includes */
+#include "LrtMin.h"
+#endif /* expanded by -frewrite-includes */
+#ifndef HDEF_Commun
+#define HDEF_Commun
+
+#if 0 /* expanded by -frewrite-includes */
+#include "GzTypes.h"
+#endif /* expanded by -frewrite-includes */
+//This file is part of "GZE - GroundZero Engine"
+
+//The permisive licence allow to use GZE for free or commercial project (Apache License, Version 2.0).
+//For conditions of distribution and use, see copyright notice in Licence.txt, this license must be included with any distribution of the code.
+
+//Though not required by the license agreement, please consider the following will be greatly appreciated:
+//- We would like to hear about projects where GZE is used.
+//- Include an attribution statement somewhere in your project.
+//- If you want to see GZE evolve please help us with a donation.
+
+
+
+#ifndef tHDef_GZ_Types
+#define tHDef_GZ_Types
+
+
+
+//#include "Lib_GZ/_SysOptions.h"
+
+//Syntax Highlighting (Code::Block Settings->Editor->Syntax Highlighting->(Button Keywords...)
+
+//Primary keyword Add:
+//gzSp gzBool gzInt8 gzUInt8 gzInt16 gzUInt16 gzInt32 gzUInt32 gzInt64 gzUInt64 gzFloat32 gzFloat64 gzFloat gzUInt gzInt gzPtr gzVoid GZ_Null GZ_fSet GZ_fUnSet GZ_fNewSet  gzStr gzPStr gzLStr gzIStr gzFStr gzText8 gzText16 gzIntX gzUIntX
+
+//Secodray keyword Add:
+//gzSCast gzDCast gzCCast gzRCast SpFromThis get
+
+
+#define GZ_Null 0
+
+
+//typedef void gzVoid;
+typedef bool gzBool;
+
+typedef   signed char gzInt8;
+typedef unsigned char gzUInt8;
+typedef   signed short int gzInt16;
+typedef unsigned short int gzUInt16;
+typedef   signed int gzInt32;
+typedef unsigned int gzUInt32;
+typedef  signed long long  gzInt64;
+typedef unsigned long long gzUInt64;
+
+typedef float gzFloat32;
+typedef double gzFloat64;
+
+typedef const char* gzText8;
+typedef const wchar_t* gzText16;
+
+
+//typedef gzUInt32 gzChar;
+
+typedef void* gzPtr;
+
+
+#ifdef _WIN64
+#define GZ_tSys64
+#endif
+
+
+//32 bit by default
+#ifdef GZ_tSys64
+    typedef unsigned long long  gzPtrSize;
+    typedef signed long long gzIntX;
+    typedef  unsigned long long gzUIntX;
+#else
+    #undef GZ_tSys32
+    #define GZ_tSys32
+    typedef unsigned int gzPtrSize;
+    typedef signed int gzIntX;
+    typedef unsigned int gzUIntX;
+#endif
+
+#ifdef GZ_tJit
+typedef gzUIntX size_t; 
+#endif
+
+extern "C"  gzInt32 __divdi3(gzInt32 a, gzInt32 b);
+
+
+#define GZ_nMaxInt32 0x7FFFFFFF
+#define GZ_nMinInt32 0x80000000
+#define GZ_nMaxUInt32 0xFFFFFFFF
+
+#define GZ_nMaxInt64 0x7FFFFFFFFFFFFFFF
+#define GZ_nMinInt64 0x8000000000000000
+#define GZ_nMaxUInt64 0xFFFFFFFFFFFFFFFF
+
+#define GZ_nCharBit 8   //CHAR_BIT macro that defines the number of bits in a byte, TODO different size support?
+
+//Detection of IEE 754  :
+//Any x86 or x64-based CPU is using IEEE 754 as their floating-point arithmetic standard.
+//If the double is not 64 bits then the code will looks like char a[-1]; which is an compile time error.
+extern char Support_Floating_Point_IEE_754[ (64 == sizeof(double) * GZ_nCharBit)*2 - 1];
+
+//Compiler must support 2 bytes string (to be cross-platform), specially for String litteral in GZE -> L""
+//If not 16 bit wide, try to add to C++ command line : -fshort-wchar
+//extern char Support_16bit_String_Litteral[ sizeof(wchar_t) == 2 ? 1 : -1];
+
+
+
+#define GZ_nMaxFloat32        3.402823466e+38F    //Require IEE 754
+#define GZ_nMinFloat32        1.175494351e-38F     //Require IEE 754
+
+#define GZ_nMaxFloat64        1.7976931348623158e+308  //Require IEE 754
+#define GZ_nMinFloat64        2.2250738585072014e-308  //Require IEE 754
+
+//64 bits use the same types as 32 bits because there smaller and faster
+typedef unsigned int gzUInt;
+typedef   signed int gzInt;
+#define GZ_nMaxInt GZ_nMaxInt32
+#define GZ_nMinInt GZ_nMinInt32
+#define GZ_nMaxUInt GZ_nMaxUInt32
+
+typedef float gzFloat;
+#define GZ_nMaxFloat       GZ_nMaxFloat32  //Require IEE 754
+#define GZ_nMinFloat       GZ_nMinFloat32  //Require IEE 754
+/////////////////////////////////////////////////////////////////////////
+
+typedef void (*gzPtrFunc)(void);
+typedef void* (*gzPtrFuncRAny)(void);
+typedef void* (*gzPtrFuncRPAny)(void*);
+
+typedef struct  {  //Auto memory management
+    gzUInt nNbIns;
+}NbInstaces;
+
+////// Default Options //////////
+#ifdef GZ_tDebug
+	
+#endif
+#ifdef GZ_tNoTace
+	
+#endif
+
+////////////////////////////////
+
+namespace Lib_GZ{class cDelegate;};
+typedef Lib_GZ::cDelegate* gzAny;
+
+//struct gzDelegateClass { Lib_GZ::Delegate* oClass;};
+//typedef void* gzDlgWrap;
+typedef struct  {  //Auto memory management
+    void* _pInst;
+}gzDlgWrapD;
+typedef struct  {  //Auto memory management
+    void* _pInst;
+}gzDlgWrapM;
+
+
+struct gzComp{void* oClass; gzPtrFunc fCall; };
+
+//extern Lib_GZ::cDelegate* GZ_NullObj;
+#define GZ_NullObj 0
+
+namespace Lib_GZ{ struct uLib; namespace Lib{extern gzUInt nClass;  extern  uLib* rLastLib;}};
+
+#define GZ_FuncWrapD gzDlgWrapD*
+#define GZ_FuncWrapM gzDlgWrapM* _w
+#define GZ_PARAM
+
+#define zNull 0
+
+
+#define tApi_GZ
+#ifdef tLibExport_GZ
+    #undef tApi_GZ
+    #define tApi_GZ __declspec(dllexport)
+#endif
+#ifdef tLibImport_GZ
+    #undef tApi_GZ
+    #define tApi_GZ __declspec(dllimport)
+#endif
+
+//Temp
+#define tApi_Demo
+
+//No atomic val in monothreaded
+#ifndef GZ_tMonothread
+	#define GZ_tAtomic
+#endif
+
+
+/*
+class gzStr;
+
+namespace Lib_GZ{
+    struct uOverplace {uOverplace* _rPrec; gzUInt* pId; gzPtrFuncRPAny cfOri; gzPtrFuncRPAny cfOver; gzPtrFuncRPAny cfExt;  gzPtrFuncRAny cfExtAdr;};
+    struct uLib { uLib* rPrec; gzStr sName; uOverplace** _rLastClass; };
+    extern uLib zpLib;
+    inline  uLib* fSetLib(uLib* _rLib){
+       uLib* rTemp =  Lib::rLastLib;
+       Lib::rLastLib = _rLib;
+       return rTemp;
+    }
+}
+*/
+
+#ifdef GZ_tJit
+	#define GZ_tManIni
+	#define GZ_tExtCrash
+#endif
+
+
+#ifdef GZ_tExtCrash
+	extern "C" void DbgCrash(gzPtr* _pStackArray, gzUInt _pStackIndex );
+	#define GZ_Crash() DbgCrash(gzaCallStack, gznCallStackIndex);
+	
+#else
+	#define GZ_Crash()
+#endif
+
+#define GZ_tHaveCallStack
+
+//Must be power of 2
+#ifndef GZ_tCallStackSize
+	#define GZ_tCallStackSize 1024 
+#endif
+
+
+
+
+struct gzFuncStack{void* oClass; const char* cName; };
+
+#ifdef GZ_tHaveCallStack
+
+	extern gzPtr gzaCallStack[GZ_tCallStackSize];
+	extern gzUInt gznCallStackIndex;
+	
+//	#include <stdio.h>
+	struct gzStack {
+		gzStack(gzPtr _pStFunc) {
+			gznCallStackIndex++;
+			gzaCallStack[(gznCallStackIndex) % GZ_tCallStackSize] = _pStFunc;
+		}
+		~gzStack() {
+			gznCallStackIndex--;
+		}
+	};
+	//10 bit for idlib   ->  1024 libs
+	//12 bit for idClass ->  4096 class
+	//10 bit for idFunc  ->  1024 Function
+	#define gz_(_pStFunc) gzStack gz_s(  &_::zFuncName[_pStFunc] );
+	
+#else
+	#define gz_(_pStFunc)
+#endif
+
+#endif
+
+#endif
+
+#if 0 /* expanded by -frewrite-includes */
+#include <limits.h>
+#endif /* expanded by -frewrite-includes */
+#if 0 /* expanded by -frewrite-includes */
+#include <crtdefs.h>
+#endif /* expanded by -frewrite-includes */
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the mingw-w64 runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+
+#ifndef HDEF_INC_CRTDEFS
+#define HDEF_INC_CRTDEFS
+
+#if 0 /* expanded by -frewrite-includes */
+#include "GzTypes.h"
+#endif /* expanded by -frewrite-includes */
+
+
+#ifdef __ERRCODE_DEFINED_MS
+	typedef int errcode;
+#endif
+
+#ifndef _SIZE_T_DEFINED
+	#define _SIZE_T_DEFINED
+	#undef size_t
+	#ifdef _WIN64
+		typedef unsigned __int64 size_t;
+	#else
+		typedef unsigned int size_t;
+	#endif /* _WIN64 */
+#endif /* _SIZE_T_DEFINED */
+
+#ifndef _SSIZE_T_DEFINED
+	#define _SSIZE_T_DEFINED
+	#undef ssize_t
+		
+	#ifdef _WIN64
+		typedef __int64 ssize_t;
+	#else
+		typedef int ssize_t;
+	#endif /* _WIN64 */
+#endif 
+
+#ifndef _INTPTR_T_DEFINED
+	#define _INTPTR_T_DEFINED
+	#ifndef __intptr_t_defined
+		#define __intptr_t_defined
+		#undef intptr_t
+		#ifdef _WIN64
+			typedef __int64 intptr_t;
+		#else
+			typedef int intptr_t;
+		#endif /* _WIN64 */
+	#endif /* __intptr_t_defined */
+#endif /* _INTPTR_T_DEFINED */
+
+#ifndef _UINTPTR_T_DEFINED
+	#define _UINTPTR_T_DEFINED
+		#ifndef __uintptr_t_defined
+			#define __uintptr_t_defined
+			#undef uintptr_t
+			#ifdef _WIN64
+				typedef unsigned __int64 uintptr_t;
+			#else
+				typedef unsigned int uintptr_t;
+		#endif /* _WIN64 */
+	#endif /* __uintptr_t_defined */
+#endif /* _UINTPTR_T_DEFINED */
+
+#ifndef _PTRDIFF_T_DEFINED
+	#define _PTRDIFF_T_DEFINED
+	#ifndef _PTRDIFF_T_
+		#define _PTRDIFF_T_
+		#undef ptrdiff_t
+		#ifdef _WIN64
+			typedef __int64 ptrdiff_t;
+		#else
+			typedef int ptrdiff_t;
+		#endif /* _WIN64 */
+	#endif /* _PTRDIFF_T_ */
+#endif /* _PTRDIFF_T_DEFINED */
+
+#ifndef _WCHAR_T_DEFINED
+#define _WCHAR_T_DEFINED
+	#if !defined(__cplusplus) && !defined(__WIDL__)
+		typedef unsigned short wchar_t;
+	#endif /* C++ */
+#endif /* _WCHAR_T_DEFINED */
+
+#ifndef _WCTYPE_T_DEFINED
+	#define _WCTYPE_T_DEFINED
+	#ifndef _WINT_T
+		#define _WINT_T
+		typedef unsigned short wint_t;
+		typedef unsigned short wctype_t;
+	#endif /* _WINT_T */
+#endif /* _WCTYPE_T_DEFINED */
+
+#ifndef _ERRCODE_DEFINED
+#define _ERRCODE_DEFINED
+	typedef int errno_t;
+#endif
+
+#ifndef _TIME32_T_DEFINED
+#define _TIME32_T_DEFINED
+	typedef long __time32_t;
+#endif
+
+#ifndef _TIME64_T_DEFINED
+#define _TIME64_T_DEFINED
+ typedef gzInt64 __time64_t;
+#endif /* _TIME64_T_DEFINED */
+
+
+#ifndef _TIME_T_DEFINED
+	#define _TIME_T_DEFINED
+	#ifdef _USE_32BIT_TIME_T
+		typedef __time32_t time_t;
+	#else
+		typedef __time64_t time_t;
+	#endif
+#endif /* _TIME_T_DEFINED */
+
+
+#endif /* _INC_CRTDEFS */
+
+#ifndef _INC_LIMITS
+#define _INC_LIMITS
+/*
+ * File system limits
+ *
+ * NOTE: Apparently the actual size of PATH_MAX is 260, but a space is
+ *       required for the NUL. TODO: Test?
+ * NOTE: PATH_MAX is the POSIX equivalent for Microsoft's MAX_PATH; the two
+ *       are semantically identical, with a limit of 259 characters for the
+ *       path name, plus one for a terminating NUL, for a total of 260.
+ */
+#define PATH_MAX	260
+
+#define CHAR_BIT 8
+#define SCHAR_MIN (-128)
+#define SCHAR_MAX 127
+#define UCHAR_MAX 0xff
+
+#define CHAR_MIN SCHAR_MIN
+#define CHAR_MAX SCHAR_MAX
+
+#define MB_LEN_MAX 5
+#define SHRT_MIN (-32768)
+#define SHRT_MAX 32767
+#define USHRT_MAX 0xffffU
+#define INT_MIN (-2147483647 - 1)
+#define INT_MAX 2147483647
+#define UINT_MAX 0xffffffffU
+#define LONG_MIN (-2147483647L - 1)
+#define LONG_MAX 2147483647L
+#define ULONG_MAX 0xffffffffUL
+#define LLONG_MAX 9223372036854775807ll
+#define LLONG_MIN (-9223372036854775807ll - 1)
+#define ULLONG_MAX 0xffffffffffffffffull
+
+#define _I8_MIN (-127 - 1)
+#define _I8_MAX 127
+#define _UI8_MAX 0xffu
+
+#define _I16_MIN (-32767 - 1)
+#define _I16_MAX 32767
+#define _UI16_MAX 0xffffu
+
+#define _I32_MIN (-2147483647 - 1)
+#define _I32_MAX 2147483647
+#define _UI32_MAX 0xffffffffu
+
+#if defined(__GNUC__)
+#undef LONG_LONG_MAX
+#define LONG_LONG_MAX 9223372036854775807ll
+#undef LONG_LONG_MIN
+#define LONG_LONG_MIN (-LONG_LONG_MAX-1)
+#undef ULONG_LONG_MAX
+#define ULONG_LONG_MAX (2ull * LONG_LONG_MAX + 1ull)
+#endif
+
+#define _I64_MIN (-9223372036854775807ll - 1)
+#define _I64_MAX 9223372036854775807ll
+#define _UI64_MAX 0xffffffffffffffffull
+
+#ifndef SIZE_MAX
+	#ifdef _WIN64
+		#define SIZE_MAX _UI64_MAX
+	#else
+		#define SIZE_MAX UINT_MAX
+	#endif
+#endif
+
+#ifndef SSIZE_MAX
+	#ifdef _WIN64
+		#define SSIZE_MAX _I64_MAX
+	#else
+		#define SSIZE_MAX INT_MAX
+	#endif
+#endif
+
+
+#endif /* _INC_LIMITS */
+#if 0 /* expanded by -frewrite-includes */
+#include <stdio.h>
+#endif /* expanded by -frewrite-includes */
+#if 0 /* expanded by -frewrite-includes */
+#include "LrtMin.h"
+#endif /* expanded by -frewrite-includes */
+
+extern "C" {
+
+	#ifndef _FILE_DEFINED
+	#define	_FILE_DEFINED
+	typedef struct _iobuf
+	{
+		char*	_ptr;
+		int	_cnt;
+		char*	_base;
+		int	_flag;
+		int	_file;
+		int	_charbuf;
+		int	_bufsiz;
+		char*	_tmpfname;
+	} FILE;
+	#endif
+
+
+	int printf ( const char * format, ... );
+	int wprintf (const wchar_t* format, ...);
+	
+	size_t fread ( void * ptr, size_t size, size_t count, FILE * stream );
+	int fclose ( FILE * stream );
+	
+}
+#if 0 /* expanded by -frewrite-includes */
+#include <stdlib.h>
+#endif /* expanded by -frewrite-includes */
+#if 0 /* expanded by -frewrite-includes */
+#include "LrtMin.h"
+#endif /* expanded by -frewrite-includes */
+
+
+extern "C" {
+
+	void* malloc(gzUIntX _nSize);
+	void* calloc(gzUIntX num, gzUIntX size);
+	void* realloc (void* ptr, gzUIntX size);
+	void free (void* ptr);
+
+	void* memcpy ( void * destination, const void * source, gzUIntX num );
+	void* memset ( void * ptr, int value, gzUIntX num );
+
+	/////////TODO
+	//int memcmp( const void * ptr1, const void * ptr2, size_t num );
+}
+#if 0 /* expanded by -frewrite-includes */
+#include <string.h>
+#endif /* expanded by -frewrite-includes */
+#if 0 /* expanded by -frewrite-includes */
+#include "LrtMin.h"
+#endif /* expanded by -frewrite-includes */
+
+extern "C" {
+	int memcmp( const void * ptr1, const void * ptr2, gzUIntX num );
+
+	int strcmp( const char * str1, const char * str2 );
+	int strncmp( const char * str1, const char * str2, gzUIntX num );
+	//long int strtol (const char* str, char** endptr, int base); //Convert to integer
+	long strtol(const char* str, char** endptr, int base); //Convert to integer
+
+}
+
+#endif
+
+
+extern "C" {
+	extern gzInt nMainIsAlive; //Default 1 (Alive)
+	extern gzInt nMainUpdateMs; //Default 16 (~60 fps if available)
+}
+#if 0 /* expanded by -frewrite-includes */
+#include <Main>
+#endif /* expanded by -frewrite-includes */
+/////////////// MAIN /////////////////
+
+#ifndef GZ_tLibRT
+	#error Please Include <LibRT.h> before <Main>
+#endif
+
+#ifdef GZ_tMainInclued
+	#error Please include <Main> only once, in your "main" .cpp
+#endif
+#define GZ_tMainInclued
+
+gzInt nMainIsAlive = 1;
+gzInt nMainUpdateMs = 16; // (60 fps if available)
+gzInt Main(gzText8 _sArg, gzUIntX _nId = 0, gzInt _nCmd = 0);
+gzInt Update(gzFloat _nDelta = 0);
+
+
+#ifdef GZ_tJit
+
+	extern "C" int Jit_Main(void* _dTest) {
+		nMainIsAlive = Main("");
+		return nMainIsAlive;
+	}
+	
+	extern "C" int Jit_Update() { 
+		if( nMainIsAlive){
+			nMainIsAlive = Update(0);
+		}
+		return nMainIsAlive;
+	}
+
+#elif  GZ_tWindows
+
+	#if 0 /* expanded by -frewrite-includes */
+#include <Windows.h>
+#endif /* expanded by -frewrite-includes */
+
+	gzInt WINAPI WinMain(HINSTANCE _hInstance,  HINSTANCE _hNull, LPSTR _lpCmdLine, gzInt _nShowCmd){
+		
+		nMainIsAlive = Main("", (gzUIntX)_hInstance, (gzInt)_nShowCmd );	
+		while(nMainIsAlive){
+			Sleep(nMainUpdateMs);
+			nMainIsAlive = Update(0);
+		}
+		return nMainIsAlive;
+	}
+
+#elif GZ_tWeb_Emsc ////////////////////// Web //////////////////////////////////////
+
+	#if 0 /* expanded by -frewrite-includes */
+#include <emscripten/emscripten.h>
+#endif /* expanded by -frewrite-includes */
+	#if 0 /* expanded by -frewrite-includes */
+#include <emscripten/bind.h>
+#endif /* expanded by -frewrite-includes */
+
+	void Emsc_Update(){
+		if(nMainIsAlive){
+			nMainIsAlive = Update(0);
+		}
+	}
+
+	gzInt main(){
+		
+		emscripten_set_main_loop(Emsc_Update, 0, 1);
+		nMainIsAlive = Main("");
+		return nMainIsAlive;
+	}
+
+#elif GZ_tCpcDos
+
+	extern "C" int cpc__gze_main() {
+		Main();
+		while( nMainIsAlive){
+			nMainIsAlive = Update(0);
+		}
+		return nMainIsAlive;
+	}
+	
+#else ////// Others //////
+	int main() {
+		nMainIsAlive = Main("");
+		while(nMainIsAlive){
+			Update(0);
+		}
+		return nMainIsAlive;
+	}
+	
+#endif
+
+gzInt Main(gzText8 _sArg, gzUIntX _nId, gzInt _nCmd){
+	printf("Hello World\n");
+	return 1; // 1 Still Alive, 0 Stop, < 0 Errors
+}
+gzInt Update(gzFloat _nDelta){
+	static gzInt _nCount = 0;
+	printf("Update: %d\r", _nCount);
+	_nCount++;
+	return 1; // 1 Still Alive, 0 Stop, < 0 Errors
+}

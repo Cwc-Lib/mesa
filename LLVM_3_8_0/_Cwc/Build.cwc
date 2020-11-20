@@ -1,0 +1,59 @@
+-{pLLVM}=../src/
+-{pHostConfig}=../HostConfig/
+-{pLLVM_lib}={pLLVM}lib/
+-{pObj}=obj/cpp_{_sPlatform}_{_sOpt}/
+-{pLib}=Lib/{_sPlatform}_{_sOpt}/
+-{pOut}=_out/{_sPlatform}_{_sOpt}/
+>
+-{vFlag}=
+-std=c++11
+-DD__STDC_LIMIT_MACROS
+-DD__STDC_CONSTANT_MACROS
+>
+-{vLink_lib}=
+-lole32
+-limagehlp
+-lgdi32
+-lKernel32
+-lOpengl32
+>
+-{vIncl}=
+-I {pHostConfig}
+-I {pLLVM}include/
+-I {pLLVM}lib/Tg/X86/
+-I {pLLVM}rt/lib/builtins/
+-I {pLLVM}lib/ExecutionEngine/
+>
+;Build llvm libs
+-c {pLLVM_lib}
+!{pLLVM_lib}Tg/
+!{pLLVM_lib}LibDriver/
+!{pLLVM_lib}LineEditor/
+!{pLLVM_lib}LTO/
+!{pLLVM_lib}TableGen/
+!{pLLVM_lib}Fuzzer/
+!{pLLVM_lib}Dbg/
+!{pLLVM_lib}Support/ThreadPool.cpp
+!{pLLVM_lib}EE/OProfileJIT/
+!{pLLVM_lib}EE/IntelJITEvents/
+-o {pObj}llvm/lib/
+-{vIncl}
+-{vFlag}
+>
+;Build Tg --> only x86 subfolder + &Tg
+-c &{pLLVM_lib}Tg/ -o {pObj}llvm/lib/Tg/ -{vIncl} -{vFlag}
+|
+-c &{pLLVM_lib}Tg/ -o {pObj}llvm/lib/Tg/ -{vIncl} -{vFlag}
+>
+;Generate Dynamic Lib
+;-o {pObj}lib/ -#To Lib/{_sPlatform}_{_sOpt}/nouveau.{_sDynamic}
+>
+;Generate LLVM Lib
+;-o {pObj} -#To {pLib}llvm.a
+>
+;Generate IrDemo.exe
+-o {pObj} -#To {pOut}/IrDemo.*
+-{vLink_lib}
+>
+
+-#Run

@@ -1,0 +1,83 @@
+/////////////// MAIN /////////////////
+
+#ifndef GZ_tLibRT
+	#error Please Include <LibRT.h> before <Main>
+#endif
+
+#ifdef GZ_tMainInclued
+	#error Please include <Main> only once, in your "main" .cpp
+#endif
+#define GZ_tMainInclued
+
+gzInt nMainIsAlive = 1;
+gzInt nMainUpdateMs = 16; // (60 fps if available)
+gzInt Main(gzText8 _sArg, gzUIntX _nId = 0, gzInt _nCmd = 0);
+gzInt Update(gzFloat _nDelta = 0);
+
+
+#ifdef GZ_tJit
+
+	extern "C" int Jit_Main(void* _dTest) {
+		nMainIsAlive = Main("");
+		return nMainIsAlive;
+	}
+	
+	extern "C" int Jit_Update() { 
+		if( nMainIsAlive){
+			nMainIsAlive = Update(0);
+		}
+		return nMainIsAlive;
+	}
+
+#elif  GZ_tWindows
+
+	#include <Windows.h>
+
+	gzInt WINAPI WinMain(HINSTANCE _hInstance,  HINSTANCE _hNull, LPSTR _lpCmdLine, gzInt _nShowCmd){
+		
+		nMainIsAlive = Main("", (gzUIntX)_hInstance, (gzInt)_nShowCmd );	
+		while(nMainIsAlive){
+			Sleep(nMainUpdateMs);
+			nMainIsAlive = Update(0);
+		}
+		return nMainIsAlive;
+	}
+
+#elif GZ_tWeb_Emsc ////////////////////// Web //////////////////////////////////////
+
+	#include <emscripten/emscripten.h>
+	#include <emscripten/bind.h>
+
+	void Emsc_Update(){
+		if(nMainIsAlive){
+			nMainIsAlive = Update(0);
+		}
+	}
+
+	gzInt main(){
+		
+		emscripten_set_main_loop(Emsc_Update, 0, 1);
+		nMainIsAlive = Main("");
+		return nMainIsAlive;
+	}
+
+#elif GZ_tCpcDos
+
+	extern "C" int cpc__gze_main() {
+		Main();
+		while( nMainIsAlive){
+			nMainIsAlive = Update(0);
+		}
+		return nMainIsAlive;
+	}
+	
+#else ////// Others //////
+	int main() {
+		nMainIsAlive = Main("");
+		while(nMainIsAlive){
+			Update(0);
+		}
+		return nMainIsAlive;
+	}
+	
+#endif
