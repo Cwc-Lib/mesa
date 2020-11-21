@@ -2950,3 +2950,16 @@ void LLVMStopMultithreaded() {
 LLVMBool LLVMIsMultithreaded() {
   return llvm_is_multithreaded();
 }
+
+
+LLVMValueRef LLVMBuildAtomicCmpXchg(LLVMBuilderRef B, LLVMValueRef Ptr,
+                                    LLVMValueRef Cmp, LLVMValueRef New,
+                                    LLVMAtomicOrdering SuccessOrdering,
+                                    LLVMAtomicOrdering FailureOrdering,
+                                    LLVMBool singleThread) {
+
+  return wrap(unwrap(B)->CreateAtomicCmpXchg(unwrap(Ptr), unwrap(Cmp),
+                unwrap(New), mapFromLLVMOrdering(SuccessOrdering),
+                mapFromLLVMOrdering(FailureOrdering),
+                singleThread ? SingleThread : CrossThread));
+}

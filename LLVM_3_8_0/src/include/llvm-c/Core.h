@@ -2919,6 +2919,12 @@ void LLVMStopMultithreaded(void);
     @see llvm::llvm_is_multithreaded */
 LLVMBool LLVMIsMultithreaded(void);
 
+
+LLVMValueRef LLVMBuildAtomicCmpXchg(LLVMBuilderRef B, LLVMValueRef Ptr,
+                                    LLVMValueRef Cmp, LLVMValueRef New,
+                                    LLVMAtomicOrdering SuccessOrdering,
+                                    LLVMAtomicOrdering FailureOrdering,
+                                    LLVMBool SingleThread);
 /**
  * @}
  */

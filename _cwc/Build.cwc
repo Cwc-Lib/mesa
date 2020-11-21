@@ -14,6 +14,7 @@
 -DLLVM_AVAILABLE
 >
 -{vFlag}=
+-DDEBUG
 -DGALLIUM_LLVMPIPE
 -DGALLIUM_NOUVEAU
 -D__STDC_FORMAT_MACROS
@@ -70,14 +71,14 @@
 !{pMesa}gallium/auxiliary/rbug/
 !{pMesa}gallium/auxiliary/driver_rbug/
 !{pMesa}gallium/auxiliary/renderonly/
-!{pMesa}gallium/auxiliary/draw/draw_llvm.c
-!{pMesa}gallium/auxiliary/draw/draw_llvm_sample.c
-!{pMesa}gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c
-!{pMesa}gallium/auxiliary/draw/draw_vs_llvm.c
 !{pMesa}gallium/auxiliary/indices/u_indices.c
 !{pMesa}gallium/auxiliary/indices/u_unfilled_indices.c
 !{pMesa}gallium/auxiliary/indices/u_primconvert.c
+;!{pMesa}gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c --> LLVMPipe
 ;!{pMesa}gallium/auxiliary/gallivm/ --> LLVMPipe
+;!{pMesa}gallium/auxiliary/draw/draw_llvm.c  --> LLVMPipe
+;!{pMesa}gallium/auxiliary/draw/draw_llvm_sample.c   --> LLVMPipe
+;!{pMesa}gallium/auxiliary/draw/draw_vs_llvm.c  --> LLVMPipe
 ;
 !{pMesa}gallium/auxiliary/pipe-loader/
 ;
