@@ -89,7 +89,13 @@ raw_ostream &dbgs();
 //
 // DEBUG(dbgs() << "Bitset contains: " << Bitset << "\n");
 //
+#ifdef DEBUG_SHOW_ALL
+//Debug all temps ...
+#define DEBUG(X) do {X; } while (0)
+//#undef NDEBUG
+#else
 #define DEBUG(X) DEBUG_WITH_TYPE(DEBUG_TYPE, X)
+#endif
 
 } // End llvm namespace
 

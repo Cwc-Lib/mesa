@@ -567,9 +567,12 @@ public:
   /// setOptLevel - Set the optimization level for the JIT.  This option
   /// defaults to CodeGenOpt::Default.
   EngineBuilder &setOptLevel(CodeGenOpt::Level l) {
-   // OptLevel = l;
+   OptLevel = l;
+    #ifdef Disable_OptLevel
     OptLevel = llvm::CodeGenOpt::None;
-    printf("\n ---------------------------- Set Opt Level  ");
+    printf("\n --- Set Opt Level None ");
+	#endif
+	
     return *this;
   }
 

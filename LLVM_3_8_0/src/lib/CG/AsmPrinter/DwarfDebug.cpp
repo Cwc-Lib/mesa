@@ -467,10 +467,11 @@ void DwarfDebug::constructAndAddImportedEntityDIE(DwarfCompileUnit &TheCU,
 // the target AsmPrinter.
 void DwarfDebug::beginModule() {
 
-  if (DisableDebugInfoPrinting){printf("----------Debug INFO Already Disabled!!! -------");}//Temp
-DisableDebugInfoPrinting = true;//Temp
+  #ifdef Disable_DebugInfo
+  DisableDebugInfoPrinting = true;//Temp
+  #endif
   if (DisableDebugInfoPrinting){
-		printf("----------Debug INFO Disabled!!! -------");
+		//printf("----------Debug INFO Disabled!!! -------");
 		return;
 	}
 

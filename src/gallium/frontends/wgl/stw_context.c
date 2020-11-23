@@ -430,14 +430,11 @@ stw_get_current_read_dc( void )
 BOOL
 stw_make_current(HDC hDrawDC, HDC hReadDC, DHGLRC dhglrc)
 {
-
-printf("\n!stw_make_current!\n");
    struct stw_context *old_ctx = NULL;
    struct stw_context *ctx = NULL;
    BOOL ret = FALSE;
 
    if (!stw_dev){
-	printf("\n!stw_dev\n");
       return FALSE;
 	}
    old_ctx = stw_current_context();

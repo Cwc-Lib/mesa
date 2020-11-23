@@ -70,9 +70,9 @@ using namespace sys;
     ELM_Callback(WIN32_ELMCB_PCSTR ModuleName, DWORD64 ModuleBase,
                  ULONG ModuleSize, PVOID UserContext) {
 
-
-           printf("\nLoadLib: %s" ,(char*)ModuleName );
-
+		#ifdef Show_LoadLib
+			printf("\n*LoadLib: %s" ,(char*)ModuleName );
+		#endif
 
       OpenedHandles->insert((HMODULE)ModuleBase);
       return TRUE;
@@ -85,9 +85,9 @@ using namespace sys;
                                                        std::string *errMsg) {
 
 
-
+	#ifdef Show_LoadLib
       printf("\nLoadLib: %s" ,filename );
-
+	#endif
 
 
 
@@ -200,8 +200,10 @@ return DynamicLibrary(&oHandle);
 #undef INLINE_DEF_SYMBOL2
 
 void* DynamicLibrary::SearchForAddressOfSymbol(const char* symbolName) {
-
+	
+	#ifdef Show_SymbolName
       ::printf("\n --- AdrSymbolName: %s" ,symbolName );
+	 #endif
 
   SmartScopedLock<true> Lock(*SymbolsMutex);
 

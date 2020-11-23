@@ -104,7 +104,6 @@ printf("\n get_adapter_luid(");
 boolean
 stw_init(const struct stw_winsys *stw_winsys)
 {
-printf("\n!!******!!!!!!!!!!!!!!!!! *** stw_init");
    static struct stw_device stw_dev_storage;
 
    debug_disable_error_message_boxes();
@@ -157,15 +156,10 @@ error1:
 boolean
 stw_init_screen()
 {
-   printf("\nsstw_init_screen1() %p", stw_dev);
-   printf("\nsstw_init_screen2() %p", &stw_dev->screen_mutex);
    EnterCriticalSection(&stw_dev->screen_mutex);
-   printf("\nsEnterCriticalSection");
    if (!stw_dev->screen_initialized) {
-      printf("\n !stw_dev->screen_initialized");
       stw_dev->screen_initialized = true;
       if (!init_screen(stw_dev->stw_winsys)) {
-	     printf("\n init_screen");
          LeaveCriticalSection(&stw_dev->screen_mutex);
          return false;
       }

@@ -7,6 +7,10 @@
 >
 -{vFlag}=
 -std=c++11
+-DEBUG_SHOW_SUBTARGET 
+;-UNDEBUG
+;-DDisable_DebugInfo
+;-DDisable_OptLevel
 -DD__STDC_LIMIT_MACROS
 -DD__STDC_CONSTANT_MACROS
 >

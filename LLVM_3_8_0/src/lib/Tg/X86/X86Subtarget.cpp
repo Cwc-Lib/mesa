@@ -25,6 +25,15 @@
 #include "llvm/Target/TargetMachine.h"
 #include "llvm/Target/TargetOptions.h"
 
+#ifdef DEBUG_SHOW_SUBTARGET
+//Debug all temps ...
+#undef DEBUG
+#define DEBUG(X) do {X; } while (0)
+//#undef NDEBUG
+#endif
+
+
+
 #if defined(_MSC_VER)
 #include <intrin.h>
 #endif
@@ -220,10 +229,91 @@ void X86Subtarget::initSubtargetFeatures(StringRef CPU, StringRef FS) {
     ToggleFeature(X86::Mode16Bit);
   else
     llvm_unreachable("Not 16-bit, 32-bit or 64-bit mode!");
-
-  DEBUG(dbgs() << "Subtarget features: SSELevel " << X86SSELevel
+/*
+  (dbgs() << "Subtarget features: SSELevel " << X86SSELevel
                << ", 3DNowLevel " << X863DNowLevel
                << ", 64bit " << HasX86_64 << "\n");
+*/		 
+  
+static bool showSpecsOneTime = false;
+if(!showSpecsOneTime){showSpecsOneTime = true;
+	printf("\n ---=========== LLVM CPU Specs ===========---");
+	printf("\n CPU name: %s ",			  sys::getHostCPUName().str().c_str());
+	printf("\n SSELevel %d", 			  X86SSELevel);
+	printf("\n 3DNowLevel %d", 			  X863DNowLevel);
+	printf("\n Support 64bit %d", 		  HasX86_64);
+	printf("\n hasCMov: %d",              hasCMov());             
+	printf("\n hasSSE1: %d",              hasSSE1());             
+	printf("\n hasSSE2: %d",              hasSSE2());             
+	printf("\n hasSSE3: %d",              hasSSE3());             
+	printf("\n hasSSSE3: %d",             hasSSSE3());            
+	printf("\n hasSSE41: %d",             hasSSE41());            
+	printf("\n hasSSE42: %d",             hasSSE42());            
+	printf("\n hasAVX: %d",               hasAVX());              
+	printf("\n hasAVX2: %d",              hasAVX2());             
+	printf("\n hasAVX512: %d",            hasAVX512());           
+	printf("\n hasFp256: %d",             hasFp256());            
+	printf("\n hasInt256: %d",            hasInt256());           
+	printf("\n hasSSE4A: %d",             hasSSE4A());            
+	printf("\n hasMMX: %d",               hasMMX());              
+	printf("\n has3DNow: %d",             has3DNow());            
+	printf("\n has3DNowA: %d",            has3DNowA());           
+	printf("\n hasPOPCNT: %d",            hasPOPCNT());           
+	printf("\n hasAES: %d",               hasAES());              
+	printf("\n hasFXSR: %d",              hasFXSR());             
+	printf("\n hasXSAVE: %d",             hasXSAVE());            
+	printf("\n hasXSAVEOPT: %d",          hasXSAVEOPT());         
+	printf("\n hasXSAVEC: %d",            hasXSAVEC());           
+	printf("\n hasXSAVES: %d",            hasXSAVES());           
+	printf("\n hasPCLMUL: %d",            hasPCLMUL());           
+	printf("\n hasFMA: %d",               hasFMA());              
+	printf("\n hasFMA4: %d",              hasFMA4());             
+	printf("\n hasAnyFMA: %d",            hasAnyFMA());           
+	printf("\n hasXOP: %d",               hasXOP());              
+	printf("\n hasTBM: %d",               hasTBM());              
+	printf("\n hasMOVBE: %d",             hasMOVBE());            
+	printf("\n hasRDRAND: %d",            hasRDRAND());           
+	printf("\n hasF16C: %d",              hasF16C());             
+	printf("\n hasFSGSBase: %d",          hasFSGSBase());         
+	printf("\n hasLZCNT: %d",             hasLZCNT());            
+	printf("\n hasBMI: %d",               hasBMI());              
+	printf("\n hasBMI2: %d",              hasBMI2());             
+	printf("\n hasRTM: %d",               hasRTM());              
+	printf("\n hasHLE: %d",               hasHLE());              
+	printf("\n hasADX: %d",               hasADX());              
+	printf("\n hasSHA: %d",               hasSHA());              
+	printf("\n hasPRFCHW: %d",            hasPRFCHW());           
+	printf("\n hasRDSEED: %d",            hasRDSEED());           
+	printf("\n hasLAHFSAHF: %d",          hasLAHFSAHF());         
+	printf("\n isBTMemSlow: %d",          isBTMemSlow());         
+	printf("\n isSHLDSlow: %d",           isSHLDSlow());          
+	printf("\n isUnalignedMem16Slow: %d", isUnalignedMem16Slow());
+	printf("\n isUnalignedMem32Slow: %d", isUnalignedMem32Slow());
+	printf("\n hasSSEUnalignedMem: %d",   hasSSEUnalignedMem());  
+	printf("\n hasCmpxchg16b: %d",        hasCmpxchg16b());       
+	printf("\n useLeaForSP: %d",          useLeaForSP());         
+	printf("\n hasSlowDivide32: %d",      hasSlowDivide32());     
+	printf("\n hasSlowDivide64: %d",      hasSlowDivide64());     
+	printf("\n padShortFunctions: %d",    padShortFunctions());   
+	printf("\n callRegIndirect: %d",      callRegIndirect());     
+	printf("\n LEAusesAG: %d",            LEAusesAG());           
+	printf("\n slowLEA: %d",              slowLEA());             
+	printf("\n slowIncDec: %d",           slowIncDec());          
+	printf("\n hasCDI: %d",               hasCDI());              
+	printf("\n hasPFI: %d",               hasPFI());              
+	printf("\n hasERI: %d",               hasERI());              
+	printf("\n hasDQI: %d",               hasDQI());              
+	printf("\n hasBWI: %d",               hasBWI());              
+	printf("\n hasVLX: %d",               hasVLX());              
+	printf("\n hasPKU: %d",               hasPKU());              
+	printf("\n hasMPX: %d",               hasMPX());              
+	printf("\n isAtom: %d",               isAtom());              
+	printf("\n isSLM: %d",                isSLM());               
+	printf("\n useSoftFloat: %d",         useSoftFloat()); 
+	printf("\n ---======================================---");
+}
+
+
   assert((!In64BitMode || HasX86_64) &&
          "64-bit code requested on a subtarget that doesn't support it!");
 

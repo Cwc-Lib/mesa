@@ -460,33 +460,19 @@ util_make_fragment_passthrough_shader(struct pipe_context *pipe,
    struct tgsi_token tokens[1000];
    struct pipe_shader_state state = {0};
 
-
-	printf("\n>================================================ ");
-	printf("\n>>>>>==== printf tgsi_text_translate[shader_templ]:\n %s ", shader_templ);
-	printf("\n>>>>>==== ");
-	printf("\n>>>>>==== " 
-		"FRAG\n"
-         "PROPERTY FS_COLOR0_WRITES_ALL_CBUFS 1\n"
-         "DCL IN[0], %s[0], %s\n"
-         "DCL OUT[0], COLOR[0]\n"
-
-         "MOV OUT[0], IN[0]\n"
-         "END\n" , tgsi_semantic_names[input_semantic], tgsi_interpolate_names[input_interpolate]);
-	printf("\n>>>>>==== tgsi_text_translate[tokens]:\n %s ", tokens);
-	printf("\n>===>===>===>===>===>===>===>===>===>===>===>=== ");
-
-
-
    sprintf(text, shader_templ,
            write_all_cbufs ? "PROPERTY FS_COLOR0_WRITES_ALL_CBUFS 1\n" : "",
            tgsi_semantic_names[input_semantic],
            tgsi_interpolate_names[input_interpolate]);
 		   
 
+	#ifdef Show_Shader
 	printf("\n>================================================ ");
 	printf("\n>>>>>==== tgsi_text_translate[text]:\n %s ", text);
 	printf("\n>>>>>==== tgsi_text_translate[tokens]:\n %s ", tokens);
 	printf("\n>===>===>===>===>===>===>===>===>===>===>===>=== ");
+	#endif
+	
    if (!tgsi_text_translate(text, tokens, ARRAY_SIZE(tokens))) {
       assert(0);
       return NULL;

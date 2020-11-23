@@ -101,7 +101,7 @@ MemoryBlock Memory::allocateMappedMemory(size_t NumBytes,
     //Ceil to nearest 64k bloc
    size_t _nCeil = ((NumBytes/65536) * 65536) + 65536;
 
-    printf("\nCeiled Block: %d", _nCeil );
+  //  printf("\nCeiled Block: %d", _nCeil );
     ResultTest.Address = (void*)malloc(_nCeil);
     ResultTest.Size = _nCeil;
 
@@ -159,7 +159,7 @@ MemoryBlock Memory::allocateMappedMemory(size_t NumBytes,
   Result.Address = PA;
   Result.Size = NumBlocks*Granularity;
 
-printf("\nMemoryBlock ResultAdr: %p   ,Size : %d",   Result.Address,  Result.Size);
+//printf("\nMemoryBlock ResultAdr: %p   ,Size : %d",   Result.Address,  Result.Size);
 
 
   if (Flags & MF_EXEC)
@@ -197,7 +197,7 @@ std::error_code Memory::protectMappedMemory(const MemoryBlock &M,
                                        unsigned Flags) {
 
 
-printf("protectMappedMemory %p: ", &M);
+//printf("protectMappedMemory %p: ", &M);
 
            #ifndef CpcDos
 

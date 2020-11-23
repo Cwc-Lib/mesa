@@ -14,7 +14,7 @@
 -DLLVM_AVAILABLE
 >
 -{vFlag}=
--DDEBUG
+;-DDEBUG
 -DGALLIUM_LLVMPIPE
 -DGALLIUM_NOUVEAU
 -D__STDC_FORMAT_MACROS
@@ -249,7 +249,7 @@
 ;-lsvga
 ;-lwgl
 -Wl,--kill-at
--L {pLLVM}_Cwc/Lib/Windows_Debug/
+-L {pLLVM}_Cwc/Lib/Windows_O2/
 -lllvm
 >
 
