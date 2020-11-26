@@ -250,6 +250,7 @@
 ;-lwgl
 -Wl,--kill-at
 -L {pLLVM}_Cwc/Lib/Windows_O2/
+;-L {pLLVM}_Cwc/Lib/Windows_Debug/
 -lllvm
 >
 

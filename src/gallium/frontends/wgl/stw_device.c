@@ -83,16 +83,13 @@ get_refresh_rate(void)
 static bool
 init_screen(const struct stw_winsys *stw_winsys)
 {
-printf("\n init_screen(");
    struct pipe_screen *screen = stw_winsys->create_screen();
    if (!screen)
       return false;
 
-printf("\n create_screen(");
    if (stw_winsys->get_adapter_luid)
       stw_winsys->get_adapter_luid(screen, &stw_dev->AdapterLuid);
 
-printf("\n get_adapter_luid(");
    stw_dev->smapi->screen = screen;
    stw_dev->screen = screen;
 
@@ -105,6 +102,7 @@ boolean
 stw_init(const struct stw_winsys *stw_winsys)
 {
    static struct stw_device stw_dev_storage;
+   
 
    debug_disable_error_message_boxes();
 
