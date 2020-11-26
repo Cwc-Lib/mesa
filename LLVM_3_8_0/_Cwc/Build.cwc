@@ -9,6 +9,8 @@
 -std=c++11
 -DEBUG_SHOW_SUBTARGET 
 ;-UNDEBUG
+-DNDEBUG
+;-DShow_SymbolName
 ;-DDisable_DebugInfo
 ;-DDisable_OptLevel
 -DD__STDC_LIMIT_MACROS

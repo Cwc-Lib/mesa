@@ -60,8 +60,7 @@ using namespace sys;
     static bool loadDebugHelp(void) {
       HMODULE hLib = ::LoadLibraryW(L"Dbghelp.dll");
       if (hLib) {
-        fEnumerateLoadedModules = (fpEnumerateLoadedModules)
-          ::GetProcAddress(hLib, "EnumerateLoadedModules64");
+        fEnumerateLoadedModules = (fpEnumerateLoadedModules)::GetProcAddress(hLib, "EnumerateLoadedModules64");
       }
       return fEnumerateLoadedModules != 0;
     }
@@ -260,8 +259,9 @@ void* DynamicLibrary::SearchForAddressOfSymbol(const char* symbolName) {
 
 void *DynamicLibrary::getAddressOfSymbol(const char *symbolName) {
 
-      ::printf("\n --- SymbolName: %s" ,symbolName );
-
+	#ifdef Show_SymbolName
+		  ::printf("\n --- SymbolName: %s" ,symbolName );
+	#endif
 
   if (!isValid())
     return NULL;
