@@ -3,3 +3,6 @@
 -{_sOpt}="O2"
 >
 -#Run Build.cwc -{_wToolchain}= VLianceTool/LibRT
+>
+-#Copy {pLib}opengl32.dll "E:/Data/setting/ExeLoader/build/_out/Debug/"
+>

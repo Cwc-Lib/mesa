@@ -21,7 +21,7 @@
 //#define NoDynamiqueLink
 //#define CpcDos
 /////////////////////////////////////////
-
+#define Show_SymbolName
 
 
 #include "WindowsSupport.h"
