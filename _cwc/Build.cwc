@@ -15,6 +15,9 @@
 >
 -{vFlag}=
 ;-DDEBUG
+-D_WIN32_WINNT=0x0600
+-DEMULATED_THREADS_USE_NATIVE_CALL_ONCE
+-DEMULATED_THREADS_USE_NATIVE_CV
 -DGALLIUM_LLVMPIPE
 -DGALLIUM_NOUVEAU
 -D__STDC_FORMAT_MACROS
@@ -249,8 +252,8 @@
 ;-lsvga
 ;-lwgl
 -Wl,--kill-at
-;-L {pLLVM}_Cwc/Lib/Windows_O2/
--L {pLLVM}_Cwc/Lib/Windows_Debug/
+-L {pLLVM}_Cwc/Lib/Windows_O2/
+;-L {pLLVM}_Cwc/Lib/Windows_Debug/
 -lllvm
 >
 
