@@ -1,0 +1,22 @@
+;Register Cwc before using a .cwmake
+>
+-{_sOpt}="OS"
+>
+-{vFlagExt}=
+-fno-rtti 
+-fno-exceptions
+-fno-stack-protector
+-fomit-frame-pointer
+-fno-math-errno
+-fno-unroll-loops
+-fmerge-all-constants
+-fno-ident
+
+;For i386
+-falign-functions=1 -falign-jumps=1 -falign-loops=1
+-mpreferred-stack-boundary=2
+>
+-#Run Build.cwc -{_wToolchain}= VLianceTool/LibRT
+>
+;-#Copy {pLib}opengl32.dll "E:/Data/setting/ExeLoader/build/_out/Debug/"
+>

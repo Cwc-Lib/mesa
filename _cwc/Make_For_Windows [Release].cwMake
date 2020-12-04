@@ -1,8 +1,9 @@
 ;Register Cwc before using a .cwmake
 >
 -{_sOpt}="O2"
+-{vFlagExt}=""
 >
 -#Run Build.cwc -{_wToolchain}= VLianceTool/LibRT
 >
--#Copy {pLib}opengl32.dll "E:/Data/setting/ExeLoader/build/_out/Debug/"
+;-#Copy {pLib}opengl32.dll "E:/Data/setting/ExeLoader/build/_out/Debug/"
 >

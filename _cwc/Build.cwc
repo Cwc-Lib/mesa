@@ -26,6 +26,7 @@
 -DPACKAGE_BUGREPORT=
 ;mapi
 -DPACKAGE_VERSION=%"v0%"
+-{vFlagExt}
 ;
 -D_GLAPI_DLL_EXPORTS
 ;-D_GDI32_
@@ -252,7 +253,8 @@
 ;-lsvga
 ;-lwgl
 -Wl,--kill-at
--L {pLLVM}_Cwc/Lib/Windows_O2/
+-L {pLLVM}_Cwc/Lib/Windows_OS/
+;-L {pLLVM}_Cwc/Lib/Windows_O2/
 ;-L {pLLVM}_Cwc/Lib/Windows_Debug/
 -lllvm
 >

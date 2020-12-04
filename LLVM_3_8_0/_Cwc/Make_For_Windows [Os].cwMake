@@ -1,0 +1,19 @@
+;Register Cwc before using a .cwmake
+>
+;http://ptspts.blogspot.com/2013/12/how-to-make-smaller-c-and-c-binaries.html
+-{_sOpt}="OS"
+-{vFlagExt}=
+-fno-rtti 
+-fno-exceptions
+-fno-stack-protector
+-fomit-frame-pointer
+-fno-math-errno
+-fno-unroll-loops
+-fmerge-all-constants
+-fno-ident
+
+;For i386
+-falign-functions=1 -falign-jumps=1 -falign-loops=1
+-mpreferred-stack-boundary=2
+>
+-#Run Build.cwc -{_wToolchain}= VLianceTool/LibRT

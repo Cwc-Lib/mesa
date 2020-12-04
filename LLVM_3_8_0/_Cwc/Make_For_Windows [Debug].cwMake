@@ -1,7 +1,6 @@
 ;Register Cwc before using a .cwmake
 >
 -{_sOpt}="Debug"
->
--{_sDynamic}="dll"
+-{vFlagExt}=""
 >
 -#Run Build.cwc -{_wToolchain}= VLianceTool/LibRT

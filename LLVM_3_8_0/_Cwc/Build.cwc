@@ -15,6 +15,7 @@
 ;-DDisable_OptLevel
 -DD__STDC_LIMIT_MACROS
 -DD__STDC_CONSTANT_MACROS
+-{vFlagExt}
 >
 -{vLink_lib}=
 -lole32
