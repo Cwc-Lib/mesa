@@ -33,7 +33,8 @@
  * @author Jose Fonseca <jfonseca@vmware.com>
  */
 
-
+#include <stdio.h>
+#include <stdlib.h>
 #include <windows.h>
 
 #include "util/u_debug.h"

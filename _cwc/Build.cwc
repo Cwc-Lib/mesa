@@ -205,7 +205,7 @@
 ;-DBUILD_GL32
 ;-DKHRONOS_DLL_EXPORTS
 >
--o {pObj}mesa/mapi/ -#To {pLib}libglapi.a
+-o {pObj}dyn/mapi/ -#To {pLib}libglapi.a
 >
 ;--- Build frontend wgl
 -c  {pMesa}gallium/frontends/wgl/ -o {pObj}gallium/frontends/wgl/

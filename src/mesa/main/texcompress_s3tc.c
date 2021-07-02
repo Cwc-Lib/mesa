@@ -28,7 +28,8 @@
  * \file texcompress_s3tc.c
  * GL_EXT_texture_compression_s3tc support.
  */
-
+#include <stdio.h>
+#include <stdlib.h>
 #include "glheader.h"
 
 #include "image.h"

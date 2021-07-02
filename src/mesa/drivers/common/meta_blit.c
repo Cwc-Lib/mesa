@@ -22,6 +22,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+#include <stdlib.h>
+
 #include "main/glheader.h"
 #include "main/mtypes.h"
 #include "main/arbprogram.h"
@@ -85,6 +87,7 @@ setup_glsl_blit_framebuffer(struct gl_context *ctx,
  * We can do this when the src renderbuffer is actually a texture, or when the
  * driver exposes BindRenderbufferTexImage().
  */
+ #include <math.h>
 static bool
 blitframebuffer_texture(struct gl_context *ctx,
                         const struct gl_framebuffer *readFb,

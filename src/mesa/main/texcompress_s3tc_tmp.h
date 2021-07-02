@@ -22,6 +22,9 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+#include <stdio.h>
+#include <stdlib.h>
+
 #ifndef TEXCOMPRESS_S3TC_TMP_H
 #define TEXCOMPRESS_S3TC_TMP_H
 
